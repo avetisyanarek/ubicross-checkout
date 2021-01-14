@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+   <header >
+       <div class="container">
+           <div class="header-wrapper">
+               <div class="header-logo">
+                   <a href="#">
+                       <img src="img/logo.svg" alt="logo">
+                       <!-- Yeraz kids center -->
+                   </a>
+               </div>
+               <div class="main-header">
+                   <div class="busket">
+                       <a href="#">
+                           <img src="img/busket.svg" alt="busket">
+                           <div class="number">2</div>
+                       </a>
+                   </div>
+                   <div class="btn-wrapper">
+                       <a href="#" class="main-btn">Sign In</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>
+
+   <section class="shoppingCart">
+       <div class="container">
+           
+
+           <div class="shopping-steps">
+               <div class="steps-wrapper">
+                   <div class="steps">
+                       <div class="step1">
+                          <div class="points"></div>
+                       </div>
+                       <div class="text1">Shopping cart</div>
+                   </div>
+                   <hr>
+                   <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <div class="text">Shipping</div>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <div class="text">Payment</div>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <div class="text">Review</div>
+                </div>
+                
+                  
+               </div>
+           </div>
+           <div class="shopping">Shopping cart</div>
+           <div class="shopping-cart">
+               <div class="boxShadow">
+                  <div class="sellect-all">
+                  <div class="all">
+                      <div class="sellect-wrapper">
+                        <input type="checkbox" onClick="toggle(this)" /> Select all<br/>
+
+                          <!-- <input type="checkbox" id="items" onClick="toggle(this)" /> 
+                          <label for="items">  Select all</label> -->
+                      </div>
+                      <div class="remove-wrapper">
+                          <a href="#">Remove all items</a>
+                      </div>
+    
+                  </div>
+                  <div class="title">
+                      <div class="title-wrapper">
+                          <p class="text-sm">Products</p>
+                      </div>
+                      <div class="qty-wrapper">
+
+                          <div class="total-wrapper">
+                              <div class="qty">Qty.</div>
+                              <div class="total">Total</div>
+                          </div>
+                      </div>
+                  </div>
+                  <hr class="product-hr">
+                  <div class="products">
+                    <!-- <input type="checkbox" id="items" name="foo" >  -->
+                    <input type="checkbox" name="foo" value="bar1">
+                    <!-- <label for="items" > -->
+                                <div class="prod-row">
+
+                            <div class="product-discription">
+                                <div class="product-img">
+                                    <img src="img/item1.svg" alt="item">
+                                </div>
+                                <div class="width">
+
+                                    <div class="nameQty">
+                                        <div class="name">
+                                            <a class="text-sm">
+                                              Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                            </a>
+                                            <p class="text-xs">SKU: 3274628</p>
+                                            <p class="text-xs">Color: White</p>
+                                            <p class="text-xs">Size: 3L</p>
+                                            <p class="text-xs">Material: Plastic</p>
+                                        </div>
+                                        <div class="qty-wrapper">
+                                          <select name="number" >
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+      
+                            </div>
+                            <div class="product-price">
+                                <div class="price-wrapper">
+                                    <p class="text-md">$50.09</p>
+                                    <p class="text-sm sale">$61.00</p>
+                                </div>
+                                <a class="remove">Remove</a>
+      
+                            </div>
+                        </div>
+                        <br/>
+                    <!-- </label> -->
+                </div>
+                <hr class="product-hr">
+                  <div class="products">
+                    <!-- <input type="checkbox" id="items" name="foo" >  -->
+                    <input type="checkbox" name="foo" value="bar1">
+                    <!-- <label for="items" > -->
+                                <div class="prod-row">
+
+                            <div class="product-discription">
+                                <div class="product-img">
+                                    <img src="img/item1.svg" alt="item">
+                                </div>
+                                <div class="width">
+
+                                    <div class="nameQty">
+                                        <div class="name">
+                                            <a class="text-sm">
+                                              Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                            </a>
+                                            <p class="text-xs">SKU: 3274628</p>
+                                            <p class="text-xs">Color: White</p>
+                                            <p class="text-xs">Size: 3L</p>
+                                            <p class="text-xs">Material: Plastic</p>
+                                        </div>
+                                        <div class="qty-wrapper">
+                                          <select name="number" >
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+      
+                            </div>
+                            <div class="product-price">
+                                <div class="price-wrapper">
+                                    <p class="text-md">$50.09</p>
+                                    <p class="text-sm sale">$61.00</p>
+                                </div>
+                                <a class="remove">Remove</a>
+      
+                            </div>
+                        </div>
+                        <br/>
+                    <!-- </label> -->
+                </div>
+                
+                 
+
+                   </div>
+               </div>
+               <div class="promo-wrapper">
+               <div class="boxShadow boxShadow1">                  
+                   <div class="promo">
+                    <div class="promo-code">
+                       <p class="text-sm">Apply Promo code</p>
+                       <div class="apply">
+                           <div class="form-group">
+                            <input type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                           </div>
+                           <div class="button-wrapper">
+                               <a href="#" class="main-btn">Apply</a>
+                           </div>
+                       </div>
+                       <p class="text-xs">Code with higher savings will apply.</p>
+
+                    </div>
+                    <div class="promo-code">
+
+                        <div class="items-total">
+                            <div class="item">
+                                <span>Items total, 4 items</span>
+                                <span>$122.00</span>
+                            </div>
+                            <div class="item">
+                                <span class="discount">Discount</span>
+                                <span class="discount">$100.18</span>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="promo-code">
+
+                        <div class="items-total">
+                            <div class="item">
+                                <span>Subtotal</span>
+                                <span>$50.09</span>
+                            </div>
+                            <div class="item">
+                                <span>Shipping</span>
+                                <span>Calculate</span>
+                            </div>
+                            <div class="item">
+                                <span>Personal discount</span>
+                                <span class="discount">$3.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-code borderNone">
+                        <div class="items-total">
+                            <div class="item">
+                                <span class="big">Total</span>
+                                <span class="big">$50.09</span>
+                            </div>
+                            <div class="item">
+                                <span>Rewords Credit</span>
+                                <span>$0.00</span>
+                            </div>
+    
+                        </div>
+                    </div>
+                   </div>
+                  
+            </div> 
+            <div class="checkout">
+                <div class="checkout-btn">
+                    <a href="#" class="main-btn">Proceed to Checkout</a>
+                </div>               
+            </div>
+            <div class="paypal-wrapper">
+                <div class="title">
+                    <p class="text-sm">Accepted payment methods</p>
+                </div>
+                <div class="cardWrap">
+                    <div class="labels visa"></div>
+                    <div class="labels master"></div>
+                    <div class="labels amex"></div>
+                    <div class="labels arca"></div>
+                    <div class="labels pay_pal"></div>
+                    <div class="labels yandex_many"></div>
+                    <div class="labels payfast"></div>
+                    <div class="labels paystack"></div>
+
+                </div>
+            </div>
+        </div>
+           </div>
+       </div>
+   </section>
+
+
+
+
+    <!-- Script -->
+   <script language="JavaScript">
+    function toggle(source) {
+checkboxes = document.getElementsByName('foo');
+for(var i=0, n=checkboxes.length;i<n;i++) {
+checkboxes[i].checked = source.checked;
+}
+}
+     </script>
+     
+</body>
+</html>
