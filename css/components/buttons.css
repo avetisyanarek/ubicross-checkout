@@ -1,0 +1,28 @@
+.main-btn {
+  background-color: #4F49F5;
+  border: 1px solid #4B50EC;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-radius: 6px;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 12px 5px 12px 5px;
+}
+.main-btn:focus {
+  outline: none;
+  color: #FFFFFF;
+}
+.main-btn:hover {
+  background-color: #36c756;
+  color: #FFFFFF;
+  transition: background 0.5s linear;
+  border-color: #36c756;
+}
+.h40 {
+  padding: 9px 0;
+}

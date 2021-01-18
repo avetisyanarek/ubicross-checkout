@@ -15,7 +15,7 @@
                <div class="header-logo">
                    <a href="#">
                        <img src="img/logo.svg" alt="logo">
-                       <!-- Yeraz kids center -->
+                       <!-- <p class="logo-text">Yeraz kids center</p>  -->
                    </a>
                </div>
                <div class="main-header">
@@ -26,7 +26,7 @@
                        </a>
                    </div>
                    <div class="btn-wrapper">
-                       <a href="#" class="main-btn">Sign In</a>
+                       <a href="#" class="main-btn h40">Sign In</a>
                    </div>
                </div>
            </div>
@@ -34,14 +34,12 @@
    </header>
 
    <section class="shoppingCart">
-       <div class="container">
-           
-
+       <div class="container">        
            <div class="shopping-steps">
                <div class="steps-wrapper">
                    <div class="steps">
-                       <div class="step1">
-                          <div class="points"></div>
+                       <div class=" step step1">
+                          <div class="points points1"></div>
                        </div>
                        <div class="text1">Shopping cart</div>
                    </div>
@@ -65,21 +63,22 @@
                        <div class="points"></div>
                     </div>
                     <div class="text">Review</div>
-                </div>
-                
-                  
+                </div>              
                </div>
            </div>
-           <div class="shopping">Shopping cart</div>
+           <div class="shopping">
+               <p class="font-big">Shopping cart</p>
+               </div>
            <div class="shopping-cart">
                <div class="boxShadow">
                   <div class="sellect-all">
                   <div class="all">
-                      <div class="sellect-wrapper">
-                        <input type="checkbox" onClick="toggle(this)" /> Select all<br/>
-
-                          <!-- <input type="checkbox" id="items" onClick="toggle(this)" /> 
-                          <label for="items">  Select all</label> -->
+                      <div class="checkbox-label">
+                          <div class="checkbox-style sellect-wrapper">
+                              <input class="" name="" id="" value="" type="checkbox">
+                              <label></label>
+                        </div>
+                        <label ><p class="text-sm">Select all</p></label>
                       </div>
                       <div class="remove-wrapper">
                           <a href="#">Remove all items</a>
@@ -90,7 +89,7 @@
                       <div class="title-wrapper">
                           <p class="text-sm">Products</p>
                       </div>
-                      <div class="qty-wrapper">
+                      <div class="qty-wrap">
 
                           <div class="total-wrapper">
                               <div class="qty">Qty.</div>
@@ -100,11 +99,11 @@
                   </div>
                   <hr class="product-hr">
                   <div class="products">
-                    <!-- <input type="checkbox" id="items" name="foo" >  -->
-                    <input type="checkbox" name="foo" value="bar1">
-                    <!-- <label for="items" > -->
-                                <div class="prod-row">
-
+                    <div class="checkbox-style">
+                            <input class="" name="" id="" value="" type="checkbox">
+                            <label></label>
+                    </div>                  
+                           <div class="prod-row">
                             <div class="product-discription">
                                 <div class="product-img">
                                     <img src="img/item1.svg" alt="item">
@@ -122,13 +121,15 @@
                                             <p class="text-xs">Material: Plastic</p>
                                         </div>
                                         <div class="qty-wrapper">
-                                          <select name="number" >
-                                              <option value="1">1</option>
-                                              <option value="2">2</option>
-                                              <option value="3">3</option>
-                                              <option value="4">4</option>
-                                              <option value="5">5</option>
-                                            </select>
+                                            <div class="form-group">
+                                                <select class="text-md" name="" id="" >
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -139,18 +140,19 @@
                                     <p class="text-md">$50.09</p>
                                     <p class="text-sm sale">$61.00</p>
                                 </div>
-                                <a class="remove">Remove</a>
+                                <a class="remove text-xs">Remove</a>
       
                             </div>
                         </div>
                         <br/>
-                    <!-- </label> -->
+
                 </div>
                 <hr class="product-hr">
                   <div class="products">
-                    <!-- <input type="checkbox" id="items" name="foo" >  -->
-                    <input type="checkbox" name="foo" value="bar1">
-                    <!-- <label for="items" > -->
+                    <div class="checkbox-style">
+                            <input class="" name="" id="" value="" type="checkbox">
+                            <label></label>
+                      </div>
                                 <div class="prod-row">
 
                             <div class="product-discription">
@@ -161,7 +163,7 @@
 
                                     <div class="nameQty">
                                         <div class="name">
-                                            <a class="text-sm">
+                                            <a class="text-sm">l
                                               Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
                                             </a>
                                             <p class="text-xs">SKU: 3274628</p>
@@ -170,13 +172,15 @@
                                             <p class="text-xs">Material: Plastic</p>
                                         </div>
                                         <div class="qty-wrapper">
-                                          <select name="number" >
-                                              <option value="1">1</option>
-                                              <option value="2">2</option>
-                                              <option value="3">3</option>
-                                              <option value="4">4</option>
-                                              <option value="5">5</option>
-                                            </select>
+                                            <div class="form-group ">
+                                                <select class="text-md" name="" id="" >
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -185,18 +189,14 @@
                             <div class="product-price">
                                 <div class="price-wrapper">
                                     <p class="text-md">$50.09</p>
-                                    <p class="text-sm sale">$61.00</p>
                                 </div>
-                                <a class="remove">Remove</a>
+                                <a class="remove text-xs">Remove</a>
       
                             </div>
                         </div>
                         <br/>
-                    <!-- </label> -->
                 </div>
-                
-                 
-
+ 
                    </div>
                </div>
                <div class="promo-wrapper">
@@ -205,8 +205,10 @@
                     <div class="promo-code">
                        <p class="text-sm">Apply Promo code</p>
                        <div class="apply">
-                           <div class="form-group">
-                            <input type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                           <div class="apply-input">
+                               <div class="form-group">
+                                <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                               </div>
                            </div>
                            <div class="button-wrapper">
                                <a href="#" class="main-btn">Apply</a>
@@ -218,11 +220,11 @@
                     <div class="promo-code">
 
                         <div class="items-total">
-                            <div class="item">
+                            <div class="item text-md">
                                 <span>Items total, 4 items</span>
                                 <span>$122.00</span>
                             </div>
-                            <div class="item">
+                            <div class="item text-md">
                                 <span class="discount">Discount</span>
                                 <span class="discount">$100.18</span>
                             </div>
@@ -232,15 +234,15 @@
                     <div class="promo-code">
 
                         <div class="items-total">
-                            <div class="item">
+                            <div class="item text-md">
                                 <span>Subtotal</span>
                                 <span>$50.09</span>
                             </div>
-                            <div class="item">
+                            <div class="item text-md">
                                 <span>Shipping</span>
                                 <span>Calculate</span>
                             </div>
-                            <div class="item">
+                            <div class="item text-md">
                                 <span>Personal discount</span>
                                 <span class="discount">$3.00</span>
                             </div>
@@ -248,11 +250,11 @@
                     </div>
                     <div class="promo-code borderNone">
                         <div class="items-total">
-                            <div class="item">
-                                <span class="big">Total</span>
-                                <span class="big">$50.09</span>
+                            <div class="item text-md">
+                                <span class="font-big">Total</span>
+                                <span class="font-big">$50.09</span>
                             </div>
-                            <div class="item">
+                            <div class="item text-md">
                                 <span>Rewords Credit</span>
                                 <span>$0.00</span>
                             </div>
@@ -264,7 +266,7 @@
             </div> 
             <div class="checkout">
                 <div class="checkout-btn">
-                    <a href="#" class="main-btn">Proceed to Checkout</a>
+                    <a href="#" class="main-btn font-big">Proceed to Checkout</a>
                 </div>               
             </div>
             <div class="paypal-wrapper">
@@ -289,17 +291,6 @@
    </section>
 
 
-
-
-    <!-- Script -->
-   <script language="JavaScript">
-    function toggle(source) {
-checkboxes = document.getElementsByName('foo');
-for(var i=0, n=checkboxes.length;i<n;i++) {
-checkboxes[i].checked = source.checked;
-}
-}
-     </script>
      
 </body>
 </html>
