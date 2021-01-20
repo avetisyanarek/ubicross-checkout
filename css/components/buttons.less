@@ -1,5 +1,5 @@
 @import url('../colors/color.less');
-
+// Start main-btn styling
 .main-btn {
     background-color:@mainBtn;
     border: 1px solid @btnBorder;
@@ -29,3 +29,37 @@
 .h40 {
     padding: 9px 0;
 }
+// End main-btn styling
+
+// Start sign-in styling
+.sign-in{
+    .main-btn{
+        background-color: @white;
+        color: @mainBtn;
+        width: 92px;
+        text-decoration: none;
+        &:hover{
+            background-color: @btnBorder;
+            border-color: @btnBorder;
+            color: @white;
+            transition: background 0.5s linear
+        }
+    }
+}
+// End sign-in styling
+
+
+
+// Start disabled styling
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: @stepBorder;
+    border-color: @stepBorder;
+    pointer-events: all !important;
+    &:hover{
+        background-color: @stepBorder;
+        border-color: @stepBorder;
+    }
+  }
+//End disabled styling

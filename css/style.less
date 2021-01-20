@@ -7,7 +7,80 @@
 *{
     box-sizing: border-box;
 }
-
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 25px;
+    position: relative;
+    .selected-lang {
+        display: flex;   
+        justify-content: space-between;
+        line-height: 2;
+        cursor: pointer;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-image: url(https://www.countryflags.io/us/flat/32.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        display: none;
+        background-color: #fff;
+        border: 1px solid #f8f8f8;
+        position: absolute;
+        top: 45px;
+        right: 0px;
+        width: 125px;
+        border-radius: 5px;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        li {
+            list-style: none;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                width: 125px;
+                padding: 5px 10px;
+                display: block;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            .de:before {
+                background-image: url(https://www.countryflags.io/de/flat/32.png);
+            }
+            
+            .en:before {
+                background-image: url(https://www.countryflags.io/us/flat/32.png);
+            }
+            .fr:before {
+                background-image: url(https://www.countryflags.io/fr/flat/32.png);
+            }
+            
+            .ar:before {
+                background-image: url(https://www.countryflags.io/ae/flat/32.png);
+            }
+        }
+    }
+    &:hover ul {
+        display: block;
+    }
+}
 
 body {
 	font-family: 'Helvetica Neue', 'sans-serif'; 
@@ -55,8 +128,8 @@ header{
             align-items: center;
             .busket{
                 margin-right: 35px;
-                width: 39px;
-                height: 32px;
+                width: 29px;
+                height: 24px;
                 position: relative;
                 img{
                     width: 100%;
@@ -67,13 +140,13 @@ header{
                 .number{
                     position: absolute;
                     top: 0;
-                    right: -4px;
-                    width: 14px;
-                    height: 14px;
+                    right: -3px;
+                    width: 11px;
+                    height: 11px;
                     border-radius: 50%;
                     background-color: @mainBtn;
                     color: @white;
-                    font-size: 10px;
+                    font-size: 7px;
                     font-weight: bold;
                     text-align: center;
                     padding-top: 1px;
@@ -86,20 +159,81 @@ header{
                 }
 
             }
-            .btn-wrapper{
-                .main-btn{
+            .dropdown{
+                .dropdown-toggle{
+                    .login-wrapper{
+                        height: 29px;
+                        width: 29px;
+                        color: @mainBtn;
+                        background-color: fade(@mainBtn, 10%);
+                        border-radius: 50%;
+                        overflow: hidden;
+                        border-color: fade(@mainBtn, 10%);
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        .text-xs{
+                            font-weight: bold;
+                            margin: 0;
+                        }
+
+                            img{
+                              max-width: 100%;
+                                display: block;
+                            }
+
+                    }
+                }
+                .dropdown-menu{
                     background-color: @white;
-                    color: @mainBtn;
-                    width: 92px;
-                    text-decoration: none;
-                    &:hover{
-                        background-color: @btnBorder;
-                        border-color: @btnBorder;
+                    min-width: 200px;
+                    box-shadow: 0px 6px 30px fade(@main-dark , 14%);
+                    border-radius: 7px;
+                    border: none;
+                    padding: 11px 15px;
+                    margin-left: -150px;
+                    margin-top: 15px;
+                    li{
+                        color: @light-dark;
+                        margin: 0;
+                        border-bottom: 0.2px solid @stepBorder;
+                        padding: 6px 0;
+                        &:nth-last-child(1){
+                            border-bottom: none;
+                            }
+                            a{
+                                color: @light-dark; 
+                                padding: 0;
+                            }
+
+                    }
+                    .li-hover:hover{
+                        background-color: @selected;
+                    }
+                    .user-bonus{
+                        .user-bonus-amount{
+                            border-radius: 7px;
+                            background-color: fade(@mainBtn, 10%);
+                            padding: 2px 7px;
+                            margin-left: 10px;
+                        }
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top:-20px;
+                        right: 25px;
                         color: @white;
-                        transition: background 0.5s linear
+                        border: 10px solid transparent;
+                        border-bottom: 10px solid @white;
+
+
                     }
                 }
             }
+
         }
     }
 }
@@ -426,7 +560,7 @@ header{
                
                 }
                 .payfast{
-                    background-image: url(../img/payfastlogo.png);
+                    background-image: url(../img/payfastlogo.svg);
                   
                 }
                 .paystack{
@@ -452,7 +586,40 @@ header{
         }
     
           
-    
-
-
 // End shoppingCart styling
+
+// Start empty basket styling
+.empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+    margin-bottom: 172px;
+
+    .text-lg{
+        color: @mainBtn;
+    }
+    .text-md{
+        color: @light-dark;
+    }
+    .cart-img{
+        img{
+            max-width: 100%;
+            max-height: auto;
+            object-fit: contain;
+        }
+    }
+    .cart-img--padding{
+        padding-top: 52px;
+    }
+    .continue-btn{
+        margin-top: 62px;
+        width: 225px;
+        .main-btn{
+            text-decoration: none;
+        }
+
+    }
+}
+// End empty basket styling

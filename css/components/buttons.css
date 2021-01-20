@@ -26,3 +26,26 @@
 .h40 {
   padding: 9px 0;
 }
+.sign-in .main-btn {
+  background-color: #FFFFFF;
+  color: #4F49F5;
+  width: 92px;
+  text-decoration: none;
+}
+.sign-in .main-btn:hover {
+  background-color: #4B50EC;
+  border-color: #4B50EC;
+  color: #FFFFFF;
+  transition: background 0.5s linear;
+}
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #E1E3EE;
+  border-color: #E1E3EE;
+  pointer-events: all !important;
+}
+.disabled:hover {
+  background-color: #E1E3EE;
+  border-color: #E1E3EE;
+}

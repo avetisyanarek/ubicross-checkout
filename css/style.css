@@ -26,6 +26,29 @@
 .h40 {
   padding: 9px 0;
 }
+.sign-in .main-btn {
+  background-color: #FFFFFF;
+  color: #4F49F5;
+  width: 92px;
+  text-decoration: none;
+}
+.sign-in .main-btn:hover {
+  background-color: #4B50EC;
+  border-color: #4B50EC;
+  color: #FFFFFF;
+  transition: background 0.5s linear;
+}
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #E1E3EE;
+  border-color: #E1E3EE;
+  pointer-events: all !important;
+}
+.disabled:hover {
+  background-color: #E1E3EE;
+  border-color: #E1E3EE;
+}
 .error {
   border: 1px solid #e27c7c;
   border-radius: 6px;
@@ -108,6 +131,9 @@ select:focus {
 select:hover {
   background-color: #f9fbff;
 }
+.text-lg {
+  font-size: 30px;
+}
 .font-big {
   font-size: 20px;
 }
@@ -143,6 +169,78 @@ select:hover {
 }
 * {
   box-sizing: border-box;
+}
+.lang-menu {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 25px;
+  position: relative;
+}
+.lang-menu .selected-lang {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  cursor: pointer;
+}
+.lang-menu .selected-lang::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 125px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.lang-menu ul li a {
+  text-decoration: none;
+  width: 125px;
+  padding: 5px 10px;
+  display: block;
+}
+.lang-menu ul li a::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lang-menu ul li .de:before {
+  background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+.lang-menu ul li .en:before {
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.lang-menu ul li .fr:before {
+  background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+.lang-menu ul li .ar:before {
+  background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+.lang-menu:hover ul {
+  display: block;
 }
 body {
   font-family: 'Helvetica Neue', 'sans-serif';
@@ -190,8 +288,8 @@ header .header-wrapper .main-header {
 }
 header .header-wrapper .main-header .busket {
   margin-right: 35px;
-  width: 39px;
-  height: 32px;
+  width: 29px;
+  height: 24px;
   position: relative;
 }
 header .header-wrapper .main-header .busket img {
@@ -202,13 +300,13 @@ header .header-wrapper .main-header .busket img {
 header .header-wrapper .main-header .busket .number {
   position: absolute;
   top: 0;
-  right: -4px;
-  width: 14px;
-  height: 14px;
+  right: -3px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background-color: #4F49F5;
   color: #FFFFFF;
-  font-size: 10px;
+  font-size: 7px;
   font-weight: bold;
   text-align: center;
   padding-top: 1px;
@@ -219,17 +317,68 @@ header .header-wrapper .main-header .busket .number:hover {
   border: 1px solid #77808D;
   padding-top: 0;
 }
-header .header-wrapper .main-header .btn-wrapper .main-btn {
-  background-color: #FFFFFF;
+header .header-wrapper .main-header .dropdown .dropdown-toggle .login-wrapper {
+  height: 29px;
+  width: 29px;
   color: #4F49F5;
-  width: 92px;
+  background-color: rgba(79, 73, 245, 0.1);
+  border-radius: 50%;
+  overflow: hidden;
+  border-color: rgba(79, 73, 245, 0.1);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-header .header-wrapper .main-header .btn-wrapper .main-btn:hover {
-  background-color: #4B50EC;
-  border-color: #4B50EC;
+header .header-wrapper .main-header .dropdown .dropdown-toggle .login-wrapper .text-xs {
+  font-weight: bold;
+  margin: 0;
+}
+header .header-wrapper .main-header .dropdown .dropdown-toggle .login-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+header .header-wrapper .main-header .dropdown .dropdown-menu {
+  background-color: #FFFFFF;
+  min-width: 200px;
+  box-shadow: 0px 6px 30px rgba(14, 14, 14, 0.14);
+  border-radius: 7px;
+  border: none;
+  padding: 11px 15px;
+  margin-left: -150px;
+  margin-top: 15px;
+}
+header .header-wrapper .main-header .dropdown .dropdown-menu li {
+  color: #77808D;
+  margin: 0;
+  border-bottom: 0.2px solid #E1E3EE;
+  padding: 6px 0;
+}
+header .header-wrapper .main-header .dropdown .dropdown-menu li:nth-last-child(1) {
+  border-bottom: none;
+}
+header .header-wrapper .main-header .dropdown .dropdown-menu li a {
+  color: #77808D;
+  padding: 0;
+}
+header .header-wrapper .main-header .dropdown .dropdown-menu .li-hover:hover {
+  background-color: #F9FBFF;
+}
+header .header-wrapper .main-header .dropdown .dropdown-menu .user-bonus .user-bonus-amount {
+  border-radius: 7px;
+  background-color: rgba(79, 73, 245, 0.1);
+  padding: 2px 7px;
+  margin-left: 10px;
+}
+header .header-wrapper .main-header .dropdown .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 25px;
   color: #FFFFFF;
-  transition: background 0.5s linear;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #FFFFFF;
 }
 .shoppingCart {
   background-color: #F7F7F7;
@@ -525,7 +674,7 @@ header .header-wrapper .main-header .btn-wrapper .main-btn:hover {
   background-image: url(../img/yandexmany.svg);
 }
 .shoppingCart .cardWrap .payfast {
-  background-image: url(../img/payfastlogo.png);
+  background-image: url(../img/payfastlogo.svg);
 }
 .shoppingCart .cardWrap .paystack {
   background-image: url(../img/paystack.svg);
@@ -540,4 +689,33 @@ header .header-wrapper .main-header .btn-wrapper .main-btn:hover {
   border-radius: 6px;
   margin-right: 7px;
   margin-top: 7px;
+}
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+  margin-bottom: 172px;
+}
+.empty .text-lg {
+  color: #4F49F5;
+}
+.empty .text-md {
+  color: #77808D;
+}
+.empty .cart-img img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: contain;
+}
+.empty .cart-img--padding {
+  padding-top: 52px;
+}
+.empty .continue-btn {
+  margin-top: 62px;
+  width: 225px;
+}
+.empty .continue-btn .main-btn {
+  text-decoration: none;
 }
