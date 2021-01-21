@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+   <header >
+       <div class="container">
+           <div class="header-wrapper">
+               <div class="header-logo">
+                   <a href="#">
+                       <img src="img/logo.svg" alt="logo">
+                       <!-- <p class="logo-text">Yeraz kids center</p>  -->
+                   </a>
+               </div>
+               <div class="main-header">
+                   <div class="busket">
+                       <a href="#">
+                           <img src="img/busket.svg" alt="busket">
+                           <div class="number">2</div>
+                       </a>
+                   </div>
+                   <div class="sign-in ">
+                       <a href="#" class="main-btn h40">Sign In</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>
+
+   <section class="shoppingCart">
+       <div class="container">        
+           <div class="shopping-steps">
+               <div class="steps-wrapper">
+                   <div class="steps">
+                       <div class=" step step1 success-step ">
+                          <div class="points points1"></div>
+                       </div>
+                       <div class="text-bold success-text">Shopping cart</div>
+                   </div>
+                   <hr class="success-step">
+                   <div class="steps">
+                    <div class="step step1">
+                       <div class="points points1"></div>
+                    </div>
+                    <div class="text text-bold">Shipping</div>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <div class="text">Payment</div>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <div class="text">Review</div>
+                </div>              
+               </div>
+           </div>
+           <div class="shopping">
+               <p class="font-big">Shipping address</p>
+               <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
+               </div>
+           <div class="shopping-cart">
+               <form class="addres-form" action="">
+                   <div class="delivery-methods">
+                    <label class="label-container label-selected">
+                        <span class="text-md">Deliver to your address</span> 
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="label-container">
+                        <span class="text-md">Pickup at Pickup location</span> 
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                       <!-- <span class="card-row" >
+                           <div class="cards">
+                               <label class="lable-container">
+                                   <input name="shoppingcart" type="radio">
+                                   <span class="checkmark"></span>
+                                    <div class="card-wrapp">
+                                        <span class="text-md">Deliver to your address</span>
+                                    </div>
+                               </label>
+                           </div>
+                           <div class="cards">
+                            <label class="lable-container">
+                                <input name="shoppingcart" class="addres-input" type="radio">
+                                <span class="checkmark"></span>
+                                 <div class="card-wrapp">
+                                     <span class="text-md">Pickup at Pickup location</span>
+                                 </div>
+                            </label>
+                        </div>
+                       </span> -->
+                   </div>
+               </form>
+               <div class="promo-wrapper">
+               <div class="boxShadow boxShadow1">                  
+                   <div class="promo">
+                    <div class="promo-code">
+                       <p class="text-sm">Apply Promo code</p>
+                       <div class="apply">
+                           <div class="apply-input">
+                               <div class="form-group">
+                                <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                               </div>
+                           </div>
+                           <div class="button-wrapper">
+                               <a href="#" class="main-btn">Apply</a>
+                           </div>
+                       </div>
+                       <p class="text-xs">Code with higher savings will apply.</p>
+
+                    </div>
+                    <div class="promo-code">
+
+                        <div class="items-total">
+                            <div class="item text-md">
+                                <span>Items total, 4 items</span>
+                                <span>$122.00</span>
+                            </div>
+                            <div class="item text-md">
+                                <span class="discount">Discount</span>
+                                <span class="discount">$100.18</span>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="promo-code">
+
+                        <div class="items-total">
+                            <div class="item text-md">
+                                <span>Subtotal</span>
+                                <span>$50.09</span>
+                            </div>
+                            <div class="item text-md">
+                                <span>Shipping</span>
+                                <span>Calculate</span>
+                            </div>
+                            <div class="item text-md">
+                                <span>Personal discount</span>
+                                <span class="discount">$3.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-code borderNone">
+                        <div class="items-total">
+                            <div class="item text-md">
+                                <span class="font-big">Total</span>
+                                <span class="font-big">$50.09</span>
+                            </div>
+                            <div class="item text-md">
+                                <span>Rewords Credit</span>
+                                <span>$0.00</span>
+                            </div>
+    
+                        </div>
+                    </div>
+                   </div>
+                  
+            </div> 
+            <div class="checkout">
+                <div class="checkout-btn">
+                    <a href="#" class="main-btn font-big">Continue</a>
+                </div>               
+            </div>
+            <!-- <div class="paypal-wrapper">
+                <div class="title">
+                    <p class="text-sm">Accepted payment methods</p>
+                </div>
+                <div class="cardWrap">
+                    <div class="labels visa"></div>
+                    <div class="labels master"></div>
+                    <div class="labels amex"></div>
+                    <div class="labels arca"></div>
+                    <div class="labels pay_pal"></div>
+                    <div class="labels yandex_many"></div>
+                    <div class="labels payfast"></div>
+                    <div class="labels paystack"></div>
+
+                </div>
+            </div> -->
+        </div>
+           </div>
+       </div>
+   </section>
+     
+</body>
+</html>

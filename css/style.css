@@ -170,78 +170,6 @@ select:hover {
 * {
   box-sizing: border-box;
 }
-.lang-menu {
-  width: 100px;
-  text-align: right;
-  font-weight: bold;
-  margin-top: 25px;
-  position: relative;
-}
-.lang-menu .selected-lang {
-  display: flex;
-  justify-content: space-between;
-  line-height: 2;
-  cursor: pointer;
-}
-.lang-menu .selected-lang::before {
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url(https://www.countryflags.io/us/flat/32.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.lang-menu ul {
-  margin: 0;
-  padding: 0;
-  display: none;
-  background-color: #fff;
-  border: 1px solid #f8f8f8;
-  position: absolute;
-  top: 45px;
-  right: 0px;
-  width: 125px;
-  border-radius: 5px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-}
-.lang-menu ul li {
-  list-style: none;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-}
-.lang-menu ul li a {
-  text-decoration: none;
-  width: 125px;
-  padding: 5px 10px;
-  display: block;
-}
-.lang-menu ul li a::before {
-  content: '';
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.lang-menu ul li .de:before {
-  background-image: url(https://www.countryflags.io/de/flat/32.png);
-}
-.lang-menu ul li .en:before {
-  background-image: url(https://www.countryflags.io/us/flat/32.png);
-}
-.lang-menu ul li .fr:before {
-  background-image: url(https://www.countryflags.io/fr/flat/32.png);
-}
-.lang-menu ul li .ar:before {
-  background-image: url(https://www.countryflags.io/ae/flat/32.png);
-}
-.lang-menu:hover ul {
-  display: block;
-}
 body {
   font-family: 'Helvetica Neue', 'sans-serif';
   font-weight: 400;
@@ -425,14 +353,20 @@ header .header-wrapper .main-header .dropdown .dropdown-menu::before {
 .shoppingCart .shopping-steps .steps-wrapper .steps .text {
   margin-left: 12px;
   margin-right: 8px;
-  color: #0E0E0E;
-  opacity: 0.5;
+  color: rgba(14, 14, 14, 0.4);
 }
-.shoppingCart .shopping-steps .steps-wrapper .steps .text1 {
+.shoppingCart .shopping-steps .steps-wrapper .steps .text-bold {
   color: #0E0E0E;
   font-weight: 500;
   margin-right: 8px;
   margin-left: 12px;
+}
+.shoppingCart .shopping-steps .steps-wrapper .steps .success-text {
+  color: #36c756;
+}
+.shoppingCart .shopping-steps .steps-wrapper .steps .success-step {
+  background-color: #36c756;
+  border: #36c756;
 }
 .shoppingCart .shopping-steps .steps-wrapper hr {
   width: 50px;
@@ -441,9 +375,15 @@ header .header-wrapper .main-header .dropdown .dropdown-menu::before {
   border-radius: 5px;
   margin-right: 12px;
 }
+.shoppingCart .shopping-steps .steps-wrapper .success-step {
+  background-color: #36c756;
+  border: #36c756;
+}
+.shoppingCart .shopping {
+  margin-bottom: 25px;
+}
 .shoppingCart .shopping .font-big {
   color: #77808D;
-  margin-bottom: 25px;
 }
 .shoppingCart .shopping-cart {
   display: flex;
@@ -506,7 +446,7 @@ header .header-wrapper .main-header .dropdown .dropdown-menu::before {
   width: 85%;
 }
 .shoppingCart .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .product-img {
-  height: 100px;
+  height: 91px;
   border: 1px solid #D4D9EE;
   margin-right: 10px;
   margin-left: 8px;
@@ -514,7 +454,7 @@ header .header-wrapper .main-header .dropdown .dropdown-menu::before {
 }
 .shoppingCart .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .product-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
 }
 .shoppingCart .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .width {
@@ -649,6 +589,77 @@ header .header-wrapper .main-header .dropdown .dropdown-menu::before {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 12px;
+}
+.shoppingCart .shopping-cart .addres-form {
+  width: 80%;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods {
+  display: flex;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-container {
+  width: 50%;
+  border-radius: 6px;
+  border: 2px solid #D4D9EE;
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-container + .label-container {
+  margin-left: 25px;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-container .text-md {
+  margin-left: 15px;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+  left: 0;
+  height: 100%;
+  top: 0;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-selected {
+  background-color: #F9FBFF;
+  border-color: #4F49F5;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .checkmark {
+  position: absolute;
+  top: 27px;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3EE;
+  border-radius: 50%;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-container input:checked ~ .checkmark {
+  background-color: #FFFFFF;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.shoppingCart .shopping-cart .addres-form .delivery-methods .label-container .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4F49F5;
 }
 .shoppingCart .cardWrap {
   display: flex;
