@@ -23,13 +23,44 @@
             color: @white;
             transition: background 0.5s linear;
             border-color: @hover;
+            text-decoration: none;
         }
 }
+// Start cancel-btn styling
+.cancel-btn{
+    background-color: @selected;
+    color: @light-dark;
+    border: none;
+    text-decoration: none;
+}
+// End cancel-btn styling
 
 .h40 {
     padding: 9px 0;
 }
 // End main-btn styling
+
+// Start free shipping buttons styling
+.free-shipping-wrapper{
+    max-width: 120px;
+    height: auto;
+    z-index: 5;
+    .main-btn{
+        background-color: @hover;
+        color: @white;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 5px 13px;
+        border: none;
+        text-decoration: none;
+        font-size: 14px;
+        &:hover{
+            background-color: @orange;
+        }
+    }
+}
+// End free shipping buttons styling
+
 
 // Start sign-in styling
 .sign-in{

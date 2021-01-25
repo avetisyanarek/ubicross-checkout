@@ -2,6 +2,16 @@
   border: 1px solid #e27c7c;
   border-radius: 6px;
 }
+.error:hover {
+  border: 1px solid #e27c7c;
+  border-radius: 6px;
+}
+.errorMessage {
+  color: #e27c7c;
+  padding: 3px 5px;
+  margin: 2px 0 10px;
+  font-size: 12px;
+}
 .checkbox-style {
   min-width: 20px! important;
   max-width: 20px! important;
@@ -71,7 +81,7 @@ select {
   border: 1px solid #D4D9EE;
   border-radius: 6px;
   color: #77808D;
-  padding: 5px;
+  padding: 14px;
   cursor: pointer;
 }
 select:focus {

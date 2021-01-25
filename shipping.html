@@ -139,7 +139,9 @@
                         <input type="radio" name="radio-address">
                         <span class="checkmark"></span>
                       </label>
-                          <label class="label-container label-container--border">
+                    <div class="label-container-wrapper">
+                        <label class="label-container label-container--border border-none"> 
+                            <!--   -->
                             <span class="decription-row">
                                 <p class="font-big">Add new Shipping Address</p>
                             </span> 
@@ -148,60 +150,80 @@
 
                         </label>
                         <div class="new-address">
-                            <div class="checkbox-style">
-                                <input class="" name="" id="" value="" type="checkbox">
-                                <label></label>
+                            <div class="checkbox-label border-top">
+                                <div class="checkbox-style sellect-wrapper ">
+                                    <input class="" name="" id="" value="" type="checkbox">
+                                    <label></label>
+                                </div>
+                              <label ><p class="text-sm">Set as my default shipping address</p></label>
+                            </div>
+                            <div class="required-fields">
+                                <p class="text-sm">*Required fields</p>
                             </div>
                             <div class="form-group address-section">
-                                <select class="text-md" name="" id="" >
-                                    <option value="Country">Country</option>
-                                    <option value="">Country</option>
-                                    <option value="">Country</option>
-                                    <option value="">Country</option>
-                                    <option value="">Country</option>
+                                <select class="text-sm" name="" id="" >
+                                    <option value="Armenia">Armenia</option>
                                 </select>
+                                <div class="errorMessage">Country cannot be blank.</div>
                             </div>
                             <div class="address-section">
-                                <div class="form-group">
-                                    <label for="">Full Name*</label>
-                                    <input class="text-md" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
+                                <div class="form-group form-position">
+                                    <label class="form-control-label text-xs" for="">Full Name*</label>
+                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
+                                    <div class="errorMessage">Full Name cannot be blank.</div>
                                </div>
                             </div>
                             <div class="address-section">
-                                <div class="form-group">
-                                    <label for="">Address Line 1*</label>
-                                    <input class="text-md" type="text" id="fname" name="fname" placeholder=" ">
+                                <div class="form-group form-position">
+                                    <label  class="form-control-label text-xs"  for="">Address Line 1*</label>
+                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder=" ">
+                                    <div class="errorMessage">Address Line 1 cannot be blank.</div>
                                </div>
                             </div>
                             <div class="address-section">
-                                <div class="form-group">
-                                    <label for="">Address Line 2*</label>
-                                    <input class="text-md" type="text" id="fname" name="fname" placeholder="Apartment, suite, unit, building, floor, etc.">
+                                <div class="form-group form-position">
+                                    <label  class="form-control-label text-xs"  for="">Address Line 2*</label>
+                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="Apartment, suite, unit, building, floor, etc.">
+                                    <div class="errorMessage">Address Line 2 cannot be blank.</div>
                                </div>
                             </div>
                             <div class="address-section three-input-wrapper">
-                                <div class="form-group">
-                                    <label for="">City*</label>
-                                    <input class="text-md" type="text" id="fname" name="fname" placeholder="">
+
+                                <div class="form-group form-width form-position">
+                                    <label  class="form-control-label text-xs"  for="">City*</label>
+                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                    <div class="errorMessage">City cannot be blank.</div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">State/Region*</label>
-                                    <input class="text-md" type="text" id="fname" name="fname" placeholder="">
+                                <div class="form-group form-width form-position">
+                                    <label  class="form-control-label text-xs"  for="">State/Region*</label>
+                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                    <div class="errorMessage">State/Region cannot be blank.</div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">Zip/Postal Code*</label>
-                                    <input class="text-md" type="text" id="fname" name="fname" placeholder="">
+                                <div class="form-group form-width form-position">
+                                    <label  class="form-control-label text-xs"  for="">Zip/Postal Code*</label>
+                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                    <div class="errorMessage">Zip/Postal Code cannot be blank.</div>
                                 </div>
                             </div>
                             <div class="address-section">
-                                <div class="form-group">
-                                    <label for="">Mobile Number*</label>
-                                    <input class="text-md" type="text" id="fname" name="fname" placeholder="">
+                                <div class="form-group form-position">
+                                    <label  class="form-control-label text-xs"  for="">Mobile Number*</label>
+                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                    <div class="errorMessage">Mobile Number cannot be blank.</div>
                                </div>
                             </div>
+                            <div class="btn-wrapper">
+                                <div class="cansel-wrapper">
+                                    <a class="main-btn cancel-btn" href="">Cancel</a>
+                                </div>
+                                <div class="continue-wrapper">
+                                    <a class="main-btn" href="">Continue</a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                    </div>
-                    <!-- <div class="pickup-location">
+                     <!-- <div class="pickup-location">
                     <label class="label-container label-container--border label-selected">
                         <span class="decription-row decription-row--center">
                             <div class="address-description">
@@ -227,7 +249,7 @@
                             </div>
 
                         </span> 
-                        <input type="radio" name="radio-address">
+                        <input type="radio" name="radio-pickup">
                         <span class="checkmark"></span>
                       </label>
                       <label class="label-container label-container--border">
@@ -253,10 +275,10 @@
                                 <p class="text-sm text-sm--main">Deliver here</p>
                             </div>
                         </span> 
-                        <input type="radio" name="radio-address">
+                        <input type="radio" name="radio-pickup">
                         <span class="checkmark"></span>
                       </label>
-                   </div>  -->
+                   </div>   -->
                    <div class="continue-wrapper">
                        <a class="main-btn" href="">Continue</a>
                    </div>

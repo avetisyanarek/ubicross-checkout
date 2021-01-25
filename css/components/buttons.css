@@ -22,9 +22,34 @@
   color: #FFFFFF;
   transition: background 0.5s linear;
   border-color: #36c756;
+  text-decoration: none;
+}
+.cancel-btn {
+  background-color: #F9FBFF;
+  color: #77808D;
+  border: none;
+  text-decoration: none;
 }
 .h40 {
   padding: 9px 0;
+}
+.free-shipping-wrapper {
+  max-width: 120px;
+  height: auto;
+  z-index: 5;
+}
+.free-shipping-wrapper .main-btn {
+  background-color: #36c756;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 5px 13px;
+  border: none;
+  text-decoration: none;
+  font-size: 14px;
+}
+.free-shipping-wrapper .main-btn:hover {
+  background-color: #E68500;
 }
 .sign-in .main-btn {
   background-color: #FFFFFF;

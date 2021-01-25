@@ -4,6 +4,19 @@
 .error{
     border: 1px solid @error;
     border-radius: 6px;
+    &:hover{
+        border: 1px solid @error;
+        border-radius: 6px;
+    }
+}
+
+.errorMessage{
+    // border-radius: 5px;
+    // background-color: @error;
+    color: @error;
+    padding: 3px 5px;
+    margin: 2px 0 10px;
+    font-size: 12px;
 }
 // End form-group error styling
 
@@ -91,7 +104,7 @@ select{
     border: 1px solid @productBorder;
     border-radius: 6px;
     color: @light-dark;
-    padding: 5px;
+    padding: 14px;
     cursor: pointer;
     &:focus{
         outline: none;
