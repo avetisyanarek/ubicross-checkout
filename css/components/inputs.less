@@ -11,13 +11,16 @@
 }
 
 .errorMessage{
-    // border-radius: 5px;
-    // background-color: @error;
     color: @error;
     padding: 3px 5px;
-    margin: 2px 0 10px;
     font-size: 12px;
+    margin-top: -14px;
+    margin-bottom: 10px;
 }
+// .form-group{
+//     margin-bottom: 5px;
+//     margin-top: 5px;
+// }
 // End form-group error styling
 
 // Start checkbox-style styling
@@ -37,7 +40,7 @@
              height: 100%;
              z-index: 100;
              &:checked + label {
-                 border: 1px solid @btnBorder;
+                 border: 1px solid @main;
                  &::before {
                     content: "";
                     position: absolute;
@@ -45,7 +48,7 @@
                     left: 4px;
                     width: 12px;
                     height: 6px;
-                    border: solid @btnBorder;
+                    border: 1px solid @main;
                     border-width: 0 0 2px 2px;
                     transform: rotate(-45deg);
                  }
@@ -92,11 +95,7 @@ input{
 // End inputs styling
 
 // Start select styling
-.error{
-    select{
-        border: none;
-    }
-}
+
 
 select{
     width: 100%;
@@ -114,7 +113,11 @@ select{
         border: 1px solid @selectBorder;
     }
 }
-
+.error{
+    select{
+        border: none;
+    }
+}
 // End select styling
 
 // Start input type="radio" styling
@@ -153,6 +156,9 @@ select{
     border: 1px solid @selectBorder;
     background-color: @selected;
    }
+  }
+  .border2px:hover{
+    border: 2px solid @selectBorder;
   }
   .label-container--border{
     border: 1px solid @productBorder;

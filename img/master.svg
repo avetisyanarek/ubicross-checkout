@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="47.432" height="30" viewBox="0 0 47.432 30">
-  <g id="Group_4" data-name="Group 4" transform="translate(0)">
-    <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
-      <path id="Path_3" data-name="Path 3" d="M6.081,0h35.27a6.081,6.081,0,0,1,6.081,6.081V23.919A6.081,6.081,0,0,1,41.351,30H6.081A6.081,6.081,0,0,1,0,23.919V6.081A6.081,6.081,0,0,1,6.081,0Z" fill="#fff"/>
-      <g id="_Group_" data-name="&lt;Group&gt;" transform="translate(12.792 8.155)">
-        <rect id="Rectangle_2" data-name="Rectangle 2" width="6.002" height="10.786" transform="translate(8.096 1.465)" fill="#ff5f00"/>
-        <path id="_Path_" data-name="&lt;Path&gt;" d="M46.443,25.863a6.848,6.848,0,0,1,2.62-5.392,6.859,6.859,0,1,0,0,10.786,6.848,6.848,0,0,1-2.62-5.394Z" transform="translate(-37.965 -19.002)" fill="#eb001b"/>
-        <path id="Path_2" data-name="Path 2" d="M107.308,25.851a6.859,6.859,0,0,1-11.1,5.392,6.859,6.859,0,0,0,0-10.786,6.859,6.859,0,0,1,11.1,5.394Z" transform="translate(-85.113 -18.991)" fill="#f79e1b"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="117" height="74" viewBox="0 0 117 74">
+  <g id="Group_4" data-name="Group 4" transform="translate(-424 -159)">
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_3" data-name="Path 3" d="M15,0h87a15,15,0,0,1,15,15V59a15,15,0,0,1-15,15H15A15,15,0,0,1,0,59V15A15,15,0,0,1,15,0Z" transform="translate(424 159)" fill="#fff"/>
+      <g id="_Group_" data-name="&lt;Group&gt;" transform="translate(419.035 161.009)">
+        <rect id="Rectangle_2" data-name="Rectangle 2" width="14.032" height="25.218" transform="translate(56.895 22.416)" fill="#ff5f00"/>
+        <path id="_Path_" data-name="&lt;Path&gt;" d="M57.786,35.039a16.01,16.01,0,0,1,6.125-12.607,16.037,16.037,0,1,0,0,25.218,16.01,16.01,0,0,1-6.125-12.611Z" transform="translate(0 -0.008)" fill="#eb001b"/>
+        <path id="Path_2" data-name="Path 2" d="M122.158,35.031A16.037,16.037,0,0,1,96.21,47.638a16.037,16.037,0,0,0,0-25.218,16.037,16.037,0,0,1,25.948,12.611Z" transform="translate(-32.299 0)" fill="#f79e1b"/>
       </g>
     </g>
   </g>

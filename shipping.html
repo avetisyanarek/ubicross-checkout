@@ -39,7 +39,7 @@
                <div class="steps-wrapper">
                    <div class="steps">
                        <div class=" step step1 success-step ">
-                          <div class="points points1"></div>
+                          <div class="points  points-checkd"></div>
                        </div>
                        <div class="text-bold success-text">Shopping cart</div>
                    </div>
@@ -66,19 +66,19 @@
                 </div>              
                </div>
            </div>
-           <div class="shopping">
-               <p class="font-big">Shipping address</p>
-               <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
+                <div class="title">
+                    <p class="font-big">Shipping address</p>
+                    <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
                </div>
            <div class="shopping-cart">
                <form class="address-form" action="">
                    <div class="delivery-methods">
-                    <label class="label-container lable--width label-selected">
+                    <label class="label-container lable--width label-selected border2px">
                         <span class="text-md text--mrl">Deliver to your address</span> 
                         <input type="radio" checked="checked" name="radio">
                         <span class="checkmark"></span>
                       </label>
-                      <label class="label-container lable--width">
+                      <label class="label-container lable--width border2px">
                         <span class="text-md text--mrl">Pickup at Pickup location</span> 
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
@@ -87,7 +87,7 @@
                     <div class="deliver-address">
                     <label class="label-container label-container--border label-selected">
                         <span class="decription-row">
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="font-big">Narek Avetisyan</p>
                                 <div class="address-span">
                                     <div class="span-content">
@@ -100,7 +100,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="text-sm text-sm--main">Selected</p>
                                 <div class="edit-remove">
                                     <a class="edit text-xs" href="">Edit </a>
@@ -114,7 +114,7 @@
                       </label>
                       <label class="label-container label-container--border">
                         <span class="decription-row">
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="font-big">Narek Avetisyan</p>
                                 <div class="address-span">
                                     <div class="span-content">
@@ -127,7 +127,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="text-sm text-sm--main">Deliver here</p>
                                 <div class="edit-remove">
                                     <a class="edit text-xs" href="">Edit </a>
@@ -141,7 +141,7 @@
                       </label>
                     <div class="label-container-wrapper">
                         <label class="label-container label-container--border border-none"> 
-                            <!--   -->
+                            <!--  border-none -->
                             <span class="decription-row">
                                 <p class="font-big">Add new Shipping Address</p>
                             </span> 
@@ -164,53 +164,59 @@
                                 <select class="text-sm" name="" id="" >
                                     <option value="Armenia">Armenia</option>
                                 </select>
-                                <div class="errorMessage">Country cannot be blank.</div>
                             </div>
+                            <!-- <div class="errorMessage">Country cannot be blank.</div> -->
                             <div class="address-section">
                                 <div class="form-group form-position">
-                                    <label class="form-control-label text-xs" for="">Full Name*</label>
+                                    <label class="form-control-label text-xs">Full Name*</label>
                                     <input class="text-sm" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
-                                    <div class="errorMessage">Full Name cannot be blank.</div>
-                               </div>
+                                </div>
+                                <!-- <div class="errorMessage">Full Name cannot be blank.</div> -->
                             </div>
                             <div class="address-section">
                                 <div class="form-group form-position">
-                                    <label  class="form-control-label text-xs"  for="">Address Line 1*</label>
+                                    <label  class="form-control-label text-xs">Address Line 1*</label>
                                     <input class="text-sm" type="text" id="fname" name="fname" placeholder=" ">
-                                    <div class="errorMessage">Address Line 1 cannot be blank.</div>
-                               </div>
+                                </div>
+                                <!-- <div class="errorMessage">Address Line 1 cannot be blank.</div> -->
                             </div>
                             <div class="address-section">
                                 <div class="form-group form-position">
-                                    <label  class="form-control-label text-xs"  for="">Address Line 2*</label>
+                                    <label  class="form-control-label text-xs">Address Line 2*</label>
                                     <input class="text-sm" type="text" id="fname" name="fname" placeholder="Apartment, suite, unit, building, floor, etc.">
-                                    <div class="errorMessage">Address Line 2 cannot be blank.</div>
-                               </div>
+                                </div>
+                                <!-- <div class="errorMessage">Address Line 2 cannot be blank.</div> -->
                             </div>
                             <div class="address-section three-input-wrapper">
+                                <div class="error-wrapper form-width">
 
-                                <div class="form-group form-width form-position">
-                                    <label  class="form-control-label text-xs"  for="">City*</label>
-                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                    <div class="errorMessage">City cannot be blank.</div>
+                                    <div class="form-group form-position">
+                                        <label  class="form-control-label text-xs">City*</label>
+                                        <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                    </div>
+                                    <!-- <div class="errorMessage">City cannot be blank.</div> -->
                                 </div>
-                                <div class="form-group form-width form-position">
-                                    <label  class="form-control-label text-xs"  for="">State/Region*</label>
+                                <div class="error-wrapper form-width">
+                                <div class="form-group form-position ">
+                                    <label  class="form-control-label text-xs">State/Region*</label>
                                     <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                    <div class="errorMessage">State/Region cannot be blank.</div>
                                 </div>
-                                <div class="form-group form-width form-position">
-                                    <label  class="form-control-label text-xs"  for="">Zip/Postal Code*</label>
+                                <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
+                                </div>
+                                <div class="error-wrapper form-width">
+                                <div class="form-group form-position">
+                                    <label  class="form-control-label text-xs">Zip/Postal Code*</label>
                                     <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                    <div class="errorMessage">Zip/Postal Code cannot be blank.</div>
+                                </div>
+                                <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
                                 </div>
                             </div>
                             <div class="address-section">
                                 <div class="form-group form-position">
-                                    <label  class="form-control-label text-xs"  for="">Mobile Number*</label>
+                                    <label  class="form-control-label text-xs">Mobile Number*</label>
                                     <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                    <div class="errorMessage">Mobile Number cannot be blank.</div>
-                               </div>
+                                </div>
+                                <!-- <div class="errorMessage">Mobile Number cannot be blank.</div> -->
                             </div>
                             <div class="btn-wrapper">
                                 <div class="cansel-wrapper">
@@ -226,7 +232,7 @@
                      <!-- <div class="pickup-location">
                     <label class="label-container label-container--border label-selected">
                         <span class="decription-row decription-row--center">
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="font-big">Location name</p>
                                 <div class="address-span">
                                     <div class="span-content">
@@ -244,7 +250,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="text-sm text-sm--main">Selected</p>
                             </div>
 
@@ -254,7 +260,7 @@
                       </label>
                       <label class="label-container label-container--border">
                         <span class="decription-row decription-row--center">
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="font-big">Location name</p>
                                 <div class="address-span">
                                     <div class="span-content">
@@ -271,7 +277,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="address-description">
+                            <div class="label-description">
                                 <p class="text-sm text-sm--main">Deliver here</p>
                             </div>
                         </span> 
@@ -293,6 +299,7 @@
                                <div class="form-group">
                                 <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
                                </div>
+                                <!-- <div class="errorMessage">Promo code cannot be blank.</div> -->
                            </div>
                            <div class="button-wrapper">
                                <a href="#" class="main-btn">Apply</a>
