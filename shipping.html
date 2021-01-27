@@ -7,32 +7,62 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-   <header >
-       <div class="container">
-           <div class="header-wrapper">
-               <div class="header-logo">
-                   <a href="#">
-                       <img src="img/logo.svg" alt="logo">
-                       <!-- <p class="logo-text">Yeraz kids center</p>  -->
-                   </a>
-               </div>
-               <div class="main-header">
-                   <div class="busket">
-                       <a href="#">
-                           <img src="img/busket.svg" alt="busket">
-                           <div class="number">2</div>
-                       </a>
-                   </div>
-                   <div class="sign-in ">
-                       <a href="#" class="main-btn h40">Sign In</a>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </header>
-
+    <header >
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="logo">
+                        <!-- <p class="logo-text">Yeraz kids center</p>  -->
+                    </a>
+                </div>
+                <div class="main-header">
+                    <div class="busket">
+                        <a href="#">
+                            <img src="img/busket.svg" alt="busket">
+                            <div class="number">2</div>
+                        </a>
+                    </div>
+ 
+                    <!-- <div class="sign-in">
+                     <a href="#" class="main-btn h40">Sign In</a>
+                 </div> -->
+ 
+                 <div class="dropdown">
+                     <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                         <div class="login-wrapper">
+                            <!-- <p class="text-xs">N</p> -->
+                            <div class="user-img">
+                                <img src="img/miki.jpg" alt="">
+                            </div>
+                            
+                         </div>
+                         
+                     </span>
+                     <ul class="dropdown-menu slideIn" aria-labelledby="dropdownMenu1">
+                         <li class="user-name">
+                             <span class="user-name-label text-sm">Narek Avetisyan </span>
+                         </li>
+                        <li class="user-bonus">
+                             <span class="user-bonus-label text-sm">Bonus</span>
+                             <span class="user-bonus-amount text-sm">250</span>
+                         </li>
+                         <li><a class="text-sm li-hover" href="">My Orders</a></li>
+                         <li><a class="text-sm li-hover" href="">My Reviews</a></li>
+                         <li><a class="text-sm li-hover" href="">Addresses</a></li>
+                         <li><a class="text-sm li-hover" href="">Settings</a></li>
+                         <li><a class="text-sm li-hover" href="">Log out</a></li>
+                     </ul>
+                 </div>
+                 
+                </div>
+            </div>
+        </div>
+    </header>
    <section class="shoppingCart">
        <div class="container">        
            <div class="shopping-steps">
@@ -161,9 +191,16 @@
                                 <p class="text-sm">*Required fields</p>
                             </div>
                             <div class="form-group address-section">
-                                <select class="text-sm" name="" id="" >
-                                    <option value="Armenia">Armenia</option>
-                                </select>
+                                <div class="select-wrapper">
+                                    <div class="select-arrow">
+                                        <img src="img/select-arrow.svg" alt="arrow">
+                                    </div>
+                                    <select class="text-sm" >
+                                        <option value="Armenia">Country</option>
+                                        <option value="Armenia">Armenia</option>
+                                    
+                                    </select>
+                                </div>
                             </div>
                             <!-- <div class="errorMessage">Country cannot be blank.</div> -->
                             <div class="address-section">
@@ -229,7 +266,7 @@
                         </div>
                     </div>
                    </div>
-                     <!-- <div class="pickup-location">
+                      <div class="pickup-location">
                     <label class="label-container label-container--border label-selected">
                         <span class="decription-row decription-row--center">
                             <div class="label-description">
@@ -284,8 +321,8 @@
                         <input type="radio" name="radio-pickup">
                         <span class="checkmark"></span>
                       </label>
-                   </div>   -->
-                   <div class="continue-wrapper">
+                   </div>   
+                   <div class="continue-wrapper mt">
                        <a class="main-btn" href="">Continue</a>
                    </div>
                </form>
@@ -355,8 +392,8 @@
                    </div>
                   
             </div> 
-            <div class="checkout">
-                <div class="checkout-btn">
+            <div class="checkout ">
+                <div class="checkout-btn ">
                     <a href="#" class="main-btn font-big">Continue</a>
                 </div>               
             </div>

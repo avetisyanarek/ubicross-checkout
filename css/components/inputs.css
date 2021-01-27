@@ -73,6 +73,14 @@ input:hover {
 .error input {
   border: none;
 }
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper .select-arrow {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+}
 select {
   width: 100%;
   height: 50px;
@@ -81,6 +89,12 @@ select {
   color: #77808D;
   padding: 14px;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  z-index: 5;
+  background-color: transparent;
 }
 select:focus {
   outline: none;

@@ -141,7 +141,6 @@ header{
                                 color: @light-dark; 
                                 padding: 0;
                             }
-
                     }
                     .li-hover:hover{
                         background-color: @selected;
@@ -229,7 +228,7 @@ header{
                     .points-checkd::before {
                         content: "";
                         position: absolute;
-                        top: 8px;
+                        top: 9px;
                         left: 8.5px;
                         width: 11px;
                         height: 8px;
@@ -274,10 +273,10 @@ header{
         }
     }
     .title{
+        margin-bottom: 25px;
      .font-big{
        color: @light-dark;
     }
-    margin-bottom: 25px;
     }
   
     .shopping-cart{
@@ -480,13 +479,14 @@ header{
         .checkout{
             width: 100%;
             .checkout-btn{
-                margin-top: 30px;
+                margin-top: 20px;
                 .main-btn{
                     width: 100%;
                 }
             
                 }
             }
+           
             .text-wrapper{
                 .text-xs{
                     text-align: center;
@@ -497,7 +497,7 @@ header{
         }
         .paypal-wrapper{
             width: 100%;
-            .title{
+            .paypal-title{
                 .text-sm{
                     color: @light-dark;
                     text-align: center;
@@ -537,9 +537,6 @@ header{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
-                         .free-margin{
-                             margin-bottom: 8px;
-                         }
                             .text-sm--main{
                                 color: @mainBtn;
                                 font-weight: bold;
@@ -569,7 +566,7 @@ header{
                         }
                         
                         .font-big{
-                            margin-bottom: 5px;
+                            margin-bottom: 0px;
                         }
                     }
                     .decription-row--center{
@@ -584,6 +581,7 @@ header{
                 }
                 .border-none{
                     border: none;
+                    margin-bottom: 0;
                 }
                 
                 .new-address{
@@ -641,6 +639,9 @@ header{
             // }
             .continue-wrapper{
                 width: 200px;
+            }
+            .mt{
+                margin-top: 15px;
             }
         // }
     // }

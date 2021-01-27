@@ -96,6 +96,15 @@ input{
 
 // Start select styling
 
+.select-wrapper{
+        position: relative;
+        .select-arrow{
+            position: absolute;
+            top: 16px;
+            right: 17px;
+ 
+        }
+    }
 
 select{
     width: 100%;
@@ -105,6 +114,12 @@ select{
     color: @light-dark;
     padding: 14px;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    z-index: 5;
+    background-color: transparent;
     &:focus{
         outline: none;
     }
@@ -112,6 +127,7 @@ select{
         background-color: #f9fbff;
         border: 1px solid @selectBorder;
     }
+
 }
 .error{
     select{
