@@ -29,7 +29,7 @@
                     </div>
  
                     <!-- <div class="sign-in">
-                     <a href="#" class="main-btn h40">Sign In</a>
+                     <button href="#" class="main-btn h40">Sign In</button>
                  </div> -->
  
                  <div class="dropdown">
@@ -118,78 +118,91 @@
                <form class="address-form" action="">
 
                     <div class="shipping-details">
-                    <label class="label-container label-container--border label-selected">
-                        <span class="decription-row decription-row--center">
-                            <div class="label-description">
-                                <p class="font-lg">Standard delivery</p>
-                                <div class="free-shipping-wrapper ">
-                                    <p class="text-sm" >Free Shipping</p>
-                                </div>
-                                <div class="address-span">
-                                    <div class=" span-content ">
-                                        <span class="text-sm">Estimated delivery:</span>
-                                        <span class="text-sm"> Dec 16 - Dec 18</span>
+                        <span>
+                            <div class="card">
+                                <label class="label-container label-container--border label-selected">
+                                <span class="decription-row decription-row--center">
+                                    <div class="label-description">
+                                        <p class="font-lg">Standard delivery</p>
+                                        <div class="free-shipping-wrapper ">
+                                            <p class="text-sm" >Free Shipping</p>
+                                        </div>
+                                        <div class="address-span">
+                                            <div class=" span-content ">
+                                                <span class="text-sm">Estimated delivery:</span>
+                                                <span class="text-sm"> Dec 16 - Dec 18</span>
+                                            </div>
+                                            
+                                        </div>
+                                        
                                     </div>
-                                    <div class=" span-content ">
-                                        <span class="text-sm text-sm--color">Free shipping for orders over $50</span>
+                                    <div class="label-description">
+                                        <p class="text-sm text-sm--free">Free</p>
                                     </div>
-                                </div>
-                                
+        
+                                </span> 
+                                <input type="radio" name="radio-shipping-detail">
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                            <div class="label-description">
-                                <p class="text-sm text-sm--free">Free</p>
-                            </div>
-
-                        </span> 
-                        <input type="radio" name="radio-shipping-detail">
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="label-container label-container--border">
-                        <span class="decription-row decription-row--center">
-                            <div class="label-description">
-                                <p class="font-lg">PO BOX or APO Address</p>
-                                <div class="address-span">
-                                    <div class=" span-content ">
-                                        <span class="text-sm">Estimated delivery:</span>
-                                        <span class="text-sm">Dec 17</span>
+                            <div class="card">
+                                <label class="label-container label-container--border">
+                                <span class="decription-row decription-row--center">
+                                    <div class="label-description">
+                                        <p class="font-lg">PO BOX or APO Address</p>
+                                        <div class="address-span">
+                                            <div class=" span-content ">
+                                                <span class="text-sm">Estimated delivery:</span>
+                                                <span class="text-sm">Dec 17</span>
+                                            </div>
+                                            <div class=" span-content ">
+                                                <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class=" span-content ">
-                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                    <div class="label-description">
+                                        <p class="text-sm ">$3.00</p>
                                     </div>
-                                </div>
+                                </span> 
+                                <input type="radio" name="radio-shipping-detail">
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                            <div class="label-description">
-                                <p class="text-sm ">$3.00</p>
-                            </div>
-                        </span> 
-                        <input type="radio" name="radio-shipping-detail">
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="label-container label-container--border">
-                        <span class="decription-row decription-row--center">
-                            <div class="label-description">
-                                <p class="font-lg">One day</p>
-                                <div class="address-span">
-                                    <div class=" span-content ">
-                                        <span class="text-sm">Estimated delivery:</span>
-                                        <span class="text-sm">Dec 17</span>
+                            <div class="card">
+                                <label class="label-container label-container--border">
+                                <span class="decription-row decription-row--center">
+                                    <div class="label-description">
+                                        <p class="font-lg">One day</p>
+                                        <div class="address-span">
+                                            <div class=" span-content ">
+                                                <span class="text-sm">Estimated delivery:</span>
+                                                <span class="text-sm">Dec 17</span>
+                                            </div>
+                                            <div class=" span-content ">
+                                                <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class=" span-content ">
-                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                    <div class="label-description">
+                                        <p class="text-sm">$10.00</p>
                                     </div>
-                                </div>
+                                </span> 
+                                <input type="radio" name="radio-shipping-detail">
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                            <div class="label-description">
-                                <p class="text-sm">$10.00</p>
-                            </div>
-                        </span> 
-                        <input type="radio" name="radio-shipping-detail">
-                        <span class="checkmark"></span>
-                      </label>
-                   </div> 
-                   <div class="continue-wrapper">
-                       <a class="main-btn" href="">Continue</a>
+                        </span>
                    </div>
+                   
+                   <!-- <div class="errorMessage">Alooooooooooooooooo</div> -->
+                   
+                   <div class="continue-wrapper">
+                       <button type="submit" class="main-btn">Continue</button>
+                       <!-- disabled -->
+                       <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
+                   </div>
+
+                   
                </form>
                <div class="promo-wrapper">
                <div class="boxShadow boxShadow1">                  
@@ -203,7 +216,7 @@
                                </div>
                            </div>
                            <div class="button-wrapper">
-                               <a href="#" class="main-btn">Apply</a>
+                               <button href="#" class="main-btn">Apply</button>
                            </div>
                        </div>
                        <p class="text-xs">Code with higher savings will apply.</p>
@@ -258,7 +271,9 @@
             </div> 
             <div class="checkout">
                 <div class="checkout-btn">
-                    <a href="#" class="main-btn font-big">Continue</a>
+                    <button href="#" class="main-btn font-big">Continue</button>
+                    <!-- disabled -->
+                    <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
                 </div>               
             </div>
         </div>
