@@ -71,28 +71,28 @@
                        <div class=" step step1 success-step ">
                           <div class="points  points-checkd"></div>
                        </div>
-                       <div class="text-bold success-text">Shopping cart</div>
+                       <a class="text-bold success-text " href="">Shopping cart</a>
                    </div>
                    <hr class="success-step">
                    <div class="steps">
                     <div class="step step1">
                        <div class="points points1"></div>
                     </div>
-                    <div class="text text-bold">Shipping</div>
+                    <a class="text text-bold a-disabled" href="">Shipping</a>
                 </div>
                 <hr>
                 <div class="steps">
                     <div class="step">
                        <div class="points"></div>
                     </div>
-                    <div class="text">Payment</div>
+                    <a class="text a-disabled" href="">Payment</a>
                 </div>
                 <hr>
                 <div class="steps">
                     <div class="step">
                        <div class="points"></div>
                     </div>
-                    <div class="text">Review</div>
+                    <a class="text a-disabled" href="">Review</a>
                 </div>              
                </div>
            </div>
@@ -105,17 +105,18 @@
                    <div class="delivery-methods">
                         <span class="methods-row" >
                             <div class="card-width">
-                                <label class="label-container lable--width label-selected border2px">
-                                    <span class="text-md text--mrl">Deliver to your address</span> 
+                                <label class="label-container lable--width label-selected  border2px">
                                     <input type="radio" checked="checked" name="radio">
-                                    <span class="checkmark"></span>
+                                    <span class="checkmark checkmark-selected"></span>
+                                    <!-- checkmark-selected -->
+                                    <span class="text-md text--mrl">Deliver to your address</span> 
                                 </label>
                             </div>
                             <div class="card-width">
                                 <label class="label-container lable--width border2px">
-                                    <span class="text-md text--mrl">Pickup at Pickup location</span> 
                                     <input type="radio" name="radio">
                                     <span class="checkmark"></span>
+                                    <span class="text-md text--mrl">Pickup at Pickup location</span> 
                                 </label>
                             </div>
                         </span>
@@ -124,6 +125,8 @@
                         <span>
                         <div class="card">
                             <label class="label-container label-container--border label-selected">
+                                <input type="radio" name="radio-address">
+                                <span class="checkmark"></span>
                             <span class="decription-row">
                                 <div class="label-description">
                                     <p class="font-big">Narek Avetisyan</p>
@@ -147,12 +150,12 @@
                                 </div>
 
                             </span> 
-                            <input type="radio" name="radio-address">
-                            <span class="checkmark"></span>
                             </label>
                         </div>
                         <div class="card">
                             <label class="label-container label-container--border">
+                                <input type="radio" name="radio-address">
+                                <span class="checkmark"></span>
                             <span class="decription-row">
                                 <div class="label-description">
                                     <p class="font-big">Narek Avetisyan</p>
@@ -176,34 +179,34 @@
                                 </div>
 
                             </span> 
-                            <input type="radio" name="radio-address">
-                            <span class="checkmark"></span>
                             </label>
                         </div>
 
                     <div class="card">
                         <label class="label-container label-container--border"> 
-                            <!--  border-none -->
+                            <!-- add "border-none-bottom" class when select this label-->
+                            <!-- label-selected չավելացնել -->
+                            <input type="radio" name="radio-address">
+                            <span class="checkmark"></span>
                             <span class="decription-row">
                                 <p class="font-big">Add new Shipping Address</p>
                                 <div class="address-span">
                                     <div class="span-content">
-                                        <span class="text-sm left-border"></span>
-                                        <span class="text-sm left-border"></span>
+                                        <span ></span>
+                                        <span ></span>
                                     </div>
                                     <div class="span-content">
-                                        <span class="text-sm left-border"> </span>
-                                        <span class="text-sm left-border"></span>
+                                        <span > </span>
+                                        <span ></span>
                                     </div>
                                 </div>
                             </span> 
-                            <input type="radio" name="radio-address">
-                            <span class="checkmark"></span>
 
                         </label>
                     </div>
                     </span>
                     <div class="label-container-wrapper">
+                        <!-- display:none -->
                         <div class="new-address">
                             <div class="checkbox-label border-top">
                                 <div class="checkbox-style sellect-wrapper ">
@@ -251,7 +254,6 @@
                             </div>
                             <div class="address-section three-input-wrapper">
                                 <div class="error-wrapper form-width">
-
                                     <div class="form-group form-position">
                                         <label  class="form-control-label text-xs">City*</label>
                                         <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
@@ -299,6 +301,8 @@
                         <span>
                             <div class="card">
                                 <label class="label-container label-container--border label-selected">
+                                    <input type="radio" name="radio-pickup">
+                                    <span class="checkmark"></span>
                                 <span class="decription-row decription-row--center">
                                     <div class="label-description">
                                         <p class="font-big">Location name</p>
@@ -323,12 +327,12 @@
                                     </div>
         
                                 </span> 
-                                <input type="radio" name="radio-pickup">
-                                <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="card">
                                 <label class="label-container label-container--border">
+                                    <input type="radio" name="radio-pickup">
+                                    <span class="checkmark"></span>
                                 <span class="decription-row decription-row--center">
                                     <div class="label-description">
                                         <p class="font-big">Location name</p>
@@ -351,8 +355,6 @@
                                         <p class="text-sm text-sm--main">Deliver here</p>
                                     </div>
                                 </span> 
-                                <input type="radio" name="radio-pickup">
-                                <span class="checkmark"></span>
                                 </label>
                             </div>
                         </span>

@@ -72,28 +72,28 @@
                        <div class=" step step1 success-step ">
                           <div class="points points-checkd"></div>
                        </div>
-                       <div class="text-bold success-text">Shopping cart</div>
+                       <a class="text-bold success-text" href="">Shopping cart</a>
                    </div>
                    <hr class="success-step">
                    <div class="steps">
                     <div class="step step1 success-step ">
                        <div class="points points-checkd"></div>
                     </div>
-                    <div class="text text-bold success-text">Shipping</div>
+                    <a class="text text-bold success-text" href="">Shipping</a>
                 </div>
                 <hr class="success-step">
                 <div class="steps">
                     <div class="step step1">
                        <div class="points points1"></div>
                     </div>
-                    <div class="text text-bold">Payment</div>
+                    <a class="text text-bold a-disabled" href="">Payment</a>
                 </div>
                 <hr>
                 <div class="steps">
                     <div class="step">
                        <div class="points"></div>
                     </div>
-                    <div class="text">Review</div>
+                    <a class="text a-disabled" href="">Review</a>
                 </div>              
                </div>
            </div>
@@ -110,145 +110,109 @@
                         <div class="card">
                             <label class="label-container label-container--border label-selected">
                                 <!-- label-selected -->
-                            <span class="decription-row decription-row--center">
-                                <div class="label-description">
-                                    <p class="font-big">Credit card</p>
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span> 
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">Credit card</span>
+                                <div class="label-row">
+                                    <div class="labels visa"></div>
+                                    <div class="labels master"></div>
+                                    <div class="labels amex"></div>
+                                    <div class="labels arca"></div>              
                                 </div>
-                                    <div class="cardWrap">
-                                        <div class="labels visa"></div>
-                                        <div class="labels master"></div>
-                                        <div class="labels amex"></div>
-                                        <div class="labels arca"></div>           
-                                    </div>
-                            </span> 
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                            </div> 
                             </label>
                         </div>
-                        <!-- <div class="select-card">
+                        <div class="select-card">
                           <div class="font-big-wrapper">
                               <p class="font-big">Select credit card</p>
                           </div>
                           <span>
                             <div class="card">
                                 <label class="label-container label-container--border border-none label-selected">
-                                  <span class="decription-row decription-row--center">
-                                      <div class="label-description">
-                                          <p class="text-md">435505******0511</p>
-                                      </div>
-                                          <div class="cardWrap">
-                                              <div class="labels visa"></div>
-                                      </div>
-                                  </span> 
-                                  <input type="radio" name="radio-select-card">
-                                  <span class="checkmark"></span>
+                                    <input type="radio" name="radio-select-card">
+                                    <span class="checkmark"></span>
+                                  <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name text-md">435505******0511</span>
+                                    <div class="labels visa"></div>                
+                                </div> 
                                 </label>
                             </div>
                             <div class="card">
                                 <label class="label-container label-container--border border-none">
-                                  <span class="decription-row decription-row--center">
-                                      <div class="label-description">
-                                          <p class="text-md">550104******4682</p>
-                                      </div>
-                                          <div class="cardWrap">
-                                              <div class="labels master"></div>
-                                      </div>
-                                  </span> 
-                                  <input type="radio" name="radio-select-card">
-                                  <span class="checkmark"></span>
+                                    <input type="radio" name="radio-select-card">
+                                    <span class="checkmark"></span>
+                                  <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name text-md">550104******4682</span>
+                                    <div class="labels master"></div>                   
+                                </div> 
                                 </label>
                             </div>
                             <div class="card">
                                 <label class="label-container label-container--border border-none">
-                                  <span class="decription-row decription-row--center">
-                                      <div class="label-description">
-                                          <p class="text-md">Add new card</p>
-                                      </div>
-                                          <div class="cardWrap">
-                                              <div class="labels visa"></div>
-                                              <div class="labels master"></div>
-                                              <div class="labels amex"></div>
-                                              <div class="labels arca"></div>
-                                      </div>
-                                  </span> 
-                                  <input type="radio" name="radio-select-card">
-                                  <span class="checkmark"></span>
+                                    <input type="radio" name="radio-select-card">
+                                    <span class="checkmark"></span>
+                                    <div class="cardWrap decription-row decription-row--center">
+                                        <span class="payment-name text-md">Add new card</span>
+                                        <div class="label-row">
+                                        <div class="labels visa"></div>
+                                        <div class="labels master"></div>
+                                        <div class="labels amex"></div>
+                                        <div class="labels arca"></div>       
+                                        </div>                
+                                    </div> 
                                 </label>
                             </div>
                           </span>
-                        </div>  -->
+                        </div>  
                         <div class="card">
                             <label class="label-container label-container--border">
-                            <span class="decription-row decription-row--center">
-                                <div class="label-description">
-                                    <p class="font-big">PayPal</p>
-                                </div>
-                                    <div class="cardWrap">
-                                        <div class="labels pay_pal"></div>
-                                </div>
-                            </span> 
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">PayPal</span>
+                                    <div class="labels pay_pal"></div>                         
+                                </div> 
                             </label>
                         </div>
                         <div class="card">
                             <label class="label-container label-container--border">
-                            <span class="decription-row decription-row--center">
-                                <div class="label-description">
-                                    <p class="font-big">Yandex.Money</p>
-                                </div>
-                                <div class="cardWrap">
-                                    <div class="labels yandex_many"></div>
-                                </div>
-        
-                            </span> 
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">Yandex.many</span>
+                                    <div class="labels yandex_many"></div>                         
+                                </div> 
                             </label>
                         </div>
                         <div class="card">
                             <label class="label-container label-container--border">
-                            <span class="decription-row decription-row--center">
-                                <div class="label-description">
-                                    <p class="font-big">PayFast</p>
-                                </div>
-                                <div class="cardWrap">
-                                    <div class="labels payfast"></div>
-                                </div>
-        
-                            </span> 
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">PayFast</span>
+                                    <div class="labels payfast"></div>                         
+                                </div> 
                             </label>
                         </div>
                         <div class="card">
                             <label class="label-container label-container--border">
-                            <span class="decription-row decription-row--center">
-                                <div class="label-description">
-                                    <p class="font-big">Paystack</p>
-                                </div>
-                                <div class="cardWrap">
-                                    <div class="labels paystack"></div>
-                                </div>
-        
-                            </span> 
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">Paystack</span>
+                                    <div class="labels paystack"></div>                         
+                                </div> 
                             </label>
                         </div>
                         <div class="card">
                             <label class="label-container label-container--border">
-                            <span class="decription-row decription-row--center">
-                                <div class="label-description">
-                                    <p class="font-big">idram</p>
-                                </div>
-                                <div class="cardWrap">
-                                    <div class="labels idram"></div>
-                                </div>
-        
-                            </span> 
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">idram</span>
+                                <div class="labels idram"></div>                         
+                            </div> 
                             </label>
                         </div>
                     </span>
@@ -279,7 +243,6 @@
 
                     </div>
                     <div class="promo-code">
-
                         <div class="items-total">
                             <div class="item text-md">
                                 <span>Items total, 4 items</span>

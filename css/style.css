@@ -191,8 +191,7 @@ select:hover {
   user-select: none;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  flex-direction: row;
 }
 .label-container .text--mrl {
   margin-left: 10px;
@@ -228,6 +227,9 @@ select:hover {
   border: 1px solid #E1E3EE;
   border-radius: 50%;
 }
+.checkmark-selected {
+  border-color: #4F49F5;
+}
 .label-container input:checked ~ .checkmark {
   background-color: #FFFFFF;
 }
@@ -240,8 +242,8 @@ select:hover {
   display: block;
 }
 .label-container .checkmark:after {
-  top: 2px;
-  left: 2px;
+  top: 2.5px;
+  left: 2.5px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -249,7 +251,7 @@ select:hover {
 }
 .label-container--border .checkmark:after {
   top: 2px;
-  left: 1px;
+  left: 1.5px;
 }
 .text-lg {
   font-size: 30px;
@@ -624,6 +626,7 @@ li a {
 }
 .shoppingCart .shopping-steps .steps-wrapper .steps .success-text {
   color: #36c756;
+  text-decoration: none;
 }
 .shoppingCart .shopping-steps .steps-wrapper .steps .success-step {
   background-color: #36c756;
@@ -639,6 +642,9 @@ li a {
 .shoppingCart .shopping-steps .steps-wrapper .success-step {
   background-color: #36c756;
   border: #36c756;
+}
+.shoppingCart .a-disabled {
+  pointer-events: none;
 }
 .shoppingCart .title {
   margin-bottom: 25px;
@@ -920,8 +926,19 @@ li a {
 }
 .shoppingCart .label-container-wrapper {
   background-color: #FFFFFF;
-  border-radius: 6px;
   border: 1px solid #D4D9EE;
+  border-top: none;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.shoppingCart .border-none-bottom {
+  border-bottom: none;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.shoppingCart .border-none-bottom:hover {
+  border-color: #D4D9EE;
 }
 .shoppingCart .border-none {
   border: none;
@@ -1015,12 +1032,15 @@ li a {
   background-size: contain;
   background-color: #fff;
   background-position: center;
-  height: 30px;
-  width: 47px;
+  height: 40px;
+  width: 70px;
   background-repeat: no-repeat;
   border-radius: 6px;
   margin-right: 7px;
   margin-top: 7px;
+}
+.shoppingCart .cardWrap .label-row {
+  display: flex;
 }
 .empty {
   display: flex;

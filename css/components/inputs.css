@@ -121,8 +121,7 @@ select:hover {
   user-select: none;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  flex-direction: row;
 }
 .label-container .text--mrl {
   margin-left: 10px;
@@ -158,6 +157,9 @@ select:hover {
   border: 1px solid #E1E3EE;
   border-radius: 50%;
 }
+.checkmark-selected {
+  border-color: #4F49F5;
+}
 .label-container input:checked ~ .checkmark {
   background-color: #FFFFFF;
 }
@@ -170,8 +172,8 @@ select:hover {
   display: block;
 }
 .label-container .checkmark:after {
-  top: 2px;
-  left: 2px;
+  top: 2.5px;
+  left: 2.5px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -179,5 +181,5 @@ select:hover {
 }
 .label-container--border .checkmark:after {
   top: 2px;
-  left: 1px;
+  left: 1.5px;
 }

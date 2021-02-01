@@ -152,8 +152,7 @@ select{
     user-select: none;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row;
     
     .text--mrl{
         margin-left: 10px;
@@ -192,6 +191,9 @@ select{
     border: 1px solid @stepBorder;
     border-radius: 50%;
   }
+  .checkmark-selected{
+      border-color: @main;
+  }
 
   .label-container input:checked ~ .checkmark {
     background-color:@white;
@@ -208,8 +210,8 @@ select{
   }
 
   .label-container .checkmark:after {
-      top: 2px;
-      left: 2px;
+      top: 2.5px;
+      left: 2.5px;
       width: 14px;
       height: 14px;
       border-radius: 50%;
@@ -217,6 +219,6 @@ select{
   }
   .label-container--border .checkmark:after {
     top: 2px;
-    left: 1px;
+    left: 1.5px;
   }
 // End input type="radio" styling
