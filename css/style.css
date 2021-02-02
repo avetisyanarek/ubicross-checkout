@@ -921,6 +921,9 @@ li a {
 .shoppingCart .label-container .decription-row .font-big {
   margin-bottom: 0px;
 }
+.shoppingCart .label-container .decription-row .payment-name {
+  margin-right: auto;
+}
 .shoppingCart .label-container .decription-row--center {
   align-items: center;
 }
@@ -1038,9 +1041,6 @@ li a {
   border-radius: 6px;
   margin-right: 7px;
   margin-top: 7px;
-}
-.shoppingCart .cardWrap .label-row {
-  display: flex;
 }
 .empty {
   display: flex;
