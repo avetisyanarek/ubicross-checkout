@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
    <section class="shoppingCart">
        <div class="container">        
            <div class="shopping-steps">
@@ -18,34 +22,39 @@
                        <div class=" step step1 success-step ">
                           <div class="points points-checkd"></div>
                        </div>
-                       <div class="text-bold success-text">Shopping cart</div>
+                       <a class="text-bold success-text" href="index.html">Shopping cart</a>
                    </div>
                    <hr class="success-step">
                    <div class="steps">
                     <div class="step step1 success-step ">
                        <div class="points points-checkd"></div>
                     </div>
-                    <div class="text text-bold success-text">Shipping</div>
+                    <a class="text text-bold success-text" href="shipping.html">Shipping</a>
                 </div>
                 <hr class="success-step">
                 <div class="steps">
                     <div class="step step1 success-step">
                        <div class="points points-checkd"></div>
                     </div>
-                    <div class="text text-bold success-text">Payment</div>
+                    <a class="text text-bold success-text" href="payment.html">Payment</a>
                 </div>
                 <hr >
                 <div class="steps">
                     <div class="step step1">
                        <div class="points points1"></div>
                     </div>
-                    <div class="text text-bold ">Review</div>
+                    <a class="text text-bold a-disabled ">Review</a>
                 </div>              
                </div>
            </div>
            
        </div>
    </section>
-     
+
+   <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
 </body>
 </html>

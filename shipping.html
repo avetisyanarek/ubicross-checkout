@@ -63,6 +63,9 @@
             </div>
         </div>
     </header>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
    <section class="shoppingCart">
        <div class="container">        
            <div class="shopping-steps">
@@ -71,7 +74,7 @@
                        <div class=" step step1 success-step ">
                           <div class="points  points-checkd"></div>
                        </div>
-                       <a class="text-bold success-text " href="index.html">Shopping cart</a>
+                       <a class="text-bold success-text " href="index.html" id="cart">Shopping cart</a>
                    </div>
                    <hr class="success-step">
                    <div class="steps">
@@ -458,6 +461,12 @@
            </div>
        </div>
    </section>
+
+   <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
      
 </body>
 </html>

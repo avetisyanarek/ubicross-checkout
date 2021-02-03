@@ -82,6 +82,9 @@
             </div>
         </div>
     </header>
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
 
    <section class="shoppingCart">
        <div class="container">        
@@ -360,6 +363,11 @@
             $('.header_burger, .header-menu').toggleClass('active');
             $('body').toggleClass('lock');
         })
+    </script>
+     <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
     </script>
 </body>
 </html>
