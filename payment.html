@@ -113,13 +113,13 @@
                             <label class="label-container label-container--border label-selected">
                                 <!-- label-selected -->
                                 <input type="radio" name="radio-payment">
-                                <span class="checkmark"></span> 
+                                <span class="checkmark checkmark-selected "></span> 
                             <div class="cardWrap decription-row decription-row--center">
                                 <span class="payment-name font-big">Credit card</span>
-                                    <div class="labels visa"></div>
-                                    <div class="labels master"></div>
-                                    <div class="labels amex"></div>
-                                    <div class="labels arca"></div>              
+                                    <div class="labels label-size visa"></div>
+                                    <div class="labels label-size master"></div>
+                                    <div class="labels label-size amex"></div>
+                                    <div class="labels label-size arca"></div>              
 
                             </div> 
                             </label>
@@ -132,10 +132,10 @@
                             <div class="card">
                                 <label class="label-container label-container--border border-none label-selected">
                                     <input type="radio" name="radio-select-card">
-                                    <span class="checkmark"></span>
+                                    <span class="checkmark checkmark-selected"></span>
                                   <div class="cardWrap decription-row decription-row--center">
                                     <span class="payment-name text-md">435505******0511</span>
-                                    <div class="labels visa"></div>                
+                                    <div class="labels label-size visa"></div>                
                                 </div> 
                                 </label>
                             </div>
@@ -145,7 +145,7 @@
                                     <span class="checkmark"></span>
                                   <div class="cardWrap decription-row decription-row--center">
                                     <span class="payment-name text-md">550104******4682</span>
-                                    <div class="labels master"></div>                   
+                                    <div class="labels label-size master"></div>                   
                                 </div> 
                                 </label>
                             </div>
@@ -155,10 +155,10 @@
                                     <span class="checkmark"></span>
                                     <div class="cardWrap decription-row decription-row--center">
                                         <span class="payment-name text-md">Add new card</span>
-                                        <div class="labels visa"></div>
-                                        <div class="labels master"></div>
-                                        <div class="labels amex"></div>
-                                        <div class="labels arca"></div>       
+                                        <div class="labels label-size visa"></div>
+                                        <div class="labels label-size master"></div>
+                                        <div class="labels label-size amex"></div>
+                                        <div class="labels label-size arca"></div>       
                                     </div> 
                                 </label>
                             </div>
@@ -170,7 +170,7 @@
                                 <span class="checkmark"></span>
                                 <div class="cardWrap decription-row decription-row--center">
                                     <span class="payment-name font-big">PayPal</span>
-                                    <div class="labels pay_pal"></div>                         
+                                    <div class="labels label-size pay_pal"></div>                         
                                 </div> 
                             </label>
                         </div>
@@ -180,7 +180,7 @@
                                 <span class="checkmark"></span>
                                 <div class="cardWrap decription-row decription-row--center">
                                     <span class="payment-name font-big">Yandex.many</span>
-                                    <div class="labels yandex_many"></div>                         
+                                    <div class="labels label-size yandex_many"></div>                         
                                 </div> 
                             </label>
                         </div>
@@ -190,7 +190,7 @@
                                 <span class="checkmark"></span>
                                 <div class="cardWrap decription-row decription-row--center">
                                     <span class="payment-name font-big">PayFast</span>
-                                    <div class="labels payfast"></div>                         
+                                    <div class="labels label-size payfast"></div>                         
                                 </div> 
                             </label>
                         </div>
@@ -200,7 +200,7 @@
                                 <span class="checkmark"></span>
                                 <div class="cardWrap decription-row decription-row--center">
                                     <span class="payment-name font-big">Paystack</span>
-                                    <div class="labels paystack"></div>                         
+                                    <div class="labels label-size paystack"></div>                         
                                 </div> 
                             </label>
                         </div>
@@ -209,8 +209,28 @@
                                 <input type="radio" name="radio-payment">
                                 <span class="checkmark"></span>
                             <div class="cardWrap decription-row decription-row--center">
-                                <span class="payment-name font-big">idram</span>
-                                <div class="labels idram"></div>                         
+                                <span class="payment-name font-big">Idram</span>
+                                <div class="labels label-size idram"></div>                         
+                            </div> 
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">Cash</span>
+                                <div class="labels label-size cash"></div>                         
+                            </div> 
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">Banktransfer</span>
+                                <div class="labels label-size banktransfer"></div>                         
                             </div> 
                             </label>
                         </div>
@@ -218,7 +238,7 @@
                </div> 
                <div class="continue-wrapper">
                    <button class="main-btn" href="">Continue</button>
-                   <!-- disabled -->
+                   <!-- disabled class-->
                    <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
                </div>
            </form>
@@ -290,7 +310,7 @@
             <div class="checkout">
                 <div class="checkout-btn">
                     <button href="#" class="main-btn font-big">Continue</button>
-                    <!-- disabled -->
+                    <!-- disabled class-->
                     <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
                 </div>               
             </div>

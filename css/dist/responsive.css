@@ -270,25 +270,25 @@ select:hover {
 }
 @font-face {
   font-family: Helvetica Neue;
-  src: url(font/HelveticaNeueCyr-Bold.woff);
+  src: url(./font/HelveticaNeueCyr-Bold.woff);
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Neue;
-  src: url(font/HelveticaNeueCyr-Medium.woff);
+  src: url(./font/HelveticaNeueCyr-Medium.woff);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Neue;
-  src: url(font/HelveticaNeueCyr-Light.woff);
+  src: url(./font/HelveticaNeueCyr-Light.woff);
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Neue;
-  src: url(font/HelveticaNeueCyr-Roman.woff2);
+  src: url(./font/HelveticaNeueCyr-Roman.woff2);
   font-weight: normal;
   font-style: normal;
 }
@@ -395,7 +395,6 @@ select:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -15px;
   }
   .shopping-mobile .shopping-mobile-steps .step-circle .points {
     width: 10px;
@@ -405,25 +404,5 @@ select:hover {
   }
   .shopping-mobile .shopping-mobile-steps .step-name .step-number-wrapper {
     display: flex;
-    align-items: center;
-  }
-  .shopping-mobile .shopping-mobile-steps .step-name .step-number-wrapper .text-xs {
-    margin-bottom: 0;
-    margin-right: 5px;
-  }
-  .shopping-mobile .shopping-mobile-steps .step-name .step-number-wrapper .text-xs .step-color {
-    margin-left: -3px;
-    color: #77808D;
-  }
-  .shopping-mobile .shopping-mobile-row {
-    width: 100vw;
-    background-color: #77808D;
-    height: 12px;
-  }
-  .shopping-mobile .shopping-mobile-row .row-success {
-    width: 25%;
-    background-color: #36c756;
-    height: 12px;
-    border-right: 10px;
   }
 }
