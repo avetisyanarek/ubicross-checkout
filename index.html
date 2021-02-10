@@ -11,7 +11,23 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header >
+    <nav class="header-menu">
+        <ul class="header_list " >
+            <li class="user-name">
+                <span class="user-name-label text-sm">Narek Avetisyan </span>
+            </li>
+           <li class="user-bonus">
+                <span class="user-bonus-label text-sm">Bonus points</span>
+                <span class="user-bonus-amount text-sm">250</span>
+            </li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
+            <li class="li-hover"><a class="text-sm li-hover" href="">Addresses</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Settings</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
+        </ul>
+      </nav>
+    <div class="mega-wrapper" id="main">
+    <header  >
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-logo">
@@ -58,35 +74,20 @@
                          <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
                      </ul>
                  </div>
-                <div class="header_burger">
-                         <span></span>
+                <div class="header_burger" id="openNav">
+                         <span ></span>
                 </div>
-                <nav class="header-menu">
-                    <ul class="header_list">
-                        <li class="user-name">
-                            <span class="user-name-label text-sm">Narek Avetisyan </span>
-                        </li>
-                       <li class="user-bonus">
-                            <span class="user-bonus-label text-sm">Bonus</span>
-                            <span class="user-bonus-amount text-sm">250</span>
-                        </li>
-                        <li><a class="text-sm li-hover" href="">My Orders</a></li>
-                        <li><a class="text-sm li-hover" href="">My Reviews</a></li>
-                        <li><a class="text-sm li-hover" href="">Addresses</a></li>
-                        <li><a class="text-sm li-hover" href="">Settings</a></li>
-                        <li><a class="text-sm li-hover" href="">Log out</a></li>
-                    </ul>
-                  </nav>
                 </div>
             </div>
         </div>
     </header>
-<div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-</div>
 
-   <section class="shoppingCart">
-       <div class="container">        
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <section class="shoppingCart" >
+       <div class="container" >        
            <div class="shopping-steps">
                <div class="steps-wrapper">
                    <div class="steps">
@@ -185,13 +186,28 @@
 
                                     <div class="nameQty">
                                         <div class="name">
-                                            <a class="text-sm">
-                                              Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
-                                            </a>
-                                            <p class="text-xs">SKU: 3274628</p>
-                                            <p class="text-xs">Color: White</p>
-                                            <p class="text-xs">Size: 3L</p>
-                                            <p class="text-xs">Material: Plastic</p>
+                                            <div class="name-wrapper">
+                                                <a class="text-sm">
+                                                  Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                                </a>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">SKU:</span>
+                                                <span class="text-xs">3274628</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Color:</span>
+                                                <span class="text-xs">White</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Size:</span>
+                                                <span class="text-xs">3L</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Material:</span>
+                                                <span class="text-xs"> Plastic</span>
+                                            </div>
+                                         
                                         </div>
                                         <div class="qty-wrapper">
                                             <div class="form-group ">
@@ -215,13 +231,90 @@
       
                             </div>
                             <div class="product-price">
-                                <div class="price-wrapper">
-                                    <p class="text-md">$50.09</p>
-                                    <p class="text-sm sale">$61.00</p>
+                                <div class="remove-price">
+                                    <div class="price-wrapper">
+                                        <p class="text-md">$50.09</p>
+                                        <p class="text-sm sale">$61.00</p>
+                                    </div>
+                                    <a class="remove text-xs">Remove</a>
                                 </div>
-                                <a class="remove text-xs">Remove</a>
+                                <button class="main-btn">Buy now</button>
+                            </div>
+
+                        </div>
+                        <br/>
+
+                </div>
+                <hr class="product-hr">
+                  <div class="products">
+                    <div class="checkbox-style">
+                            <input class="" name="" id="" value="" type="checkbox">
+                            <label></label>
+                    </div>                  
+                           <div class="prod-row">
+                            <div class="product-discription">
+                                <div class="product-img">
+                                    <img src="img/item1.svg" alt="item">
+                                </div>
+                                <div class="width">
+
+                                    <div class="nameQty">
+                                        <div class="name">
+                                            <div class="name-wrapper">
+                                                <a class="text-sm">
+                                                  Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                                </a>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">SKU:</span>
+                                                <span class="text-xs">3274628</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Color:</span>
+                                                <span class="text-xs">White</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Size:</span>
+                                                <span class="text-xs">3L</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Material:</span>
+                                                <span class="text-xs"> Plastic</span>
+                                            </div>
+                                         
+                                        </div>
+                                        <div class="qty-wrapper">
+                                            <div class="form-group ">
+                                                <div class="select-wrapper">
+                                                    <div class="select-arrow">
+                                                        <img src="img/select-arrow.svg" alt="arrow">
+                                                    </div>
+                                                    <select class="text-md" name="" id="" >
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        <!-- <div class="errorMessage">Cannot be blank.</div> -->
+                                        </div>
+                                    </div>
+                                </div>
       
                             </div>
+                            <div class="product-price">
+                                <div class="remove-price">
+                                    <div class="price-wrapper">
+                                        <p class="text-md">$50.09</p>
+                                        <p class="text-sm sale">$61.00</p>
+                                    </div>
+                                    <a class="remove text-xs">Remove</a>
+                                </div>
+                                <button class="main-btn">Buy now</button>
+                            </div>
+
                         </div>
                         <br/>
 
@@ -242,12 +335,27 @@
 
                                     <div class="nameQty">
                                         <div class="name">
-                                            <a class="text-sm">Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
-                                            </a>
-                                            <p class="text-xs">SKU: 3274628</p>
-                                            <!-- <p class="text-xs">Color: White</p>
-                                            <p class="text-xs">Size: 3L</p>
-                                            <p class="text-xs">Material: Plastic</p> -->
+                                            <div class="name-wrapper">
+                                                <a class="text-sm">
+                                                  Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                                </a>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">SKU:</span>
+                                                <span class="text-xs">3274628</span>
+                                            </div>
+                                            <!-- <div class="product-characteristics">
+                                                <span class="text-xs">Color:</span>
+                                                <span class="text-xs">White</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Size:</span>
+                                                <span class="text-xs">3L</span>
+                                            </div>
+                                            <div class="product-characteristics">
+                                                <span class="text-xs">Material:</span>
+                                                <span class="text-xs"> Plastic</span>
+                                            </div> -->
                                         </div>
                                         <div class="qty-wrapper">
                                             <div class="form-group ">
@@ -271,11 +379,15 @@
       
                             </div>
                             <div class="product-price">
-                                <div class="price-wrapper">
-                                    <p class="text-md">$50.09</p>
+                                <div class="remove-price">
+
+                                    <div class="price-wrapper">
+                                        <p class="text-md">$50.09</p>
+                                        <!-- <p class="text-sm sale">$61.00</p> -->
+                                    </div>
+                                    <a class="remove text-xs">Remove</a>
                                 </div>
-                                <a class="remove text-xs">Remove</a>
-      
+                                <button class="main-btn">Buy now</button>
                             </div>
                         </div>
                         <br/>
@@ -351,7 +463,10 @@
             </div> 
             <div class="checkout">
                 <div class="checkout-btn">
-                    <button href="#" class="main-btn font-big">Proceed to Checkout</button> 
+                    <button href="#" class="main-btn ">
+                        <p class="font-big">Proceed to Checkout</p>
+                        <p class="text-xs">3 items, $150,27</p>
+                    </button> 
                     <!-- disabled  class-->
                 </div>               
             </div>
@@ -378,18 +493,29 @@
            </div>
        </div>
    </section>
-     
+</div>
+<!-- mobile menu open -->
    <script>
-
+    $(document).ready(function() {
+        $("#openNav").on("click", function() {
+            $("#mySidenav").toggleClass("open");
+            $("#main").toggleClass("open")
+        })
+    })
+    </script>
+<!-- header_burger, header-menu active -->
+   <script>
         $(document).on("click", ".header_burger", function(){
             $('.header_burger, .header-menu').toggleClass('active');
             $('body').toggleClass('lock');
         })
     </script>
+<!-- page loader-wrapper -->
      <script>
         $(window).on("load",function(){
           $(".loader-wrapper").fadeOut("slow");
         });
     </script>
+
 </body>
 </html>

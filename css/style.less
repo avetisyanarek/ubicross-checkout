@@ -63,6 +63,61 @@ body {
   }
 //   End loader-wrapper styling
 
+// Start modal styling
+.modal1{
+    
+    .modal-dialog{
+        width: 526px;
+        box-shadow: 0 3px 10px #EAEAEA;
+        .modal-content{
+            padding-left: 10px;
+            padding-top: 10px;
+            .modal-header{
+                border-bottom: none;
+                .font-big{
+                    width: 70%;
+                    font-weight: bold;
+                }
+            }
+            .modal-body{
+                .text-sm{
+                    color: @light-dark;
+                    margin-top: -20px;
+                    margin-bottom: 70px;
+                
+                }
+            }
+            .modal-footer{
+                border-top: none;
+                display: flex;
+                justify-content: flex-end;
+                .main-btn{
+                    width: 105px;
+                    height: 45px;
+                    border: none;
+                    & + .main-btn{
+                        margin-left: 10px;
+                    }
+                }
+                .btn_cancel{
+                    background-color: @light-gray;
+                    color: @light-dark;
+                }
+                .btn_error{
+                    background-color: @error;
+                }
+                .btn_warning{
+                    background-color: @bonus;
+                }
+                // .btn_primary{
+                //     background-color: @main;
+                // }
+            }
+        }
+    }
+}
+// End modal styling
+
 
 // Start header styling
 header{
@@ -156,7 +211,8 @@ header{
                     box-shadow: 0px 6px 30px fade(@main-dark , 14%);
                     border-radius: 7px;
                     border: none;
-                    padding: 11px 15px;
+                    padding-top: 11px;
+                    padding-bottom: 11px;
                     margin-left: -150px;
                     margin-top: 15px;
                     -webkit-transition: all .5s ease-out;
@@ -168,6 +224,8 @@ header{
                     width: 100%;
                     border: none;
                     li{
+                        padding-left: 10px;
+                        padding-right: 10px;
                             a{
                                 color: @light-dark; 
                                 padding: 0;
@@ -220,7 +278,7 @@ header{
 }
 
 // Start menu li styling
-.dropdown-menu{
+.dropdown-menu {
 
     li{
         color: @light-dark;
@@ -265,7 +323,6 @@ header{
         justify-content: center;
         margin-top: 20px;
         margin-bottom: 60px;
-        display: none;
         .steps-wrapper{
             display: flex;
             flex-direction: row;
@@ -343,6 +400,15 @@ header{
             }
         }
     }
+    // Start shopping-mobile styling
+    .shopping-mobile{
+        display: none;
+    }
+    .header-menu{
+        display: none;
+    }
+    // End shopping-mobile styling
+
     .a-disabled{
         pointer-events: none;
     }
@@ -411,10 +477,10 @@ header{
                                 width: 85%;
                                 .product-img{                                   
                                     height: 91px;
+                                    height: 91px;
                                     border: 1px solid @productBorder;
                                     margin-right: 10px;
                                     margin-left: 8px;
-                                    width: 16%;
                                     img{
                                         width: 100%;
                                         height: 100%;
@@ -429,15 +495,26 @@ header{
                                         justify-content: space-between;
                                         .name{
                                             max-width: 280px;
-                                            .text-sm{
-                                                color: @main-dark;
-                                                text-decoration: none;
-                                                cursor: pointer;
+                                            .name-wrapper{
+                                                margin-bottom: 10px;
+                                                .text-sm{
+                                                    color: @main-dark;
+                                                    text-decoration: none;
+                                                    cursor: pointer;
+                                                    margin-bottom: 10px;
+                                                }
                                             }
-                                            .text-xs{
-                                                color: @light-dark;
-                                                margin-bottom: 0;
-                                                font-weight: 400;
+                                            .product-characteristics{
+                                                span{
+                                                    margin-bottom: 6px;
+                                                    &:first-child{
+                                                        color: @light-dark;
+                                                    }
+                                                }
+                                                &:last-child{
+                                                    margin-bottom: 10px;
+                                                }
+                                             
                                             }
                                         }
                                         .qty-wrapper{
@@ -450,26 +527,35 @@ header{
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
-                                .price-wrapper{
-                                    text-align: right;
-                                    .text-md{
-                                        font-weight: bold;
+                                .remove-price{
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    .price-wrapper{
+                                        text-align: right;
+                                        .text-md{
+                                            font-weight: bold;
+                                        }
+                                        .text-sm{
+                                            color: @light-dark;
+                                            text-decoration: line-through;                                        
+                                        }
                                     }
-                                    .text-sm{
+                                    .remove{
                                         color: @light-dark;
-                                        text-decoration: line-through;                                        
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                        cursor: pointer;
+                                        &:hover{
+                                            color:@mainBtn;
+                                        }
                                     }
+
                                 }
-                                .remove{
-                                    color: @light-dark;
-                                    font-weight: 400;
-                                    text-decoration: none;
-                                    cursor: pointer;
-                                    &:hover{
-                                        color:@mainBtn;
-                                    }
+                                button{
+                                    display: none;
                                 }
-                                
                             }
                         }
                     // }
@@ -553,6 +639,10 @@ header{
                 margin-top: 20px;
                 .main-btn{
                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                 }
             
                 }
@@ -1042,8 +1132,23 @@ header{
     .text-md{
         margin-bottom: 0;
     }
- .label-container:hover{
-border: none;
+ .label-container{
+    border: none;
+    &:hover{
+   border: none;
+    }
+    .checkmark:after {
+        top: 2px;
+        left: 1.5px;
+    }
  }
 }
-// End payment-method styling
+// End payment-method styling 
+
+.mega-wrapper {
+    transition: 0.5s;
+    &.open {
+        // margin-right: 350px;
+        transform: translateX(-350px);
+    }
+}
