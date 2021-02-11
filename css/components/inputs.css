@@ -1,13 +1,13 @@
 .error {
-  border: 1px solid #e27c7c;
+  border: 1px solid #E04949;
   border-radius: 6px;
 }
 .error:hover {
-  border: 1px solid #e27c7c;
+  border: 1px solid #E04949;
   border-radius: 6px;
 }
 .errorMessage {
-  color: #e27c7c;
+  color: #E04949;
   padding: 3px 5px;
   font-size: 12px;
   margin-top: -14px;
@@ -30,7 +30,7 @@
   z-index: 100;
 }
 .checkbox-style input[type=checkbox]:checked + label {
-  border: 1px solid #4F49F5;
+  background-color: #4F49F5;
 }
 .checkbox-style input[type=checkbox]:checked + label::before {
   content: "";
@@ -39,7 +39,7 @@
   left: 4px;
   width: 12px;
   height: 6px;
-  border: 1px solid #4F49F5;
+  border: 1px solid #FFFFFF;
   border-width: 0 0 2px 2px;
   transform: rotate(-45deg);
 }
@@ -60,6 +60,7 @@ input {
   cursor: pointer;
   border: 1px solid #D4D9EE;
   border-radius: 6px;
+  text-overflow: ellipsis;
 }
 input:focus {
   outline: none;

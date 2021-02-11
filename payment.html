@@ -11,6 +11,60 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="language-currency">
+        <div class="container">
+            <div class="currency-wrapper">
+                <div class="delivery-dropdown">
+                    <div class="dropdown">
+                        <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            AMD
+                            <span>
+                                <img src="img/arrow.svg" alt="arrow">
+                            </span>
+                            <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                        </span>
+                        <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                        <span class="closing">
+                            <i class="material-icons">arrow_back</i>
+                        </span>
+                        <li>
+                            <a href="">USD</a>
+                        </li>
+                        <li>
+                            <a href="">INR</a>
+                        </li>
+                        <li>
+                            <a href="">ZAR</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="lang-wrapper">
+                <div class="lenguage-block">
+                    <div  class="dropdown ls-language-widget">
+                        <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                             English 
+                                 <span ></span>
+                                     <img src="img/arrow.svg" alt="arrow">
+                                 </span>
+                                 <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                        </span>
+                        <ul class="dropdown-menu ls-lang-changer-list">
+                            <span class="closing"><i class="material-icons">arrow_back</i></span>
+                            <li>
+                                <a class="text-sm"> Հայերեն </a>
+                            </li>
+                            <li>
+                                <a  class="text-sm">العربية</a>
+                            </li>
+                           
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
     <header >
         <div class="container">
             <div class="header-wrapper">
@@ -265,66 +319,73 @@
            </form>
                <div class="promo-wrapper">
                <div class="boxShadow boxShadow1">                  
-                   <div class="promo">
-                    <div class="promo-code">
-                       <p class="text-sm">Apply Promo code</p>
-                       <div class="apply">
-                           <div class="apply-input">
-                               <div class="form-group">
-                                <input class="text-md" type="text" placeholder="Enter Promo code">
+                  <div class="promo">
+                       <div class="promo-code-wrapper">
+                           <div class="promo-code">
+                              <p class="text-sm">Apply Promo code</p>
+                              <div class="apply">
+                                  <div class="apply-input">
+                                      <div class="form-group ">
+                                       <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                                      </div>
+                                      <!-- <div class="errorMessage">Promo code cannot be blank.</div> -->
+                                  </div>
+                                  <div class="button-wrapper">
+                                      <button href="#" class="main-btn">Apply</button>
+                                  </div>
+                              </div>
+                              <p class="text-xs">Code with higher savings will apply.</p>
+       
+                           </div>
+                           <div class="promo-code">
+       
+                               <div class="items-total">
+                                   <div class="item text-md">
+                                       <span>Items total, 4 items</span>
+                                       <span>$122.00</span>
+                                   </div>
+                                   <div class="item text-md">
+                                       <span class="discount">Discount</span>
+                                       <span class="discount">$100.18</span>
+                                   </div>
+           
                                </div>
-                               <!-- <div class="errorMessage">Promo code cannot be blank.</div> -->
                            </div>
-                           <div class="button-wrapper">
-                               <button href="#" class="main-btn">Apply</button>
+                           <div class="promo-code">
+       
+                               <div class="items-total">
+                                   <div class="item text-md">
+                                       <span>Subtotal</span>
+                                       <span>$50.09</span>
+                                   </div>
+                                   <div class="item text-md">
+                                       <span>Shipping</span>
+                                       <span>Calculate</span>
+                                   </div>
+                                   <div class="item text-md">
+                                       <span>Personal discount</span>
+                                       <span class="discount">$3.00</span>
+                                   </div>
+                               </div>
                            </div>
+                           <div class="promo-code borderNone">
+                               <div class="items-total">
+                                   <div class="item text-md">
+                                       <span class="font-big">Total</span>
+                                       <span class="font-big">$50.09</span>
+                                   </div>
+                                   
+                               </div>
+                           </div>
+
                        </div>
-                       <p class="text-xs">Code with higher savings will apply.</p>
-
-                    </div>
-                    <div class="promo-code">
-                        <div class="items-total">
-                            <div class="item text-md">
-                                <span>Items total, 4 items</span>
-                                <span>$122.00</span>
-                            </div>
-                            <div class="item text-md">
-                                <span class="discount">Discount</span>
-                                <span class="discount">$100.18</span>
-                            </div>
-    
-                        </div>
-                    </div>
-                    <div class="promo-code">
-
-                        <div class="items-total">
-                            <div class="item text-md">
-                                <span>Subtotal</span>
-                                <span>$50.09</span>
-                            </div>
-                            <div class="item text-md">
-                                <span>Shipping</span>
-                                <span>Calculate</span>
-                            </div>
-                            <div class="item text-md">
-                                <span>Personal discount</span>
-                                <span class="discount">$3.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promo-code borderNone">
-                        <div class="items-total">
-                            <div class="item text-md">
-                                <span class="font-big">Total</span>
-                                <span class="font-big">$50.09</span>
-                            </div>
-                            <div class="item text-md">
-                                <span>Rewords Credit</span>
-                                <span>$0.00</span>
-                            </div>
-    
-                        </div>
-                    </div>
+                       <div class="bonus-wrapper">
+                        <li class="user-bonus">
+                               <img src="img/bonus.svg" alt="bonus">
+                               <span class="user-bonus-label text-md">Reword Points</span>
+                               <span class="user-bonus-amount text-md">250</span>
+                           </li>
+                       </div>
                    </div>
                   
             </div> 

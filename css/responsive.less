@@ -98,7 +98,7 @@
         }
         }
       
-
+        // Start promo media styling
         .promo-wrapper{
             width: 42%;
             margin-left: 15px;
@@ -119,8 +119,44 @@
                 }
             }
         }
+        // End promo media styling
       
     }
+
+     // Start shipping media styling
+     .shopping-cart{
+        .address-form{
+            .delivery-methods{
+                .methods-row{
+                    flex-direction: column;
+                    .card-width{
+                        width: 100%;
+                        &.card-width{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }            
+                .card{
+                    .label-container{
+                        .decription-row{
+                            .label-description{
+                                .text-sm--main{
+                                    display: none;
+                                }
+                                .edit-remove{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                } 
+        } 
+    }
+        // End shipping media styling
+        .address-form {
+            width: 57%;
+        }
 }
 
 @media screen and (max-width:767px){
@@ -345,6 +381,20 @@
     }
     // End shopping cart media styling
 
+    
+    // Start shipping media styling
+   
+    .new-address{
+        .address-section {
+            .form-position{
+                .form-control-label {
+                    font-size: 10px;
+                }
+            }
+        }
+    }     
+    // End shipping media styling
+
 }
 
 
@@ -427,7 +477,7 @@
 
 // }
 
-// @media screen and (max-width:991px)
+// @media screen and (max-width:567px)
 @media screen and (max-width:576px){
 
     .header-menu{
@@ -464,7 +514,6 @@
                 border-radius: 0;
                 .promo{
                     max-width: 100%;
-                    padding-bottom: 10px;
                 }
             }
             .checkout{
@@ -479,4 +528,12 @@
         }
     }
     // End shopping cart media styling
+
+    // Start shipping media styling
+    .address-form {
+        width: 100%;
+    }
+    // End shipping media styling
+
+   
 }

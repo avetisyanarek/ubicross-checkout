@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
@@ -16,8 +17,8 @@
             <li class="user-name">
                 <span class="user-name-label text-sm">Narek Avetisyan </span>
             </li>
-           <li class="user-bonus">
-                <span class="user-bonus-label text-sm">Bonus points</span>
+            <li class="user-bonus">
+                <span class="user-bonus-label text-sm">Reword Points</span>
                 <span class="user-bonus-amount text-sm">250</span>
             </li>
             <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
@@ -27,6 +28,60 @@
         </ul>
       </nav>
     <div class="mega-wrapper" id="main">
+        <div class="language-currency">
+            <div class="container">
+                <div class="currency-wrapper">
+                    <div class="delivery-dropdown">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AMD
+                                <span>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </span>
+                                <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                            <span class="closing">
+                                <i class="material-icons">arrow_back</i>
+                            </span>
+                            <li>
+                                <a href="">USD</a>
+                            </li>
+                            <li>
+                                <a href="">INR</a>
+                            </li>
+                            <li>
+                                <a href="">ZAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="lang-wrapper">
+                    <div class="lenguage-block">
+                        <div  class="dropdown ls-language-widget">
+                            <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                                 English 
+                                     <span ></span>
+                                         <img src="img/arrow.svg" alt="arrow">
+                                     </span>
+                                     <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu ls-lang-changer-list">
+                                <span class="closing"><i class="material-icons">arrow_back</i></span>
+                                <li>
+                                    <a class="text-sm"> Հայերեն </a>
+                                </li>
+                                <li>
+                                    <a  class="text-sm">العربية</a>
+                                </li>
+                               
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     <header  >
         <div class="container">
             <div class="header-wrapper">
@@ -65,7 +120,7 @@
                              <span class="user-name-label text-sm">Narek Avetisyan </span>
                          </li>
                         <li class="user-bonus">
-                             <span class="user-bonus-label text-sm">Bonus points</span>
+                             <span class="user-bonus-label text-sm">Reword Points</span>
                              <span class="user-bonus-amount text-sm">250</span>
                          </li>
                          <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
@@ -210,7 +265,7 @@
                                          
                                         </div>
                                         <div class="qty-wrapper">
-                                            <div class="form-group ">
+                                            <!-- <div class="form-group ">
                                                 <div class="select-wrapper">
                                                     <div class="select-arrow">
                                                         <img src="img/select-arrow.svg" alt="arrow">
@@ -223,8 +278,16 @@
                                                         <option value="5">5</option>
                                                     </select>
                                                 </div>
+                                        </div> -->
+                                        <div class="add-plus">
+                                            <i class="material-icons minus_a icons-disabled">remove</i>
+                                            <!-- icons-disabled -->
+                                            <div class="form-group  ">
+                                                <input type="number" name="" value="1" id="item-quantity" > 
+                                            </div>
+                                           <!-- error -->
+                                            <i class="material-icons  plus_a">add</i>
                                         </div>
-                                        <!-- <div class="errorMessage">Cannot be blank.</div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +347,7 @@
                                          
                                         </div>
                                         <div class="qty-wrapper">
-                                            <div class="form-group ">
+                                            <!-- <div class="form-group ">
                                                 <div class="select-wrapper">
                                                     <div class="select-arrow">
                                                         <img src="img/select-arrow.svg" alt="arrow">
@@ -297,8 +360,13 @@
                                                         <option value="5">5</option>
                                                     </select>
                                                 </div>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="errorMessage">Cannot be blank.</div> -->
+                                        <div class="add-plus">
+                                            <i class="material-icons minus_a">remove</i>
+                                            <input type="number" name="" value="5" id="item-quantity">
+                                            <i class="material-icons  plus_a">add</i>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -358,7 +426,7 @@
                                             </div> -->
                                         </div>
                                         <div class="qty-wrapper">
-                                            <div class="form-group ">
+                                            <!-- <div class="form-group ">
                                                 <div class="select-wrapper">
                                                     <div class="select-arrow">
                                                         <img src="img/select-arrow.svg" alt="arrow">
@@ -371,8 +439,13 @@
                                                         <option value="5">5</option>
                                                     </select>
                                                 </div>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="errorMessage">Cannot be blank.</div> -->
+                                        <div class="add-plus">
+                                            <i class="material-icons minus_a">remove</i>
+                                            <input type="number" name="" value="33" id="item-quantity">
+                                            <i class="material-icons  plus_a">add</i>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -398,66 +471,72 @@
                <div class="promo-wrapper ">
                <div class="boxShadow boxShadow1">                  
                    <div class="promo">
-                    <div class="promo-code">
-                       <p class="text-sm">Apply Promo code</p>
-                       <div class="apply">
-                           <div class="apply-input">
-                               <div class="form-group ">
-                                <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                       <div class="promo-code-wrapper">
+                           <div class="promo-code">
+                              <p class="text-sm">Apply Promo code</p>
+                              <div class="apply">
+                                  <div class="apply-input">
+                                      <div class="form-group ">
+                                       <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                                      </div>
+                                      <!-- <div class="errorMessage">Promo code cannot be blank.</div> -->
+                                  </div>
+                                  <div class="button-wrapper">
+                                      <button href="#" class="main-btn">Apply</button>
+                                  </div>
+                              </div>
+                              <p class="text-xs">Code with higher savings will apply.</p>
+       
+                           </div>
+                           <div class="promo-code">
+       
+                               <div class="items-total">
+                                   <div class="item text-md">
+                                       <span>Items total, 4 items</span>
+                                       <span>$122.00</span>
+                                   </div>
+                                   <div class="item text-md">
+                                       <span class="discount">Discount</span>
+                                       <span class="discount">$100.18</span>
+                                   </div>
+           
                                </div>
-                               <!-- <div class="errorMessage">Promo code cannot be blank.</div> -->
                            </div>
-                           <div class="button-wrapper">
-                               <button href="#" class="main-btn">Apply</button>
+                           <div class="promo-code">
+       
+                               <div class="items-total">
+                                   <div class="item text-md">
+                                       <span>Subtotal</span>
+                                       <span>$50.09</span>
+                                   </div>
+                                   <div class="item text-md">
+                                       <span>Shipping</span>
+                                       <span>Calculate</span>
+                                   </div>
+                                   <div class="item text-md">
+                                       <span>Personal discount</span>
+                                       <span class="discount">$3.00</span>
+                                   </div>
+                               </div>
                            </div>
+                           <div class="promo-code borderNone">
+                               <div class="items-total">
+                                   <div class="item text-md">
+                                       <span class="font-big">Total</span>
+                                       <span class="font-big">$50.09</span>
+                                   </div>
+                                   
+                               </div>
+                           </div>
+
                        </div>
-                       <p class="text-xs">Code with higher savings will apply.</p>
-
-                    </div>
-                    <div class="promo-code">
-
-                        <div class="items-total">
-                            <div class="item text-md">
-                                <span>Items total, 4 items</span>
-                                <span>$122.00</span>
-                            </div>
-                            <div class="item text-md">
-                                <span class="discount">Discount</span>
-                                <span class="discount">$100.18</span>
-                            </div>
-    
-                        </div>
-                    </div>
-                    <div class="promo-code">
-
-                        <div class="items-total">
-                            <div class="item text-md">
-                                <span>Subtotal</span>
-                                <span>$50.09</span>
-                            </div>
-                            <div class="item text-md">
-                                <span>Shipping</span>
-                                <span>Calculate</span>
-                            </div>
-                            <div class="item text-md">
-                                <span>Personal discount</span>
-                                <span class="discount">$3.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promo-code borderNone">
-                        <div class="items-total">
-                            <div class="item text-md">
-                                <span class="font-big">Total</span>
-                                <span class="font-big">$50.09</span>
-                            </div>
-                            <div class="item text-md">
-                                <span>Rewords Credit</span>
-                                <span>$0.00</span>
-                            </div>
-    
-                        </div>
-                    </div>
+                       <div class="bonus-wrapper">
+                        <li class="user-bonus">
+                               <img src="img/bonus.svg" alt="bonus">
+                               <span class="user-bonus-label text-md">Reword Points</span>
+                               <span class="user-bonus-amount text-md">250</span>
+                           </li>
+                       </div>
                    </div>
                   
             </div> 
