@@ -174,287 +174,278 @@
                 <div class="row-success row-success-2"></div>
             </div>
         </div>
-                <div class="title">
-                    <p class="font-big">Shipping address</p>
-                    <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
-               </div>
-           <div class="shopping-cart">
-               <form class="address-form" action="">
-                   <div class="delivery-methods">
-                        <span class="methods-row" >
-                            <div class="card-width">
-                                <label class="label-container lable--width label-selected  border2px">
-                                    <input type="radio" checked="checked" name="radio">
-                                    <span class="checkmark checkmark-selected"></span>
-                                    <!-- checkmark-selected -->
-                                    <span class="text-md text--mrl">Deliver to your address</span> 
-                                </label>
-                            </div>
-                            <div class="card-width">
-                                <label class="label-container lable--width border2px">
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                    <span class="text-md text--mrl">Pickup at Pickup location</span> 
-                                </label>
-                            </div>
-                        </span>
-                   </div>
-                    <div class="deliver-address">
-                        <span>
-                        <div class="card">
-                            <label class="label-container label-container--border label-selected">
-                                <input type="radio" name="radio-address">
-                                <span class="checkmark"></span>
-                            <span class="decription-row">
-                                <div class="label-description">
-                                    <p class="font-big">Narek Avetisyan</p>
-                                    <div class="address-span">
-                                        <div class="span-content">
-                                            <span class="text-sm left-border">950 Ridge RD C25 </span>
-                                            <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
-                                        </div>
-                                        <div class="span-content">
-                                            <span class="text-sm left-border">United States </span>
-                                            <span class="text-sm left-border">3024148567</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="label-description">
-                                    <p class="text-sm text-sm--main">Selected</p>
-                                    <div class="edit-remove">
-                                        <a class="edit text-xs" href="">Edit </a>
-                                        <a class="remove text-xs" href="">Remove</a>
-                                    </div>
-                                </div>
-
-                            </span> 
-                            </label>
-                        </div>
-                        <div class="card">
-                            <label class="label-container label-container--border">
-                                <input type="radio" name="radio-address">
-                                <span class="checkmark"></span>
-                            <span class="decription-row">
-                                <div class="label-description">
-                                    <p class="font-big">Narek Avetisyan</p>
-                                    <div class="address-span">
-                                        <div class="span-content">
-                                            <span class="text-sm left-border">950 Ridge RD C25 </span>
-                                            <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
-                                        </div>
-                                        <div class="span-content">
-                                            <span class="text-sm left-border">United States </span>
-                                            <span class="text-sm left-border">3024148567</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="label-description">
-                                    <p class="text-sm text-sm--main">Deliver here</p>
-                                    <div class="edit-remove">
-                                        <a class="edit text-xs" href="">Edit </a>
-                                        <a class="remove text-xs" href="">Remove</a>
-                                    </div>
-                                </div>
-
-                            </span> 
-                            </label>
-                        </div>
-
-                    <div class="card">
-                        <label class="label-container label-container--border "> 
-                            <!-- add "border-none-bottom" class when select this label-->
-                            <!-- label-selected չավելացնել -->
-                            <input type="radio" name="radio-address">
-                            <span class="checkmark"></span>
-                            <span class="decription-row">
-                                <p class="font-big">Add new Shipping Address</p>
-                                <div class="address-span">
-                                    <div class="span-content">
-                                        <span ></span>
-                                        <span ></span>
-                                    </div>
-                                    <div class="span-content">
-                                        <span > </span>
-                                        <span ></span>
-                                    </div>
-                                </div>
-                            </span> 
-
-                        </label>
-                    </div>
-                    </span>
-                    <div class="label-container-wrapper">
-                        <!-- display:none -->
-                        <div class="new-address">
-                            <div class="checkbox-label border-top">
-                                <div class="checkbox-style sellect-wrapper ">
-                                    <input class="" name="" id="" value="" type="checkbox">
-                                    <label></label>
-                                </div>
-                              <label ><p class="text-sm">Set as my default shipping address</p></label>
-                            </div>
-                            <div class="required-fields">
-                                <p class="text-sm">*Required fields</p>
-                            </div>
-                            <div class="form-group address-section">
-                                <div class="select-wrapper">
-                                    <div class="select-arrow">
-                                        <img src="img/select-arrow.svg" alt="arrow">
-                                    </div>
-                                    <select class="text-sm" >
-                                        <option value="Armenia">Country</option>
-                                        <option value="Armenia">Armenia</option>
-                                    
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- <div class="errorMessage">Country cannot be blank.</div> -->
-                            <div class="address-section">
-                                <div class="form-group form-position">
-                                    <label class="form-control-label text-xs">Full Name*</label>
-                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
-                                </div>
-                                <!-- <div class="errorMessage">Full Name cannot be blank.</div> -->
-                            </div>
-                            <div class="address-section">
-                                <div class="form-group form-position">
-                                    <label  class="form-control-label text-xs">Address Line 1*</label>
-                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder=" ">
-                                </div>
-                                <!-- <div class="errorMessage">Address Line 1 cannot be blank.</div> -->
-                            </div>
-                            <div class="address-section">
-                                <div class="form-group form-position">
-                                    <label  class="form-control-label text-xs">Address Line 2*</label>
-                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="Apartment, suite, unit, building, floor, etc.">
-                                </div>
-                                <!-- <div class="errorMessage">Address Line 2 cannot be blank.</div> -->
-                            </div>
-                            <div class="address-section three-input-wrapper">
-                                <div class="error-wrapper form-width">
-                                    <div class="form-group form-position">
-                                        <label  class="form-control-label text-xs">City*</label>
-                                        <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                    </div>
-                                    <!-- <div class="errorMessage">City cannot be blank.</div> -->
-                                </div>
-                                <div class="error-wrapper form-width">
-                                <div class="form-group form-position ">
-                                    <label  class="form-control-label text-xs">State/Region*</label>
-                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                </div>
-                                <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
-                                </div>
-                                <div class="error-wrapper form-width">
-                                <div class="form-group form-position">
-                                    <label  class="form-control-label text-xs">Zip/Postal Code*</label>
-                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                </div>
-                                <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
-                                </div>
-                            </div>
-                            <div class="address-section">
-                                <div class="form-group form-position">
-                                    <label  class="form-control-label text-xs">Mobile Number*</label>
-                                    <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                </div>
-                                <!-- <div class="errorMessage">Mobile Number cannot be blank.</div> -->
-                            </div>
-                            <div class="btn-wrapper">
-                                <div class="cansel-wrapper">
-                                    <button class="main-btn cancel-btn" href="">Cancel</button>
-                                    <!-- disabled class-->
-                                </div>
-                                <div class="continue-wrapper">
-                                    <button class="main-btn" href="">Continue</button>
-                                    <!-- disabled class-->
-                                    <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                   <!-- </div> -->
-                      <div class="pickup-location">
-                        <span>
-                            <div class="card">
-                                <label class="label-container label-container--border label-selected">
-                                    <input type="radio" name="radio-pickup">
-                                    <span class="checkmark"></span>
-                                <span class="decription-row decription-row--center">
-                                    <div class="label-description">
-                                        <p class="font-big">Location name</p>
-                                        <div class="address-span">
-                                            <div class="span-content">
-                                                <span class="text-sm left-border">950 Ridge RD C25 </span>
-                                                <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
-                                            </div>
-                                            <div class="span-content">
-                                                <span class="text-sm left-border">United States </span>
-                                                <span class="text-sm left-border">3024148567</span>
-                                            </div>
-                                            <div class=" span-content ">
-                                                <span class="text-sm">Working hours: </span>
-                                                <span class="text-sm">Monday - Friday 10:00-21:00</span>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="label-description">
-                                        <p class="text-sm text-sm--main">Selected</p>
-                                    </div>
-        
-                                </span> 
-                                </label>
-                            </div>
-                            <div class="card">
-                                <label class="label-container label-container--border">
-                                    <input type="radio" name="radio-pickup">
-                                    <span class="checkmark"></span>
-                                <span class="decription-row decription-row--center">
-                                    <div class="label-description">
-                                        <p class="font-big">Location name</p>
-                                        <div class="address-span">
-                                            <div class="span-content">
-                                                <span class="text-sm left-border">950 Ridge RD C25 </span>
-                                                <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
-                                            </div>
-                                            <div class="span-content">
-                                                <span class="text-sm left-border">United States </span>
-                                                <span class="text-sm left-border">3024148567</span>
-                                            </div>
-                                            <div class=" span-content ">
-                                                <span class="text-sm">Working hours: </span>
-                                                <span class="text-sm">Monday - Friday 10:00-21:00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="label-description">
-                                        <p class="text-sm text-sm--main">Deliver here</p>
-                                    </div>
-                                </span> 
-                                </label>
-                            </div>
-                        </span>
-                   </div>   
-                   <div class="continue-wrapper mt">
-                       <button class="main-btn" href="">Continue</button>
-                       <!-- disabled class-->
-                       <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
-                   </div>
-               </form>
+        <div class="shopping-cart">
+            <div class="form-wrapper">
+                  <div class="title">
+                      <p class="font-big">Shipping address</p>
+                      <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
+                 </div>
+                 <form class="address-form" action="">
+                     <div class="delivery-methods">
+                          <span class="methods-row" >
+                              <div class="card-width">
+                                  <label class="label-container lable--width label-selected  border2px">
+                                      <input type="radio" checked="checked" name="radio">
+                                      <span class="checkmark checkmark-selected"></span>
+                                      <!-- checkmark-selected -->
+                                      <span class="text-md text--mrl">Deliver to your address</span> 
+                                  </label>
+                              </div>
+                              <div class="card-width">
+                                  <label class="label-container lable--width border2px">
+                                      <input type="radio" name="radio">
+                                      <span class="checkmark"></span>
+                                      <span class="text-md text--mrl">Pickup at Pickup location</span> 
+                                  </label>
+                              </div>
+                          </span>
+                     </div>
+                      <div class="deliver-address">
+                          <span>
+                          <div class="card">
+                              <label class="label-container label-container--border label-selected">
+                                  <input type="radio" name="radio-address">
+                                  <span class="checkmark"></span>
+                              <span class="decription-row">
+                                  <div class="label-description">
+                                      <p class="font-big">Narek Avetisyan</p>
+                                      <div class="address-span">
+                                          <div class="span-content">
+                                              <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                              <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                          </div>
+                                          <div class="span-content">
+                                              <span class="text-sm left-border">United States </span>
+                                              <span class="text-sm left-border">3024148567</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="label-description">
+                                      <p class="text-sm text-sm--main">Selected</p>
+                                      <div class="edit-remove">
+                                          <a class="edit text-xs" href="">Edit </a>
+                                          <a class="remove text-xs" href="">Remove</a>
+                                      </div>
+                                  </div>
+  
+                              </span> 
+                              </label>
+                          </div>
+                          <div class="card">
+                              <label class="label-container label-container--border">
+                                  <input type="radio" name="radio-address">
+                                  <span class="checkmark"></span>
+                              <span class="decription-row">
+                                  <div class="label-description">
+                                      <p class="font-big">Narek Avetisyan</p>
+                                      <div class="address-span">
+                                          <div class="span-content">
+                                              <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                              <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                          </div>
+                                          <div class="span-content">
+                                              <span class="text-sm left-border">United States </span>
+                                              <span class="text-sm left-border">3024148567</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="label-description">
+                                      <p class="text-sm text-sm--main">Deliver here</p>
+                                      <div class="edit-remove">
+                                          <a class="edit text-xs" href="">Edit </a>
+                                          <a class="remove text-xs" href="">Remove</a>
+                                      </div>
+                                  </div>
+  
+                              </span> 
+                              </label>
+                          </div>
+  
+                      <div class="card">
+                          <label class="label-container label-container--border "> 
+                              <!-- add "border-none-bottom" class when select this label-->
+                              <!-- label-selected չավելացնել -->
+                              <input type="radio" name="radio-address">
+                              <span class="checkmark"></span>
+                              <span class="decription-row">
+                                  <p class="font-big">Add new Shipping Address</p>
+                              </span> 
+  
+                          </label>
+                      </div>
+                      </span>
+                      <div class="label-container-wrapper">
+                          <!-- display:none -->
+                          <div class="new-address">
+                              <div class="checkbox-label border-top">
+                                  <div class="checkbox-style sellect-wrapper ">
+                                      <input class="" name="" id="" value="" type="checkbox">
+                                      <label></label>
+                                  </div>
+                                <label ><p class="text-sm">Set as my default shipping address</p></label>
+                              </div>
+                              <div class="required-fields">
+                                  <p class="text-sm">*Required fields</p>
+                              </div>
+                              <div class="form-group address-section">
+                                  <div class="select-wrapper">
+                                      <div class="select-arrow">
+                                          <img src="img/select-arrow.svg" alt="arrow">
+                                      </div>
+                                      <select class="text-sm" >
+                                          <option value="Armenia">Country</option>
+                                          <option value="Armenia">Armenia</option>
+                                      
+                                      </select>
+                                  </div>
+                              </div>
+                              <!-- <div class="errorMessage">Country cannot be blank.</div> -->
+                              <div class="address-section">
+                                  <div class="form-group form-position">
+                                      <label class="form-control-label text-xs">Full Name*</label>
+                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
+                                  </div>
+                                  <!-- <div class="errorMessage">Full Name cannot be blank.</div> -->
+                              </div>
+                              <div class="address-section">
+                                  <div class="form-group form-position">
+                                      <label  class="form-control-label text-xs">Address Line 1*</label>
+                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder=" ">
+                                  </div>
+                                  <!-- <div class="errorMessage">Address Line 1 cannot be blank.</div> -->
+                              </div>
+                              <div class="address-section">
+                                  <div class="form-group form-position">
+                                      <label  class="form-control-label text-xs">Address Line 2*</label>
+                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder="Apartment, suite, unit, building, floor, etc.">
+                                  </div>
+                                  <!-- <div class="errorMessage">Address Line 2 cannot be blank.</div> -->
+                              </div>
+                              <div class="address-section three-input-wrapper">
+                                  <div class="error-wrapper form-width">
+                                      <div class="form-group form-position">
+                                          <label  class="form-control-label text-xs">City*</label>
+                                          <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                      </div>
+                                      <!-- <div class="errorMessage">City cannot be blank.</div> -->
+                                  </div>
+                                  <div class="error-wrapper form-width">
+                                  <div class="form-group form-position ">
+                                      <label  class="form-control-label text-xs">State/Region*</label>
+                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                  </div>
+                                  <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
+                                  </div>
+                                  <div class="error-wrapper form-width">
+                                  <div class="form-group form-position">
+                                      <label  class="form-control-label text-xs">Zip/Postal Code*</label>
+                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                  </div>
+                                  <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
+                                  </div>
+                              </div>
+                              <div class="address-section">
+                                  <div class="form-group form-position">
+                                      <label  class="form-control-label text-xs">Mobile Number*</label>
+                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                  </div>
+                                  <!-- <div class="errorMessage">Mobile Number cannot be blank.</div> -->
+                              </div>
+                              <div class="btn-wrapper">
+                                  <div class="cansel-wrapper">
+                                      <button class="main-btn cancel-btn" href="">Cancel</button>
+                                      <!-- disabled class-->
+                                  </div>
+                                  <div class="continue-wrapper">
+                                      <button class="main-btn" href="">Continue</button>
+                                      <!-- disabled class-->
+                                      <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
+                                  </div>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                     <!-- </div> -->
+                        <div class="pickup-location">
+                          <span>
+                              <div class="card">
+                                  <label class="label-container label-container--border label-selected">
+                                      <input type="radio" name="radio-pickup">
+                                      <span class="checkmark"></span>
+                                  <span class="decription-row decription-row--center">
+                                      <div class="label-description">
+                                          <p class="font-big">Location name</p>
+                                          <div class="address-span">
+                                              <div class="span-content">
+                                                  <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                                  <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                              </div>
+                                              <div class="span-content">
+                                                  <span class="text-sm left-border">United States </span>
+                                                  <span class="text-sm left-border">3024148567</span>
+                                              </div>
+                                              <div class=" span-content ">
+                                                  <span class="text-sm">Working hours: </span>
+                                                  <span class="text-sm">Monday - Friday 10:00-21:00</span>
+                                              </div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="label-description">
+                                          <p class="text-sm text-sm--main">Selected</p>
+                                      </div>
+          
+                                  </span> 
+                                  </label>
+                              </div>
+                              <div class="card">
+                                  <label class="label-container label-container--border">
+                                      <input type="radio" name="radio-pickup">
+                                      <span class="checkmark"></span>
+                                  <span class="decription-row decription-row--center">
+                                      <div class="label-description">
+                                          <p class="font-big">Location name</p>
+                                          <div class="address-span">
+                                              <div class="span-content">
+                                                  <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                                  <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                              </div>
+                                              <div class="span-content">
+                                                  <span class="text-sm left-border">United States </span>
+                                                  <span class="text-sm left-border">3024148567</span>
+                                              </div>
+                                              <div class=" span-content ">
+                                                  <span class="text-sm">Working hours: </span>
+                                                  <span class="text-sm">Monday - Friday 10:00-21:00</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="label-description">
+                                          <p class="text-sm text-sm--main">Deliver here</p>
+                                      </div>
+                                  </span> 
+                                  </label>
+                              </div>
+                          </span>
+                     </div>   
+                     <div class="continue-wrapper mt">
+                         <button class="main-btn" href="">Continue</button>
+                         <!-- disabled class-->
+                         <!-- <button href="#" class="main-btn font-big">Proceed to Checkout</button> -->
+                     </div>
+                 </form>
+              </div>
                <div class="promo-wrapper">
                <div class="boxShadow boxShadow1">                  
                 <div class="promo">
                     <div class="promo-code-wrapper">
-                        <div class="promo-code">
+                        <!-- <div class="promo-code">
                            <p class="text-sm">Apply Promo code</p>
                            <div class="apply">
                                <div class="apply-input">
                                    <div class="form-group ">
                                     <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
                                    </div>
-                                   <!-- <div class="errorMessage">Promo code cannot be blank.</div> -->
                                </div>
                                <div class="button-wrapper">
                                    <button href="#" class="main-btn">Apply</button>
@@ -462,7 +453,7 @@
                            </div>
                            <p class="text-xs">Code with higher savings will apply.</p>
     
-                        </div>
+                        </div> -->
                         <div class="promo-code">
     
                             <div class="items-total">
@@ -505,13 +496,13 @@
                         </div>
 
                     </div>
-                    <div class="bonus-wrapper">
+                    <!-- <div class="bonus-wrapper">
                      <li class="user-bonus">
                             <img src="img/bonus.svg" alt="bonus">
                             <span class="user-bonus-label text-md">Reword Points</span>
                             <span class="user-bonus-amount text-md">250</span>
                         </li>
-                    </div>
+                    </div> -->
                 </div>
                   
             </div> 

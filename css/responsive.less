@@ -5,21 +5,14 @@
 @import url('components/fonts.less');
 
 
+// Start @media screen and (max-width:991px) styling
 @media screen and (max-width:991px){
-
-    .title{
-        display: none;
-    }
     .shopping-cart {
-        // flex-direction: column;
         .boxShadow{
-            width: 56%;
             background-color: @bg;
             box-shadow: none;
-
         .sellect-all{
            padding: 0;
-
             .title{
                 display: none;
             }
@@ -36,8 +29,7 @@
                         .product-discription{
                             .product-img{
                                 border: none;
-                            }
-                  
+                            }                
                             width: 100%;
                             .width{
                                 .nameQty{
@@ -106,8 +98,8 @@
             .boxShadow1{
                 width: 100%;
                 border-radius: 6px;
-            box-shadow: 0 3px 10px #EAEAEA;
-            background-color: @white;
+                box-shadow: 0 3px 10px #EAEAEA;
+                background-color: @white;
             }
             .checkout{
                 .checkout-btn{
@@ -154,11 +146,14 @@
         } 
     }
         // End shipping media styling
-        .address-form {
-            width: 57%;
-        }
+        .cardWrap{
+            .label-size {
+                width: 40px;
+                height: 25px;
+            }
+        } 
 }
-
+// Start @media screen and (max-width:767px) styling
 @media screen and (max-width:767px){
     body{
         &.lock{
@@ -398,86 +393,7 @@
 }
 
 
-// @media screen and (max-width:1199px)
-// @media screen and (max-width:1199px){
-// Start shoppingCart media styling
-    // .shoppingCart{
-    //     .shopping-cart{
-    //         .boxShadow{
-    //             .sellect-all{
-    //                 .title{
-    //                     .qty-wrapper {
-    //                         width: 163px;
-    //                     }
-    //                 } 
-    //                 .products{
-    //                     .prod-row {
-    //                         .product-discription{
-    //                             .width {
-    //                                 width: 315px;
-    //                                 margin-right: 30px;
-    //                                 .nameQty{
-    //                                     .name {
-    //                                         max-width: 197px;
-    //                                     }
-    //                                 } 
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-    //             }       
-    //         }
-    //     }
-    // }
-    // End shoppingCart media styling   
-
-// }
-
-// @media screen and (max-width:991px)
-// @media screen and (max-width:991px){
-// Start shoppingCart media styling
-// .shoppingCart{
-//     .shopping-cart{
-        // flex-direction: column;
-        // .boxShadow{
-        //     .sellect-all{
-        //         .title{
-        //             .qty-wrapper {
-        //                 width: 215px;
-        //             }
-        //         } 
-        //         .products{
-        //             .prod-row{
-        //                 .product-discription{
-        //                     .width{
-        //                         width: 410px;
-        //                         margin-right: 80px;
-                                // .nameQty{
-                                //     flex-direction: column;
-                                //     .qty-wrapper{
-                                //         select{
-                                //             margin-top: 15px;
-                                //             width: 100px;
-                                //             height: 40px;
-                                //         }
-                                //     }  
-                                // }
-//                             }
-//                         }
-//                     }
-//                 }     
-//             }
-//         }
-//     }
-// }
-// .boxShadow1{
-//     margin-top: 20px;
-// }
-
-
-// }
-
-// @media screen and (max-width:567px)
+// Start @media screen and (max-width:567px) styling
 @media screen and (max-width:576px){
 
     .header-menu{
@@ -494,12 +410,17 @@
     .mega-wrapper {
         transition: 0.5s;
         &.open {
-            // margin-right: 350px;
             transform: translateX(-250px);
         }
     }
 
     // Start shopping cart media styling
+    .title{
+        display: none;
+    }
+    .box-shadow-wrapper{
+        width: 100%;
+    }
     .shopping-cart{
         flex-direction: column;
         .boxShadow{
@@ -530,10 +451,12 @@
     // End shopping cart media styling
 
     // Start shipping media styling
-    .address-form {
+    .form-wrapper{
         width: 100%;
     }
     // End shipping media styling
 
-   
+    .continue-wrapper{
+        display: none;
+    }
 }
