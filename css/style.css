@@ -222,18 +222,16 @@ select:hover {
   border-color: #4F49F5;
 }
 .checkmark {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  background-color: #FFFFFF;
+  height: 23px;
+  width: 23px;
   border: 1px solid #E1E3EE;
   border-radius: 50%;
-}
-.checkmark-selected {
-  border-color: #4F49F5;
+  min-width: 23px;
+  position: relative;
 }
 .label-container input:checked ~ .checkmark {
   background-color: #FFFFFF;
+  border: 1px solid #4F49F5;
 }
 .checkmark:after {
   content: "";
@@ -244,16 +242,12 @@ select:hover {
   display: block;
 }
 .label-container .checkmark:after {
-  top: 2.5px;
-  left: 2.5px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 80%;
   background: #4F49F5;
-}
-.label-container--border .checkmark:after {
-  top: 2px;
-  left: 1.5px;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -323,7 +317,7 @@ body {
 .loader-wrapper {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #E1E3EE;
@@ -331,13 +325,14 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  bottom: 0;
 }
 .loader {
   display: inline-block;
   width: 30px;
   height: 30px;
   position: relative;
-  border: 4px solid #FFFFFF;
+  border: 4px solid #4F49F5;
   animation: loader 10s infinite ease;
 }
 .loader-inner {
@@ -438,6 +433,9 @@ body {
 }
 .language-currency .dropdown span img {
   margin-left: 7px;
+}
+.language-currency .dropdown span .dropdown-open {
+  transform: rotate(179deg);
 }
 .language-currency .dropdown .dropdown-menu {
   background-color: #FFFFFF;
@@ -1381,10 +1379,6 @@ header .header-wrapper .header-menu .header_list li .header_link {
 .address-span .span-content .text-sm--color {
   color: #E68500;
 }
-.shipping-details .label-container--border .checkmark::after {
-  top: 1.7px;
-  left: 1.2px;
-}
 .form-wrapper {
   width: 68%;
 }
@@ -1403,10 +1397,6 @@ header .header-wrapper .header-menu .header_list li .header_link {
   color: #4F49F5;
   font-weight: bold;
   text-decoration: none;
-}
-.payment-method .label-container--border .checkmark::after {
-  top: 2.3px;
-  left: 1.2px;
 }
 .select-card {
   background-color: #FFFFFF;
@@ -1432,13 +1422,12 @@ header .header-wrapper .header-menu .header_list li .header_link {
 .select-card .label-container:hover {
   border: none;
 }
-.select-card .label-container .checkmark:after {
-  top: 2px;
-  left: 1.5px;
-}
 .mega-wrapper {
   transition: 0.5s;
 }
 .mega-wrapper.open {
   transform: translateX(-350px);
+}
+.success-wrapper .box-width {
+  width: 65%;
 }

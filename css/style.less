@@ -24,7 +24,7 @@ body {
 .loader-wrapper {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: @stepBorder;
@@ -32,13 +32,14 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    bottom: 0;
   }
   .loader {
     display: inline-block;
     width: 30px;
     height: 30px;
     position: relative;
-    border: 4px solid @white;
+    border: 4px solid @main;
     animation: loader 10s infinite ease;
   }
   .loader-inner {
@@ -136,7 +137,11 @@ body {
                    img{
                        margin-left: 7px;
                    }
+                   .dropdown-open{
+                    transform: rotate(179deg);
+                   }
                 }
+                
 
                 .dropdown-menu{
                     background-color: @white;
@@ -1208,14 +1213,14 @@ header{
 }
 
 // Start Shipping details styling
-.shipping-details{
-    .label-container--border{
-        .checkmark::after{
-            top: 1.7px;
-            left: 1.2px;
-        }
-    }
-}
+// .shipping-details{
+//     .label-container--border{
+//         .checkmark::after{
+//             top: 1.7px;
+//             left: 1.2px;
+//         }
+//     }
+// }
 .form-wrapper{
     width: 68%;
 }
@@ -1242,14 +1247,14 @@ header{
 // End Shipping details styling
 
 // Start payment-method styling
-.payment-method{
-    .label-container--border{
-        .checkmark::after{
-            top: 2.3px;
-            left: 1.2px;
-        }
-    }
-}
+// .payment-method{
+//     .label-container--border{
+//         .checkmark::after{
+//             top: 2.3px;
+//             left: 1.2px;
+//         }
+//     }
+// }
 .select-card{
     background-color: @white;
     border: 1px solid @productBorder;
@@ -1272,10 +1277,10 @@ header{
     &:hover{
    border: none;
     }
-    .checkmark:after {
-        top: 2px;
-        left: 1.5px;
-    }
+    // .checkmark:after {
+    //     top: 2px;
+    //     left: 1.5px;
+    // }
  }
 }
 // End payment-method styling 
@@ -1287,3 +1292,12 @@ header{
         transform: translateX(-350px);
     }
 }
+
+// Start success-wrapper styling
+.success-wrapper{
+    .box-width{
+        width: 65%;
+    }
+
+}
+// End success-wrapper styling
