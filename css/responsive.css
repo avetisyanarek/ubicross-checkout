@@ -229,9 +229,6 @@ select:hover {
   min-width: 23px;
   position: relative;
 }
-.checkmark-selected {
-  border-color: #4F49F5;
-}
 .label-container input:checked ~ .checkmark {
   background-color: #FFFFFF;
   border: 1px solid #4F49F5;
@@ -412,6 +409,12 @@ p {
   .cardWrap .label-size {
     width: 40px;
     height: 25px;
+  }
+  .success-wrapper .box-width {
+    width: 100%;
+  }
+  .details-wrapper .details-wrapper-width {
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -650,5 +653,46 @@ p {
   }
   .continue-wrapper {
     display: none;
+  }
+  .details-wrapper .details-wrapper-width {
+    flex-direction: column;
+  }
+  .details-wrapper .details-wrapper-width .details .font-big {
+    text-align: center;
+  }
+  .details-wrapper .details-wrapper-width .promo-wrapper {
+    width: 100vw;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-left: -15px;
+  }
+  .details-wrapper .details-wrapper-width .promo-wrapper .boxShadow1 {
+    border-radius: 0;
+  }
+  .details-wrapper .details-wrapper-width .promo-wrapper .boxShadow1 .promo {
+    max-width: 100%;
+  }
+  .success-wrapper .checkout {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+  }
+  .success-wrapper .checkout .checkout-btn {
+    width: 319px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal1 .modal-dialog .modal-content .modal-header .font-big {
+    width: 100%;
+  }
+  .modal1 .modal-dialog .modal-content .modal-body .text-sm {
+    margin-bottom: 40px;
+  }
+  .modal1 .modal-dialog .modal-content .modal-footer {
+    justify-content: space-between;
+  }
+  .modal1 .modal-dialog .modal-content .modal-footer .main-btn {
+    width: 150px;
   }
 }

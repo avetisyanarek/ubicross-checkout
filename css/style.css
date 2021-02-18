@@ -376,6 +376,11 @@ body {
     height: 0%;
   }
 }
+.modal1 {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
 .modal1 .modal-dialog {
   width: 526px;
   box-shadow: 0 3px 10px #EAEAEA;
@@ -403,7 +408,6 @@ body {
 }
 .modal1 .modal-dialog .modal-content .modal-footer .main-btn {
   width: 105px;
-  height: 45px;
   border: none;
 }
 .modal1 .modal-dialog .modal-content .modal-footer .main-btn + .main-btn {
@@ -1003,6 +1007,13 @@ header .header-wrapper .header-menu .header_list li .header_link {
 }
 .promo-wrapper .boxShadow1 .promo .user-bonus img {
   margin-right: -30px;
+}
+.promo-wrapper .boxShadow1 .promo .user-bonus .promo-code {
+  width: 85%;
+}
+.promo-wrapper .boxShadow1 .promo .user-bonus .promo-code .items-total .item {
+  display: flex;
+  justify-content: space-between;
 }
 .promo-wrapper .checkout {
   width: 100%;

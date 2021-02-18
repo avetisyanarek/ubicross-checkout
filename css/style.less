@@ -67,7 +67,9 @@ body {
 
 // Start modal styling
 .modal1{
-    
+    display: flex;
+    justify-content: center;
+    margin: 5px;
     .modal-dialog{
         width: 526px;
         box-shadow: 0 3px 10px #EAEAEA;
@@ -95,7 +97,7 @@ body {
                 justify-content: flex-end;
                 .main-btn{
                     width: 105px;
-                    height: 45px;
+                    // height: 45px;
                     border: none;
                     & + .main-btn{
                         margin-left: 10px;
@@ -760,6 +762,15 @@ header{
                     img{
                         margin-right: -30px;
                     }
+                    .promo-code{
+                        width: 85%;
+                        .items-total{
+                            .item{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
                 }
                 
                
@@ -1288,7 +1299,6 @@ header{
 .mega-wrapper {
     transition: 0.5s;
     &.open {
-        // margin-right: 350px;
         transform: translateX(-350px);
     }
 }
