@@ -13,8 +13,20 @@
             box-shadow: none;
         .sellect-all{
            padding: 0;
+
             .title{
                 display: none;
+            }
+            .all{
+                margin-bottom: 10px;
+                padding-left: 10px;
+                .checkbox-label{
+                    .checkbox-style{
+                        label{
+                            background-color: @white;
+                        }
+                    }
+                }
             }
             .products{
                     flex-direction: column;
@@ -23,6 +35,7 @@
                     margin-bottom: 12px;
                     box-shadow: 0 3px 10px #EAEAEA;
                     padding:10px;
+                    border-top: none;
                     .prod-row{
                         flex-direction: column;
                         margin-bottom: 0;
@@ -61,10 +74,11 @@
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                flex-direction: row;
-                                width: 70%;
+                                flex-direction: row-reverse;
+                                width: 100%;
                                 .price-wrapper{
                                    display: flex;
+                                   flex-direction: column;
                                    align-items: center;
                                    .sale{
                                        margin-left: 10px;
@@ -375,20 +389,7 @@
 
     // Start shopping cart media styling
     .shopping-cart{
-        margin-top: 100px;
-        .boxShadow{
-            .sellect-all{
-                .products{
-                    .prod-row{
-                        .product-price{
-                            .remove-price{
-                                width: 65%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        margin-top: 20px;
     }
     // End shopping cart media styling
 
@@ -432,8 +433,11 @@
 
     // Start shopping cart media styling
     .title{
-        display: none;
-    }
+        .font-big{
+            display: none;
+        }
+
+        }
     .box-shadow-wrapper{
         width: 100%;
     }
@@ -441,7 +445,72 @@
         flex-direction: column;
         .boxShadow{
             width: 100%;
-        }
+        
+        .sellect-all{
+            .all{
+                .links-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .wrap-color{
+                        display: block;
+                        & + .wrap-color{
+                            margin-left: 23px;
+                        }
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .checkbox-label{
+                    .checkbox-style{
+                        display: none;
+                    }
+                    label{
+                        .text-sm{
+                            display: none;
+                            color: @main;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .products {
+                flex-direction: row;
+                background-color: transparent;
+                box-shadow: none;
+                border-top: transparent;
+                padding-top: 0;
+                padding: 0;
+                .checkbox-style {
+                    display: none;
+                }
+                .prod-row{
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color: @white;
+                    position: relative;
+                    // right: -60px;
+                    .product-discription{
+                        .width{
+                            .nameQty{
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                    .product-price{
+                        .remove-price {
+                            .price-wrapper {
+                                .sale{
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
         .promo-wrapper{
             width: 100vw;
             margin-top: 40px;
@@ -472,6 +541,14 @@
     }
     // End shipping media styling
 
+    .btn-wrapper{
+        .cansel-wrapper{
+            display: none;
+        }
+        .continue-wrapper{
+            display: none;
+        }
+    }
     .continue-wrapper{
         display: none;
     }

@@ -210,12 +210,20 @@
                             </div>
                             <label ><p class="text-sm">Select all</p></label>
                           </div>
-                          <div class="remove-wrapper">
-                              <a href="#">Remove all items</a>
+                          <div class="links-wrapper">
+                              <div class="remove-wrap wrap-color" style="display: none;">
+                                  <a href="#">Remove</a>
+                              </div>
+                              <div id="cancelSelectProduct" class="cancel-wrap wrap-color" style="display: none;">
+                                <a href="#">Cancel</a>
+                              </div>
+                              <div id="selectProduct" class="select-wrap wrap-color">
+                                <a>Select</a>
+                              </div>
                           </div>
         
                       </div>
-                      <div class="title">
+                      <!-- <div class="title">
                           <div class="title-wrapper">
                               <p class="text-sm">Products</p>
                           </div>
@@ -226,8 +234,8 @@
                                   <div class="total">Total</div>
                               </div>
                           </div>
-                      </div>
-                      <hr class="product-hr">
+                      </div> -->
+                      <!-- <hr class="product-hr"> -->
                       <div class="products">
                         <div class="checkbox-style">
                                 <input class="" name="" id="" value="" type="checkbox">
@@ -289,14 +297,14 @@
                                         </div>
                                         <a class="remove text-xs">Remove</a>
                                     </div>
-                                    <button class="main-btn">Buy now</button>
+                                    <!-- <button class="main-btn">Buy now</button> -->
                                 </div>
     
                             </div>
                             <br/>
     
                     </div>
-                    <hr class="product-hr">
+                    <!-- <hr class="product-hr"> -->
                       <div class="products">
                         <div class="checkbox-style">
                                 <input class="" name="" id="" value="" type="checkbox">
@@ -357,14 +365,14 @@
                                         </div>
                                         <a class="remove text-xs">Remove</a>
                                     </div>
-                                    <button class="main-btn">Buy now</button>
+                                    <!-- <button class="main-btn">Buy now</button> -->
                                 </div>
     
                             </div>
                             <br/>
     
                     </div>
-                    <hr class="product-hr">
+                    <!-- <hr class="product-hr"> -->
                       <div class="products">
                         <div class="checkbox-style">
                                 <input type="checkbox">
@@ -426,7 +434,7 @@
                                         </div>
                                         <a class="remove text-xs">Remove</a>
                                     </div>
-                                    <button class="main-btn">Buy now</button>
+                                    <!-- <button class="main-btn">Buy now</button> -->
                                 </div>
                             </div>
                             <br/>
@@ -563,5 +571,31 @@
         });
     </script>
 
+    <script>
+        $(document).ready(function() {
+            $("#selectProduct").on("click", function() {
+                $(".products .checkbox-style").css("display", "block");
+                $(".products .prod-row").css("right", "-30px");
+                $(".shoppingCart").css("overflow-x", "hidden");
+                $(".remove-wrap").css("display", "block");
+                $(".cancel-wrap").css("display", "block");
+                $(".select-wrap").css("display", "none");
+                $(".all .text-sm").css("display", "block");
+
+            })
+        });
+
+        $(document).ready(function() {
+            $("#cancelSelectProduct").on("click", function() {
+                $(".products .checkbox-style").css("display", "none");
+                $(".products .prod-row").css("right", "0px");
+                $(".shoppingCart").removeProp("overflow-x");
+                $(".remove-wrap").css("display", "none");
+                $(".cancel-wrap").css("display", "none");
+                $(".select-wrap").css("display", "block");
+                $(".all .text-sm").css("display", "none");
+            })
+        })
+    </script>
 </body>
 </html>

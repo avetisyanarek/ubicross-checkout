@@ -526,7 +526,9 @@ header{
                     flex-direction: row;
                     justify-content: space-between;
                     margin-bottom: 30px;
-                    .remove-wrapper{
+                    
+                    .wrap-color{
+                        display: none;
                         a{
                             color: @mainBtn;                           
                         }
@@ -637,7 +639,9 @@ header{
                                                    
                                                 }
                                             }
-
+                                            .font-lg{
+                                                font-weight: bold;
+                                            }
                                         }
                                     }
                                 }
@@ -678,13 +682,17 @@ header{
                             }
                         }
                     // }
+                    & + .products{
+                        border-top: 1px solid @productBorder;
+                        padding-top: 20px;
+                    }
                 }
-                .product-hr{
-                    max-width: 780px;
-                    height: 2px;
-                    color: @productBorder;
-                    margin-top: 0;
-                }
+                // .product-hr{
+                //     max-width: 780px;
+                //     height: 2px;
+                //     color: @productBorder;
+                //     margin-top: 0;
+                // }
             }
         }
         .promo-wrapper{
@@ -1065,11 +1073,11 @@ header{
     .text-error{
         color: @error;
     }
-    .font-md{
+    .font-sm{
         color: @light-dark;
         margin-left: 5px;
     }
-    .text-md{
+    .text-sm{
         color: @light-dark;
     }
     .text-md--width{
@@ -1176,6 +1184,10 @@ header{
                 display: flex;
                 span{
                     width: 50%;
+                }
+                .pen{
+                    color: @main;
+                    font-size: 12px;
                 }
             }
         }
