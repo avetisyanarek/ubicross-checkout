@@ -564,7 +564,8 @@ header{
                                 width: 85%;
                                 .product-img{                                   
                                     height:100px;
-                                    height: 100px;
+                                    max-width: 100px;
+                                    width: 100%;
                                     margin-right: 10px;
                                     margin-left: 8px;
                                     img{
@@ -585,6 +586,7 @@ header{
                                                 margin-bottom: 10px;
                                                 .text-sm{
                                                     color: @main-dark;
+                                                    font-weight: 500;
                                                     text-decoration: none;
                                                     cursor: pointer;
                                                     margin-bottom: 10px;
@@ -604,7 +606,8 @@ header{
                                             }
                                         }
                                         .qty-wrapper{
-                                            width: 86px;
+                                            width: 110px;
+                                            text-align: center;
                                             .add-plus{
                                                 width: 50px;
                                                 display: flex;
@@ -622,7 +625,7 @@ header{
                                                     cursor: pointer;
                                                 }
                                                 .icons-disabled{
-                                                    background-color: @light-blue;
+                                                    background-color: @disabled;
                                                 }
                                                 input{
                                                     border: none;
@@ -641,6 +644,10 @@ header{
                                             }
                                             .font-lg{
                                                 font-weight: bold;
+                                            }
+                                            .font-md{
+                                                font-weight: bold;
+                                                text-align: center;
                                             }
                                         }
                                     }
@@ -928,11 +935,10 @@ header{
                 .new-address{
                         padding: 0px 20px 25px 20px;
                         .border-top{
-                            padding-top: 35px;
+                            padding-top: 20px;
                             border-top: 1px solid @productBorder;
                         }
                         .required-fields{
-                            margin-top: 10px;
                             .text-sm{
                                 font-weight: bold;
                                 margin-bottom: 20px;
@@ -959,15 +965,19 @@ header{
                                 
                             }
                         }
-                        .three-input-wrapper{
+                        .two-input-wrapper{
                             display:flex;
                             justify-content: space-between;
                             .form-width{
-                                width: 32%;
+                                width: 50%;
+                                & + .form-width{
+                                    margin-left: 10px;
+                                }
                             }
                         }
                         .btn-wrapper{
                             display: flex;
+                            margin-top: 20px;
                             .cansel-wrapper{
                                 width: 200px;
                                 & + .continue-wrapper{
@@ -1206,8 +1216,9 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    // width: 100%;
     .main-btn{
-        min-width: 224px;
+        width: 224px;
     }
 }
 // End success page styling
@@ -1317,6 +1328,7 @@ header{
 
 // Start success-wrapper styling
 .success-wrapper{
+    margin-bottom: 100px;
     .box-width{
         width: 65%;
     }

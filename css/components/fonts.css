@@ -13,8 +13,14 @@ p {
 .text-md {
   font-size: 16px;
 }
+.text-s {
+  font-size: 13px;
+}
 .text-xs {
   font-size: 12px;
+}
+.light-dark {
+  color: ;
 }
 @font-face {
   font-family: Helvetica Neue;

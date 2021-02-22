@@ -25,6 +25,9 @@
                         label{
                             background-color: @white;
                         }
+                        input[type=checkbox]:checked + label {
+                            background-color: @main;
+                        }
                     }
                 }
             }
@@ -383,6 +386,11 @@
             .row-success-3{
                 width: 75%;
             }
+            .row-success-4{
+                width: 100%;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
         }
     }
     // End shoping steps media styling
@@ -412,7 +420,9 @@
 
 // Start @media screen and (max-width:567px) styling
 @media screen and (max-width:576px){
-
+.text-sm{
+    font-size: 12px;
+}
     .header-menu{
         width: 250px;
         .header_list{
@@ -436,6 +446,9 @@
         .font-big{
             display: none;
         }
+        .text-xs{
+            font-size: 14px;
+        }
 
         }
     .box-shadow-wrapper{
@@ -443,6 +456,7 @@
     }
     .shopping-cart{
         flex-direction: column;
+    
         .boxShadow{
             width: 100%;
         
@@ -490,7 +504,7 @@
                     border-radius: 5px;
                     background-color: @white;
                     position: relative;
-                    // right: -60px;
+                    flex-direction: column;
                     .product-discription{
                         .width{
                             .nameQty{
@@ -532,13 +546,67 @@
                 }
             }
         }
-    }
+}
+
     // End shopping cart media styling
+
+    // Start review media stylin
+    .success-wrapper{
+    
+        .page-wrapper{
+            .success-md{
+                width: 90%;
+            }
+            
+            .boxShadow{
+                .sellect-all{
+                    .products{
+                        .prod-row{
+                            flex-direction: column;
+                            .product-discription{
+                                .width{
+                                    .nameQty{
+                                        flex-direction: column;                                        
+                                            .qty-wrapper{
+                                                text-align: left;
+                                                .qty-wrap{
+                                                    .font-lg{
+                                                        font-size: 14px;
+                                                    }
+                                                    .font-md{
+                                                        font-weight: 400;
+                                                    }
+                                                }
+                                            }
+                                    }
+                                } 
+                            }
+                            .product-price{
+                                .remove-price{
+                                    .price-wrapper{
+                                        display: flex;
+                                        flex-direction: row;
+                                        margin-left: 118px;
+                                        .text-md{
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }     
+        }
+
+    }
+    // End confirmation media styling 
 
     // Start shipping media styling
     .form-wrapper{
-        width: 100%;
-    }
+        width: 100%;    
+        }
+    
     // End shipping media styling
 
     .btn-wrapper{
@@ -558,6 +626,7 @@
         .details-wrapper-width {
             flex-direction: column;
             .details{
+                margin-left: 12px;
                 .font-big{
                     text-align: center;
                 }
@@ -585,8 +654,12 @@
         justify-content: center;
         position: fixed;
         bottom: 30px;
+        width: 100%;
+        left: 0;
         .checkout-btn{
-            width: 319px;
+            .main-btn{
+                width: 319px;
+            }
         }
     }
 }
