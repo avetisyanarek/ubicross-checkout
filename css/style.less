@@ -496,9 +496,6 @@ header{
     }
     .title{
         margin-bottom: 25px;
-     .font-big{
-       color: @light-dark;
-    }
     }
 
     .shopping-cart{
@@ -595,9 +592,6 @@ header{
                                             .product-characteristics{
                                                 span{
                                                     margin-bottom: 6px;
-                                                    &:first-child{
-                                                        color: @light-dark;
-                                                    }
                                                 }
                                                 &:last-child{
                                                     margin-bottom: 10px;
@@ -668,12 +662,10 @@ header{
                                             font-weight: bold;
                                         }
                                         .text-sm{
-                                            color: @light-dark;
                                             text-decoration: line-through;                                        
                                         }
                                     }
                                     .remove{
-                                        color: @light-dark;
                                         font-weight: 400;
                                         text-decoration: none;
                                         cursor: pointer;
@@ -694,12 +686,7 @@ header{
                         padding-top: 20px;
                     }
                 }
-                // .product-hr{
-                //     max-width: 780px;
-                //     height: 2px;
-                //     color: @productBorder;
-                //     margin-top: 0;
-                // }
+
             }
         }
         .promo-wrapper{
@@ -753,13 +740,15 @@ header{
                             display: flex;
                             justify-content: space-between;
                             padding: 13px 0;
-                            color: @light-dark;
                             .discount{
                                 color: @hover;
                             }
                             .font-big{
                                 font-weight: bold;
                                 color: @main-dark;
+                            }
+                            .reward{
+                                color: @bonus;
                             }
                         }
                     }
@@ -823,7 +812,6 @@ header{
             width: 100%;
             .paypal-title{
                 .text-sm{
-                    color: @light-dark;
                     text-align: center;
                     margin-top: 30px;
                     margin-bottom: 12px;
@@ -832,6 +820,11 @@ header{
         }
 
         .address-form{
+            .reward-points{
+                .checkbox-style input[type=checkbox]:checked + label{
+                    background-color: @hover;
+                }
+            }
             .delivery-methods{
                 .methods-row{
                     display: flex;
@@ -878,6 +871,18 @@ header{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
+                            .free-shipping-wrapper{
+                                max-width: 120px;
+                                .text-sm{
+                                    background-color: @hover;
+                                    color: @white;
+                                    font-weight: bold;
+                                    border-radius: 30px;
+                                    padding: 5px 13px;
+                                    border: none;
+                                    font-size: 14px;
+                                }
+                            }
                             .text-sm--main{
                                 color: @mainBtn;
                                 font-weight: bold;
@@ -890,14 +895,12 @@ header{
                             .edit-remove{
                                 z-index: 5;
                                 .edit{
-                                    color: @light-dark;
                                     border-right: 1px solid @light-dark;
                                     font-weight: 200;
                                     margin-right: 5px;
                                     padding-right: 2px;
                                 }
                                 .remove{
-                                    color: @light-dark;
                                     font-weight: 200;
                                 }
                             }
@@ -951,9 +954,7 @@ header{
                                     position: absolute;
                                     top: 12px;
                                     left: 20px;
-                                    font-weight: 400;
-                                    color: @light-dark;
-                                    
+                                    font-weight: 400;                                 
                                 }
                                 input{                                    
                                     height: 60px;
@@ -988,15 +989,13 @@ header{
                     }
                 
 
-            // }
             .continue-wrapper{
                 width: 200px;
             }
             .mt{
                 margin-top: 15px;
             }
-        // }
-    // }
+
 
 
             .cardWrap{
@@ -1229,7 +1228,6 @@ header{
 .address-span{
     .span-content{
         .text-sm{
-            color: @light-dark;
             font-weight: 400;
             margin-top: 10px;
             margin-bottom: 0;

@@ -13,14 +13,20 @@
   margin-top: -14px;
   margin-bottom: 10px;
 }
+.checkbox-style-all {
+  display: flex !important;
+  flex-direction: row-reverse;
+}
 .checkbox-style {
-  min-width: 20px! important;
-  max-width: 20px! important;
-  height: 20px! important;
-  position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -4px;
+  position: relative;
+  min-width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.checkbox-style .text-sm {
+  min-width: 100px;
 }
 .checkbox-style input[type=checkbox] {
   opacity: 0;
@@ -36,9 +42,9 @@
 .checkbox-style input[type=checkbox]:checked + label::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 4px;
-  width: 12px;
+  top: 5px;
+  left: 4.5px;
+  width: 10px;
   height: 6px;
   border: 1px solid #FFFFFF;
   border-width: 0 0 2px 2px;
@@ -46,11 +52,13 @@
 }
 .checkbox-style label {
   content: "";
-  display: block !important;
-  width: 100%;
+  display: block;
+  width: 20px;
   height: 100%;
   border: 1px solid #D3D9F0;
   border-radius: 4px;
+  margin-right: 5px;
+  margin-top: -1px;
 }
 input {
   width: 100%;
@@ -143,6 +151,14 @@ select:hover {
 .label-container--border {
   border: 1px solid #D4D9EE;
 }
+.reward-points:hover {
+  border: 1px solid #36c756;
+  background-color: rgba(54, 199, 86, 0.05);
+}
+.reward-points-selected {
+  border: 1px solid #36c756;
+  background-color: rgba(54, 199, 86, 0.05);
+}
 .label-selected {
   background-color: #F9FBFF;
   border-color: #4F49F5;
@@ -175,13 +191,11 @@ select:hover {
   border-radius: 80%;
   background: #4F49F5;
 }
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
