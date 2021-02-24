@@ -85,7 +85,6 @@ body {
             }
             .modal-body{
                 .text-sm{
-                    color: @light-dark;
                     margin-top: -20px;
                     margin-bottom: 70px;
                 
@@ -97,7 +96,6 @@ body {
                 justify-content: flex-end;
                 .main-btn{
                     width: 105px;
-                    // height: 45px;
                     border: none;
                     & + .main-btn{
                         margin-left: 10px;
@@ -105,17 +103,23 @@ body {
                 }
                 .btn_cancel{
                     background-color: @light-gray;
-                    color: @light-dark;
+                    &:hover{
+                        color: @white;
+                        background-color: @light-dark;
+                    }
                 }
                 .btn_error{
                     background-color: @error;
+                    &:hover{
+                        background-color: @light-dark;
+                    }
                 }
                 .btn_warning{
                     background-color: @bonus;
+                    &:hover{
+                        background-color: @hover;
+                    }
                 }
-                // .btn_primary{
-                //     background-color: @main;
-                // }
             }
         }
     }
@@ -263,30 +267,29 @@ header{
                     }
                 }
             }
-            .dropdown{
-                .dropdown-toggle{
-                    .login-wrapper{
-                        height: 29px;
-                        width: 29px;
-                        color: @mainBtn;
-                        background-color: fade(@mainBtn, 10%);
-                        border-radius: 50%;
-                        overflow: hidden;
-                        border-color: fade(@mainBtn, 10%);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        cursor: pointer;
-                        .text-xs{
-                            font-weight: bold;
-                            margin: 0;
-                        }
-                            img{
-                              max-width: 100%;
-                                display: block;
-                            }
-                        }
+            .login-wrapper{
+                height: 29px;
+                width: 29px;
+                color: @mainBtn;
+                background-color: fade(@mainBtn, 10%);
+                border-radius: 50%;
+                overflow: hidden;
+                border-color: fade(@mainBtn, 10%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                .text-xs{
+                    font-weight: bold;
+                    margin: 0;
+                }
+                    img{
+                      max-width: 100%;
+                        display: block;
                     }
+                }
+            .dropdown{
+         
                 .dropdown-menu{
                     background-color: @white;
                     min-width: 200px;
@@ -1086,9 +1089,9 @@ header{
         color: @light-dark;
         margin-left: 5px;
     }
-    .text-sm{
-        color: @light-dark;
-    }
+    // .text-sm{
+    //     color: @light-dark;
+    // }
     .text-md--width{
         width: 29%;
         text-align: center;
@@ -1185,7 +1188,6 @@ header{
         .details{
             width: 100%;
             .font-big{
-                color: @light-dark;
                 margin-bottom: 26px;
             }
             .details-row{
@@ -1197,6 +1199,8 @@ header{
                 .pen{
                     color: @main;
                     font-size: 12px;
+                    width: 10px;
+                    margin-left: 3px;
                 }
             }
         }
@@ -1309,10 +1313,6 @@ header{
     &:hover{
    border: none;
     }
-    // .checkmark:after {
-    //     top: 2px;
-    //     left: 1.5px;
-    // }
  }
 }
 // End payment-method styling 
@@ -1320,7 +1320,7 @@ header{
 .mega-wrapper {
     transition: 0.5s;
     &.open {
-        transform: translateX(-350px);
+        transform: translateX(-335px);
     }
 }
 
