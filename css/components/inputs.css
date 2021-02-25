@@ -42,8 +42,8 @@
 .checkbox-style input[type=checkbox]:checked + label::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 4.5px;
+  top: 4px;
+  left: 5px;
   width: 10px;
   height: 6px;
   border: 1px solid #FFFFFF;

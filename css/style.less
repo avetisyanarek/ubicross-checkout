@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 body {
 	font-family: 'Helvetica Neue', 'sans-serif'; 
 	font-weight: 400; 
@@ -16,7 +15,7 @@ body {
 	margin: 0;
 	padding: 0;
     color: @main-dark;
-    // font-size: 14px;
+    font-size: 14px;
     background-color: @bg;
 }
 
@@ -105,19 +104,24 @@ body {
                     background-color: @light-gray;
                     &:hover{
                         color: @white;
-                        background-color: @light-dark;
+                        background-color: #D1D1D1;
                     }
                 }
                 .btn_error{
                     background-color: @error;
                     &:hover{
-                        background-color: @light-dark;
+                        background-color:#BF3E3E;
                     }
                 }
                 .btn_warning{
                     background-color: @bonus;
                     &:hover{
-                        background-color: @hover;
+                        background-color: #D38717;
+                    }
+                }
+                .btn_primary{
+                    &:hover{
+                        background-color:#443ED2;
                     }
                 }
             }
@@ -196,14 +200,10 @@ body {
                 }
                
             }
-        
-
-    
     .currency-wrapper{
         float: right;
     }
 }
-
 
 // Start header styling
 header{
@@ -500,7 +500,6 @@ header{
     .title{
         margin-bottom: 25px;
     }
-
     .shopping-cart{
         display: flex;
         flex-direction: row;
@@ -552,7 +551,6 @@ header{
                 .products{
                     display: flex;
                     align-items: baseline;
-                    // label{
                         .prod-row{
                             display: flex;
                             flex-direction: row;
@@ -613,7 +611,6 @@ header{
                                                 .material-icons{
                                                     width: 30px;
                                                     height: 30px;
-                                                    // padding: 6px;
                                                     padding: 7px 6px 6px 6px;
                                                     background-color: @main;
                                                     color: @white;
@@ -635,8 +632,7 @@ header{
                                                     text-align: center;
                                                     &:hover, &:focus{
                                                         background-color: @white;
-                                                    }
-                                                   
+                                                    }                                                   
                                                 }
                                             }
                                             .font-lg{
@@ -683,7 +679,6 @@ header{
                                 }
                             }
                         }
-                    // }
                     & + .products{
                         border-top: 1px solid @productBorder;
                         padding-top: 20px;
@@ -693,21 +688,17 @@ header{
             }
         }
         .promo-wrapper{
-            // display:none;
             height: 100%;
             position: sticky;
             top: 80px;
             width: 30%;
             margin-left: 30px;
-            // margin-top: -50px;
         .boxShadow1{
             width: 100%;
             .promo{
                 max-width: 340px;
                 .promo-code-wrapper{
-                    padding: 6px 23px 0px 23px;
-
-                
+                    padding: 6px 23px 0px 23px;                
                 .promo-code{
                     width: 100%;
                     border-bottom: 1px solid @productBorder;
@@ -778,10 +769,8 @@ header{
                             }
                         }
                     }
-                }
-                
-               
-                }
+                }               
+            }
         }
         .checkout{
             width: 100%;
@@ -795,11 +784,8 @@ header{
                         font-weight: 400;
                     }
                 }
-                
-            
-                }
             }
-           
+        }          
             .text-wrapper{
                 .text-xs{
                     text-align: center;
@@ -821,7 +807,6 @@ header{
                 }
             }
         }
-
         .address-form{
             .reward-points{
                 .checkbox-style input[type=checkbox]:checked + label{
@@ -917,22 +902,18 @@ header{
                         }
                         .payment-name{
                             margin-right: auto;
-
                         }
                     }
                     .decription-row--center{
                         align-items: center;
-                    }
-            
-                }
-                
+                    }            
+                }                
                 .label-container-wrapper{
                     background-color: @white;
                     border: 1px solid @productBorder;
                     border-top: none;
                     border-bottom-right-radius: 6px;
                     border-bottom-left-radius: 6px;
-
                 }
                 .border-none{
                     border: none;
@@ -965,8 +946,7 @@ header{
                                     &::placeholder{
                                         color: @main-dark;
                                     }
-                                }
-                                
+                                }                               
                             }
                         }
                         .two-input-wrapper{
@@ -990,17 +970,12 @@ header{
                             }
                         }
                     }
-                
-
             .continue-wrapper{
                 width: 200px;
             }
             .mt{
                 margin-top: 15px;
             }
-
-
-
             .cardWrap{
                 display: flex;
                 flex-wrap: wrap;
@@ -1061,12 +1036,8 @@ header{
                     width: 70px;
                     height: 40px;
                     margin-top: 0;
-                }
-        
-            }
-        
-    
-          
+                }      
+            }      
 // End shoppingCart styling
 
 // Start empty basket, success styling
@@ -1077,8 +1048,6 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-    // margin-bottom: 172px;
-
     .text-lg{
         color: @mainBtn;
     }
@@ -1089,9 +1058,6 @@ header{
         color: @light-dark;
         margin-left: 5px;
     }
-    // .text-sm{
-    //     color: @light-dark;
-    // }
     .text-md--width{
         width: 29%;
         text-align: center;
@@ -1170,7 +1136,6 @@ header{
         background-color: @white;
         .text-md--width{
             width: 48%;
-
         }
     }
 }
@@ -1219,15 +1184,11 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    // width: 100%;
     .main-btn{
         width: 224px;
     }
 }
 // End success page styling
-
-
-
 
 .address-span{
     .span-content{
@@ -1235,7 +1196,6 @@ header{
             font-weight: 400;
             margin-top: 10px;
             margin-bottom: 0;
-
             & + .left-border{
                 border-left: 2px solid #E1E3EE;
                 margin-left: 8px;
@@ -1249,19 +1209,10 @@ header{
 }
 
 // Start Shipping details styling
-// .shipping-details{
-//     .label-container--border{
-//         .checkmark::after{
-//             top: 1.7px;
-//             left: 1.2px;
-//         }
-//     }
-// }
 .form-wrapper{
     width: 68%;
 }
 .shipping-address{
-    // width: 68%;
     margin-top: -10px;
     margin-bottom: 10px;
     .text-xs{
@@ -1283,14 +1234,6 @@ header{
 // End Shipping details styling
 
 // Start payment-method styling
-// .payment-method{
-//     .label-container--border{
-//         .checkmark::after{
-//             top: 2.3px;
-//             left: 1.2px;
-//         }
-//     }
-// }
 .select-card{
     background-color: @white;
     border: 1px solid @productBorder;
@@ -1320,7 +1263,9 @@ header{
 .mega-wrapper {
     transition: 0.5s;
     &.open {
-        transform: translateX(-335px);
+        @media (max-width: 767px) {
+            transform: translateX(-335px);
+        }
     }
 }
 

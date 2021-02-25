@@ -104,8 +104,8 @@
 .checkbox-style input[type=checkbox]:checked + label::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 4.5px;
+  top: 4px;
+  left: 5px;
   width: 10px;
   height: 6px;
   border: 1px solid #FFFFFF;
@@ -320,6 +320,7 @@ body {
   margin: 0;
   padding: 0;
   color: #0E0E0E;
+  font-size: 14px;
   background-color: #F7F7F7;
 }
 .loader-wrapper {
@@ -425,19 +426,22 @@ body {
 }
 .modal1 .modal-dialog .modal-content .modal-footer .btn_cancel:hover {
   color: #FFFFFF;
-  background-color: #77808D;
+  background-color: #D1D1D1;
 }
 .modal1 .modal-dialog .modal-content .modal-footer .btn_error {
   background-color: #E04949;
 }
 .modal1 .modal-dialog .modal-content .modal-footer .btn_error:hover {
-  background-color: #77808D;
+  background-color: #BF3E3E;
 }
 .modal1 .modal-dialog .modal-content .modal-footer .btn_warning {
   background-color: #F79E1B;
 }
 .modal1 .modal-dialog .modal-content .modal-footer .btn_warning:hover {
-  background-color: #36c756;
+  background-color: #D38717;
+}
+.modal1 .modal-dialog .modal-content .modal-footer .btn_primary:hover {
+  background-color: #443ED2;
 }
 .language-currency {
   padding: 8px 0;
@@ -1471,8 +1475,10 @@ header .header-wrapper .header-menu .header_list li .header_link {
 .mega-wrapper {
   transition: 0.5s;
 }
-.mega-wrapper.open {
-  transform: translateX(-335px);
+@media (max-width: 767px) {
+  .mega-wrapper.open {
+    transform: translateX(-335px);
+  }
 }
 .success-wrapper {
   margin-bottom: 100px;

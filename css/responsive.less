@@ -111,7 +111,6 @@
         .promo-wrapper{
             width: 42%;
             margin-left: 15px;
-            // margin-top: -25px;
             .boxShadow1{
                 width: 100%;
                 border-radius: 6px;
@@ -148,6 +147,8 @@
             }            
                 .card{
                     .label-container{
+                            padding-left: 10px;
+                            padding-right: 10px;
                         .decription-row{
                             .label-description{
                                 .text-sm--main{
@@ -165,8 +166,11 @@
         // End shipping media styling
         .cardWrap{
             .label-size {
-                width: 40px;
+                width: 38px;
                 height: 25px;
+            }
+            .labels{
+                margin-right: 4px;
             }
         } 
 
@@ -196,6 +200,8 @@
     }
 }  
 // End shipping details media styling
+
+
 }
 // Start @media screen and (max-width:767px) styling
 @media screen and (max-width:767px){
@@ -238,7 +244,7 @@
                 width: 350px;
                 height: 100%;
                 overflow: auto;
-                background-color: @bg;
+                background-color: @white;
                 z-index: 1;
                 transition: 0.5s;
 
@@ -300,18 +306,15 @@
                     display: block;
                     position: fixed;
                     bottom: 20px;
+                    width: 320px;
                     .language-currency-wrap{
                         display: flex;
                         flex-direction: row-reverse;
+                        justify-content: space-around;
                         .dropdown{
                             span{
                                 font-size: 16px;
-                                img{
-                                    transform: rotateX( 180deg);
-                                }
                             }
-                        
-                        
                             &.open{
                                 .dropdown-menu{
                                     top: auto;
@@ -337,13 +340,10 @@
                         }
                     }
                 }
-            }
-            
+            }          
             .active{
                 right: 0;
             }
-        // }
-    // }
     // End header media styling
 
     // Start shopping steps media styling
@@ -399,11 +399,8 @@
             }
         }
         .shopping-mobile-row{
-            // width: 100vw;
             background-color: @stepBorder;
             height: 12px;
-            // margin-left: -15px;
-            // overflow: hidden;
             .row-success{
                 width: 25%;
                 background-color: @hover;
@@ -431,15 +428,13 @@
         margin-top: 20px;
     }
     // End shopping cart media styling
-
     
-    // Start shipping media styling
-   
+    // Start shipping media styling   
     .new-address{
         .address-section {
             .form-position{
                 .form-control-label {
-                    font-size: 10px;
+                    font-size: 12px;
                 }
             }
         }
@@ -461,12 +456,33 @@
 }  
 // End shipping details media styling
 
+// Start payment media styling
+.payment-method{
+    .label-container{
+        .decription-row {
+            .font-big{
+                font-size: 14px;
+            }      
+        }
+    } 
+    .select-card{
+        .font-big-wrapper{
+            .font-big{
+                font-size: 14px;
+            }
+        }
+    } 
+}
+.payment-name{
+    font-size: 14px;
+} 
+// End payment media styling
+
 }
 
 
 // Start @media screen and (max-width:567px) styling
 @media screen and (max-width:576px){
-
     .header-menu{
         width: 320px;
     }
@@ -604,11 +620,18 @@
         }
         // Start label container media styling
         .label-container{
-            padding-left: 10px;
-            padding-right: 10px;
+            .text-md{
+                font-size: 14px;
+            }
             .decription-row{
+                .font-big{
+                    font-size: 14px;
+                }
                 .label-description{
                     .font-lg{
+                        font-size: 14px;
+                    }
+                    .font-big{
                         font-size: 14px;
                     }
                     .free-shipping-wrapper {
@@ -639,7 +662,25 @@
             .success-md{
                 width: 90%;
             }
-            
+            .icon-wrapper{
+                    width: 40px;
+                    height: 40px;
+                    border: 3px solid @main;
+                        &::before{
+                        top: 7px;
+                        left: 7px;
+                        width: 20px;
+                        height: 14px;
+                    }
+                }
+                .icon-error{
+                    width: 40px;
+                    height: 40px;
+                    border: 3px solid @main;
+                }
+                .text-lg{
+                    font-size: 25px;
+                }
             .boxShadow{
                 .sellect-all{
                     .products{
@@ -708,9 +749,11 @@
         .details-wrapper-width {
             flex-direction: column;
             .details{
-                margin-left: 12px;
                 .font-big{
                     text-align: center;
+                }
+                .details-row{
+                    margin-left: 12px;
                 }
             } 
   
@@ -765,6 +808,34 @@
         }
     }
 }  
+
+.cardWrap{
+    padding: 0 20px;
+}
+.page-wrapper{
+    .icon-error{
+        width: 40px;
+        height: 40px;
+        border: 3px solid @error;
+        &::before{
+            top: -33px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+    }
+}
+.error-wrapper{
+    background-color: @white;
+    height: 100vh;
+    .container-wrapper{
+        .page-wrapper--width{
+            .text-md--width{
+                width: 100%;
+            }
+        }
+    } 
+}
+
 }
 
 // Start @media screen and (max-width:479px) styling

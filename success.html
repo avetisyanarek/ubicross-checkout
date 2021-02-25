@@ -7,65 +7,138 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="language-currency">
-        <div class="container">
-            <div class="currency-wrapper">
-                <div class="delivery-dropdown">
-                    <div class="dropdown">
-                        <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            AMD
-                            <span>
-                                <img src="img/arrow.svg" alt="arrow">
+    <nav class="header-menu">
+        <div class="menu-close">
+            <span class="material-icons close">close</span>
+        </div>
+        <ul class="header_list " >
+            <li class="user-name">
+                <span class="user-name-label font-big">Narek Avetisyan </span>
+                
+            </li>
+            <li class="user-bonus">
+                <span class="user-bonus-label text-sm">Reword Points</span>
+                <span class="user-bonus-amount text-sm">250</span>
+            </li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
+            <li class="li-hover"><a class="text-sm li-hover" href="">Addresses</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Settings</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
+        </ul>
+        <div class="language-currency">
+            <div class="container language-currency-wrap">
+                <div class="currency-wrapper">
+                    <div class="delivery-dropdown">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AMD
+                                <span>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </span>
+                                <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
                             </span>
-                            <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
-                        </span>
-                        <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
-                        <span class="closing">
-                            <i class="material-icons">arrow_back</i>
-                        </span>
-                        <li>
-                            <a href="">USD</a>
-                        </li>
-                        <li>
-                            <a href="">INR</a>
-                        </li>
-                        <li>
-                            <a href="">ZAR</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <div class="lang-wrapper">
-                <div class="lenguage-block">
-                    <div  class="dropdown ls-language-widget">
-                        <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
-                             English 
-                                 <span ></span>
-                                     <img src="img/arrow.svg" alt="arrow">
-                                 </span>
-                                 <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
-                        </span>
-                        <ul class="dropdown-menu ls-lang-changer-list">
-                            <span class="closing"><i class="material-icons">arrow_back</i></span>
+                            <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                            <span class="closing">
+                                <i class="material-icons">arrow_back</i>
+                            </span>
                             <li>
-                                <a class="text-sm"> Հայերեն </a>
+                                <a href="">USD</a>
                             </li>
                             <li>
-                                <a  class="text-sm">العربية</a>
+                                <a href="">INR</a>
                             </li>
-                           
+                            <li>
+                                <a href="">ZAR</a>
+                            </li>
                         </ul>
-                    </div> 
+                    </div>
+                </div>
+                </div>
+                <div class="lang-wrapper">
+                    <div class="lenguage-block">
+                        <div  class="dropdown ls-language-widget">
+                            <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                                 English 
+                                     <span ></span>
+                                         <img src="img/arrow.svg" alt="arrow">
+                                     </span>
+                                     <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu ls-lang-changer-list">
+                                <span class="closing"><i class="material-icons">arrow_back</i></span>
+                                <li>
+                                    <a class="text-sm"> Հայերեն </a>
+                                </li>
+                                <li>
+                                    <a  class="text-sm">العربية</a>
+                                </li>                               
+                            </ul>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <header >
+      </nav>
+    <div class="mega-wrapper" id="main">
+        <div class="language-currency">
+            <div class="container">
+                <div class="currency-wrapper">
+                    <div class="delivery-dropdown">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AMD
+                                <span>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </span>
+                                <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                            <span class="closing">
+                                <i class="material-icons">arrow_back</i>
+                            </span>
+                            <li>
+                                <a href="">USD</a>
+                            </li>
+                            <li>
+                                <a href="">INR</a>
+                            </li>
+                            <li>
+                                <a href="">ZAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="lang-wrapper">
+                    <div class="lenguage-block">
+                        <div  class="dropdown ls-language-widget">
+                            <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                                 English 
+                                     <span ></span>
+                                         <img src="img/arrow.svg" alt="arrow">
+                                     </span>
+                                     <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu ls-lang-changer-list">
+                                <span class="closing"><i class="material-icons">arrow_back</i></span>
+                                <li>
+                                    <a class="text-sm"> Հայերեն </a>
+                                </li>
+                                <li>
+                                    <a  class="text-sm">العربية</a>
+                                </li>                               
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <header  >
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-logo">
@@ -75,63 +148,46 @@
                     </a>
                 </div>
                 <div class="main-header">
-
                     <div class="busket">
                         <a href="#">
                             <img src="img/busket.svg" alt="busket">
                             <div class="number">2</div>
                         </a>
-                    </div>
- 
+                    </div> 
                     <!-- <div class="sign-in">
-                     <button href="#" class="main-btn h40">Sign In</button>
-                 </div> -->
- 
+                        <button href="#" class="main-btn h40">Sign In</button>
+                    </div> --> 
                  <div class="dropdown">
                      <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                          <div class="login-wrapper">
-                            <!-- <p class="text-xs">N</p> -->
-                            <div class="user-img">
+                            <p class="text-xs">N</p>
+                            <!-- <div class="user-img">
                                 <img src="img/miki.jpg" alt="">
-                            </div>
-                            
-                         </div>
-                         
+                            </div> -->                            
+                         </div>                         
                      </span>
                      <ul class="dropdown-menu slideIn" aria-labelledby="dropdownMenu1">
                          <li class="user-name">
                              <span class="user-name-label text-sm">Narek Avetisyan </span>
                          </li>
                         <li class="user-bonus">
-                             <span class="user-bonus-label text-sm">Bonus</span>
+                             <span class="user-bonus-label text-sm">Reword Points</span>
                              <span class="user-bonus-amount text-sm">250</span>
                          </li>
-                         <li><a class="text-sm li-hover" href="">My Orders</a></li>
-                         <li><a class="text-sm li-hover" href="">My Reviews</a></li>
-                         <li><a class="text-sm li-hover" href="">Addresses</a></li>
-                         <li><a class="text-sm li-hover" href="">Settings</a></li>
-                         <li><a class="text-sm li-hover" href="">Log out</a></li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Addresses</a></li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Settings</a></li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
                      </ul>
                  </div>
-                <div class="header_burger">
-                         <span></span>
-                </div>
-                <nav class="header-menu">
-                    <ul class="header_list">
-                        <li class="user-name">
-                            <span class="user-name-label text-sm">Narek Avetisyan </span>
-                        </li>
-                       <li class="user-bonus">
-                            <span class="user-bonus-label text-sm">Bonus</span>
-                            <span class="user-bonus-amount text-sm">250</span>
-                        </li>
-                        <li><a class="text-sm li-hover" href="">My Orders</a></li>
-                        <li><a class="text-sm li-hover" href="">My Reviews</a></li>
-                        <li><a class="text-sm li-hover" href="">Addresses</a></li>
-                        <li><a class="text-sm li-hover" href="">Settings</a></li>
-                        <li><a class="text-sm li-hover" href="">Log out</a></li>
-                    </ul>
-                  </nav>
+                <div class="header_burger" id="openNav">
+                         <div class="login-wrapper">
+                            <!-- <p class="text-xs">N</p> -->
+                            <div class="user-img">
+                                <img src="img/miki.jpg" alt="">
+                            </div>                            
+                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,11 +195,9 @@
 <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
 </div>
-
    <section class="shoppingCart">
        <div class="container">  
            <div class="success-wrapper">
-
                <div class="empty page-wrapper">
                    <div class="icon-wrapper"></div>
                    <p class="text-lg">Thanks for Shopping!</p>
@@ -151,15 +205,13 @@
                        We will notify you when it’s on it’s way!</p>
                        <div class="boxShadow box-width">
                         <div class="sellect-all">
- 
-     <div class="products">                 
+             <div class="products">                 
                 <div class="prod-row">
                  <div class="product-discription">
                      <div class="product-img">
                          <img src="img/item1.svg" alt="item">
                      </div>
                      <div class="width">
-
                          <div class="nameQty">
                              <div class="name">
                                  <div class="name-wrapper">
@@ -182,19 +234,16 @@
                                  <div class="product-characteristics">
                                      <span class="text-s light-dark">Material:</span>
                                      <span class="text-s"> Plastic</span>
-                                 </div>
-                              
+                                 </div>                              
                              </div>
                              <div class="qty-wrapper">
                                  <div class="qty-wrap">
                                     <span class="font-lg">1</span>
                                     <span class="font-md light-dark">Item</span>
-
                                  </div>
                              </div>
                          </div>
                      </div>
-
                  </div>
                  <div class="product-price">
                      <div class="remove-price">
@@ -204,10 +253,8 @@
                          </div>
                      </div>
                  </div>
-
              </div>
              <br/>
-
      </div>   
      <div class="products">                 
          <div class="prod-row">
@@ -216,7 +263,6 @@
                   <img src="img/no-img.svg" alt="item">
               </div>
               <div class="width">
-
                   <div class="nameQty">
                       <div class="name">
                           <div class="name-wrapper">
@@ -239,19 +285,16 @@
                           <div class="product-characteristics">
                               <span class="text-s light-dark">Material:</span>
                               <span class="text-s"> Plastic</span>
-                          </div>
-                       
+                          </div>                       
                       </div>
                       <div class="qty-wrapper">
                          <div class="qty-wrap">
                             <span class="font-lg">1</span>
                                 <span class="font-md light-dark">Item</span>
-
                          </div>
                       </div>
                   </div>
               </div>
-
           </div>
           <div class="product-price">
               <div class="remove-price">
@@ -287,15 +330,13 @@
                       <div class="details-row">
                           <span>Product will arrive</span>
                           <span>20 - 22 February</span>
-                      </div>
-           
+                      </div>           
                    </div>
                    <div class="promo-wrapper promo-wrapper--mt">
                    <div class="boxShadow boxShadow1">                  
                       <div class="promo">
                          <div class="promo-code-wrapper">
-                       <div class="promo-code">
-           
+                       <div class="promo-code">           
                            <div class="items-total">
                                <div class="item text-md light-dark">
                                    <span>Subtotal</span>
@@ -316,8 +357,7 @@
                                <div class="item text-md">
                                    <span class="font-big">Total</span>
                                    <span class="font-big">$50.09</span>
-                               </div>
-           
+                               </div>          
                            </div>
                        </div>
                        </div>
@@ -337,8 +377,7 @@
                       </div>
                      </div>
                    </div> 
-               </div>
-              
+               </div>             
          </div>
          <div class=" checkout success-continue">
              <div class="checkout-btn">
@@ -347,14 +386,31 @@
              </div>
          </div>    
    </section>
-     
-   <script>
+</div>
 
+ <!-- mobile menu open -->
+ <script>
+    $(document).ready(function() {
+        $("#openNav").on("click", function() {
+            $("#mySidenav").toggleClass("open");
+            $("#main").toggleClass("open")
+        })
+        $(".menu-close").on("click", function() {
+            $("#mySidenav").removeClass("open");
+            $("#main").removeClass("open");
+            $('.header_burger, .header-menu').removeClass('active');
+            $('body').removeClass('lock');
+        })
+    })
+    </script>
+<!-- header_burger, header-menu active -->
+   <script>
         $(document).on("click", ".header_burger", function(){
             $('.header_burger, .header-menu').toggleClass('active');
             $('body').toggleClass('lock');
         })
     </script>
+<!-- page loader-wrapper -->
      <script>
         $(window).on("load",function(){
           $(".loader-wrapper").fadeOut("slow");
