@@ -13,7 +13,6 @@
             box-shadow: none;
         .sellect-all{
            padding: 0;
-
             .title{
                 display: none;
             }
@@ -82,7 +81,6 @@
                                 .price-wrapper{
                                    display: flex;
                                    flex-direction: column;
-                                   align-items: center;
                                    .sale{
                                        margin-left: 10px;
                                        margin-bottom: 0;
@@ -128,7 +126,6 @@
             }
         }
         // End promo media styling
-      
     }
 
      // Start shipping media styling
@@ -205,7 +202,6 @@
 }
 // Start @media screen and (max-width:767px) styling
 @media screen and (max-width:767px){
-
     body{
         &.lock{
             overflow: hidden;
@@ -230,10 +226,8 @@
                 position: relative;
                 z-index: 3;
                 display: flex;
-                align-items: center;
-              
+                align-items: center;             
             }
-
         }
     }
             .header-menu{
@@ -247,7 +241,6 @@
                 background-color: @white;
                 z-index: 1;
                 transition: 0.5s;
-
                 .menu-close{
                     float: right;
                     margin-top: 32px;
@@ -300,8 +293,7 @@
                             color: @bonus;
                         }
                     }
-                }
-                
+                }               
                 .language-currency{
                     display: block;
                     position: fixed;
@@ -333,8 +325,7 @@
                                     }
                                     li{
                                         font-size: 16px;
-                                    }
-                              
+                                    }                             
                                 }
                             }
                         }
@@ -486,14 +477,12 @@
     .header-menu{
         width: 320px;
     }
-
     .mega-wrapper {
         transition: 0.5s;
         &.open {
             transform: translateX(-311px);
         }
     }
-
     // Start shopping cart media styling
     .title{
         .font-big{
@@ -502,8 +491,7 @@
         .text-xs{
             font-size: 14px;
         }
-
-        }
+    }
     .box-shadow-wrapper{
         width: 100%;
     }
@@ -511,8 +499,7 @@
         flex-direction: column;
     
         .boxShadow{
-            width: 100%;
-        
+            width: 100%;        
         .sellect-all{
             .all{
                 padding-left: 0;
@@ -527,18 +514,17 @@
                         }
                         a{
                             text-decoration: none;
+                            cursor: pointer;
                         }
                     }
                 }
                 .checkbox-label{
                     .checkbox-style{
-                        display: none;
-                        
+                        display: none;                      
                         .none{
                             display: none;
                         }
-                    }
-                  
+                    }             
                     label{
                         .text-sm{
                             display: none;
@@ -565,6 +551,7 @@
                     background-color: @white;
                     position: relative;
                     flex-direction: column;
+                    transition: all 1s ease 0s;                 
                     .product-discription{
                         .width{
                             .nameQty{
@@ -582,6 +569,7 @@
                         }
                     }
                 }
+               
             }
         } 
     }
@@ -656,8 +644,7 @@
     // End shopping cart media styling
 
     // Start review media stylin
-    .success-wrapper{
-    
+    .success-wrapper{    
         .page-wrapper{
             .success-md{
                 width: 90%;
@@ -693,11 +680,15 @@
                                             .qty-wrapper{
                                                 text-align: left;
                                                 .qty-wrap{
+                                                    display: flex;
+                                                    flex-direction: row-reverse;
+                                                    justify-content: flex-end;
                                                     .font-lg{
                                                         font-size: 14px;
                                                     }
                                                     .font-md{
                                                         font-weight: 400;
+                                                        margin-right: 5px;
                                                     }
                                                 }
                                             }
@@ -708,8 +699,13 @@
                                 .remove-price{
                                     .price-wrapper{
                                         display: flex;
-                                        flex-direction: row;
+                                        flex-direction: row-reverse;
+                                        justify-content: flex-end;
+                                        align-items: center;
                                         margin-left: 118px;
+                                        .text-sm{
+                                            margin-right: 10px;
+                                        }
                                         .text-md{
                                             margin-right: 5px;
                                         }
@@ -721,15 +717,13 @@
                 }
             }     
         }
-
     }
     // End confirmation media styling 
 
     // Start shipping media styling
     .form-wrapper{
         width: 100%;    
-        }
-    
+        }   
     // End shipping media styling
 
     .btn-wrapper{
@@ -756,7 +750,6 @@
                     margin-left: 12px;
                 }
             } 
-  
     .promo-wrapper{
         width: 100vw;
         margin-top: 40px;
@@ -767,13 +760,11 @@
             .promo{
                 max-width: 100%;
             }
-        }
-       
+        }     
     }
 }
 }
 .success-wrapper{
-
     .checkout{
         display: flex;
         justify-content: center;
@@ -809,7 +800,7 @@
     }
 }  
 
-.cardWrap{
+.cardWrap-padding{
     padding: 0 20px;
 }
 .page-wrapper{
@@ -824,7 +815,7 @@
         }
     }
 }
-.error-wrapper{
+.error-page-wrapper{
     background-color: @white;
     height: 100vh;
     .container-wrapper{

@@ -379,7 +379,6 @@ p {
   .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper .sale {
     margin-left: 10px;
@@ -701,6 +700,7 @@ p {
   }
   .shopping-cart .boxShadow .sellect-all .all .links-wrapper .wrap-color a {
     text-decoration: none;
+    cursor: pointer;
   }
   .shopping-cart .boxShadow .sellect-all .all .checkbox-label .checkbox-style {
     display: none;
@@ -731,6 +731,7 @@ p {
     background-color: #FFFFFF;
     position: relative;
     flex-direction: column;
+    transition: all 1s ease 0s;
   }
   .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty {
     flex-direction: column;
@@ -817,16 +818,27 @@ p {
   .success-wrapper .page-wrapper .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty .qty-wrapper {
     text-align: left;
   }
+  .success-wrapper .page-wrapper .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty .qty-wrapper .qty-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
   .success-wrapper .page-wrapper .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty .qty-wrapper .qty-wrap .font-lg {
     font-size: 14px;
   }
   .success-wrapper .page-wrapper .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty .qty-wrapper .qty-wrap .font-md {
     font-weight: 400;
+    margin-right: 5px;
   }
   .success-wrapper .page-wrapper .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
     margin-left: 118px;
+  }
+  .success-wrapper .page-wrapper .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper .text-sm {
+    margin-right: 10px;
   }
   .success-wrapper .page-wrapper .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper .text-md {
     margin-right: 5px;
@@ -881,7 +893,7 @@ p {
   .checkout .checkout-btn .main-btn {
     font-size: 16px;
   }
-  .cardWrap {
+  .cardWrap-padding {
     padding: 0 20px;
   }
   .page-wrapper .icon-error {
@@ -894,11 +906,11 @@ p {
     font-size: 45px;
     font-weight: bold;
   }
-  .error-wrapper {
+  .error-page-wrapper {
     background-color: #FFFFFF;
     height: 100vh;
   }
-  .error-wrapper .container-wrapper .page-wrapper--width .text-md--width {
+  .error-page-wrapper .container-wrapper .page-wrapper--width .text-md--width {
     width: 100%;
   }
 }
