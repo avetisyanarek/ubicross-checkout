@@ -555,11 +555,9 @@
    <script>
     $(document).ready(function() {
         $("#openNav").on("click", function() {
-            $("#mySidenav").toggleClass("open");
             $("#main").toggleClass("open");
         })
         $(".menu-close").on("click", function() {
-            $("#mySidenav").removeClass("open");
             $("#main").removeClass("open");
             $('.header_burger, .header-menu').removeClass('active');
             $('body').removeClass('lock');
@@ -579,7 +577,7 @@
           $(".loader-wrapper").fadeOut("slow");
         });
     </script>
-
+<!-- #selectProduct and #cancelSelectProduct -->
     <script>
         $(document).ready(function() {
             $("#selectProduct").on("click", function() {
@@ -598,7 +596,7 @@
             $("#cancelSelectProduct").on("click", function() {
                 $(".products .checkbox-style").css("display", "none");
                 $(".products .prod-row").css("right", "0px");
-                $(".shoppingCart").removeProp("overflow-x");
+                $(".shoppingCart").removeProp("overflow-x", "hidden");
                 $(".remove-wrap").css("display", "none");
                 $(".cancel-wrap").css("display", "none");
                 $(".select-wrap").css("display", "block");

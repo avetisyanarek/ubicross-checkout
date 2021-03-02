@@ -213,11 +213,9 @@
    <script>
     $(document).ready(function() {
         $("#openNav").on("click", function() {
-            $("#mySidenav").toggleClass("open");
             $("#main").toggleClass("open")
         })
         $(".menu-close").on("click", function() {
-            $("#mySidenav").removeClass("open");
             $("#main").removeClass("open");
             $('.header_burger, .header-menu').removeClass('active');
             $('body').removeClass('lock');
