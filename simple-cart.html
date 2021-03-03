@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- <nav class="header-menu">
+        <div class="menu-close">
+            <span class="material-icons close">close</span>
+        </div>
+        <ul class="header_list " >
+            <li class="user-name">
+                <span class="user-name-label font-big">Narek Avetisyan </span>              
+            </li>
+            <li class="user-bonus">
+                <span class="user-bonus-label text-sm">Reword Points</span>
+                <span class="user-bonus-amount text-sm">250</span>
+            </li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
+            <li class="li-hover"><a class="text-sm li-hover" href="">Addresses</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Settings</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
+        </ul>
+        <div class="language-currency">
+            <div class="container language-currency-wrap">
+                <div class="currency-wrapper">
+                    <div class="delivery-dropdown">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AMD
+                                <span>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </span>
+                                <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                            <span class="closing">
+                                <i class="material-icons">arrow_back</i>
+                            </span>
+                            <li>
+                                <a href="">USD</a>
+                            </li>
+                            <li>
+                                <a href="">INR</a>
+                            </li>
+                            <li>
+                                <a href="">ZAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="lang-wrapper">
+                    <div class="lenguage-block">
+                        <div  class="dropdown ls-language-widget">
+                            <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                                 English 
+                                     <span ></span>
+                                         <img src="img/arrow.svg" alt="arrow">
+                                     </span>
+                                     <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu ls-lang-changer-list">
+                                <span class="closing"><i class="material-icons">arrow_back</i></span>
+                                <li>
+                                    <a class="text-sm"> Հայերեն </a>
+                                </li>
+                                <li>
+                                    <a  class="text-sm">العربية</a>
+                                </li>                               
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav> -->
+    <div class="mega-wrapper" id="main">
+        <div class="language-currency">
+            <div class="container">
+                <div class="currency-wrapper">
+                    <div class="delivery-dropdown">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AMD
+                                <span>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </span>
+                                <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                            <span class="closing">
+                                <i class="material-icons">arrow_back</i>
+                            </span>
+                            <li>
+                                <a href="">USD</a>
+                            </li>
+                            <li>
+                                <a href="">INR</a>
+                            </li>
+                            <li>
+                                <a href="">ZAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="lang-wrapper">
+                    <div class="lenguage-block">
+                        <div  class="dropdown ls-language-widget">
+                            <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                                 English 
+                                     <span ></span>
+                                         <img src="img/arrow.svg" alt="arrow">
+                                     </span>
+                                     <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu ls-lang-changer-list">
+                                <span class="closing"><i class="material-icons">arrow_back</i></span>
+                                <li>
+                                    <a class="text-sm"> Հայերեն </a>
+                                </li>
+                                <li>
+                                    <a  class="text-sm">العربية</a>
+                                </li>                               
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <header  >
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="logo">
+                        <!-- <p class="logo-text">Yeraz kids center</p>  -->
+                    </a>
+                </div>
+                <div class="main-header">
+                    <div class="busket">
+                        <a href="#">
+                            <img src="img/busket.svg" alt="busket">
+                            <div class="number">2</div>
+                        </a>
+                    </div> 
+                    <div class="sign-in">
+                        <button href="#" class="main-btn h40">Sign In</button>
+                    </div>
+                 <!-- <div class="dropdown">
+                     <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                         <div class="login-wrapper">
+                            <p class="text-xs">N</p> -->
+                            <!-- <div class="user-img">
+                                <img src="img/miki.jpg" alt="">
+                            </div> -->                           
+                         <!-- </div>                        
+                     </span>
+                     <ul class="dropdown-menu slideIn" aria-labelledby="dropdownMenu1">
+                         <li class="user-name">
+                             <span class="user-name-label text-sm">Narek Avetisyan </span>
+                         </li>
+                        <li class="user-bonus">
+                             <span class="user-bonus-label text-sm">Reword Points</span>
+                             <span class="user-bonus-amount text-sm">250</span>
+                         </li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Addresses</a></li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Settings</a></li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
+                     </ul>
+                 </div> -->
+                <!-- <div class="header_burger" id="openNav">
+                         <div class="login-wrapper"> -->
+                            <!-- <p class="text-xs">N</p> -->
+                            <!-- <div class="user-img">
+                                <img src="img/miki.jpg" alt="">
+                            </div>                           
+                         </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <section class="shoppingCart" >
+       <div class="container" >        
+           <!-- <div class="shopping-steps">
+               <div class="steps-wrapper">
+                   <div class="steps">
+                       <div class=" step step1">
+                          <div class="points points1"></div>
+                       </div>
+                       <a class="text-bold a-disabled" href="">Shopping cart</a>
+                   </div>
+                   <hr>
+                   <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <a class="text a-disabled" href="">Shipping</a>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <a class="text a-disabled" href="">Payment</a>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <a class="text a-disabled" href="">Review</a>
+                </div>              
+               </div>
+           </div>
+           <div class="shopping-mobile">
+               <div class="shopping-mobile-steps">
+                   <div class="step-circle">
+                       <div class="points"></div>
+                   </div>
+                   <div class="step-name">
+                       <div class="step-number-wrapper">
+                          <p class="text-xs">Step </p>
+                           <div class="step-number text-xs">
+                               <span>1</span>
+                               <span class="step-color">/4</span>
+                           </div>
+                       </div>
+                       <p class="text-sm">Shopping cart</p>
+                   </div>
+               </div>
+               <div class="shopping-mobile-row">
+                   <div class="row-success"></div>
+               </div>
+           </div> -->
+           <div class="shopping-cart">
+               <div class="box-shadow-wrapper">
+                   <div class="title">
+                      <p class="font-big light-dark">Shopping cart</p>
+                   </div>
+                   <div class="boxShadow">
+                        <div class="sellect-all">
+                        <div class="all">
+                          <div class="checkbox-label">
+                              <label class="checkbox-style checkbox-style-all sellect-wrapper">
+                                <p class="text-sm">Select all</p>
+                                  <input class="" name="" id="" value="" type="checkbox">
+                                  <label class="none"></label>
+                                </div>
+                            </label>
+                          <div class="links-wrapper">
+                              <div class="remove-wrap wrap-color" style="display: none;">
+                                  <a href="#">Remove</a>
+                              </div>
+                              <div id="cancelSelectProduct" class="cancel-wrap wrap-color" style="display: none;">
+                                <a href="#">Cancel</a>
+                              </div>
+                              <div id="selectProduct" class="select-wrap wrap-color">
+                                <a>Select</a>
+                              </div>
+                          </div>        
+                      </div>
+                      <div class="products">
+                        <div class="checkbox-style">
+                                <input class="" name="" id="" value="" type="checkbox">
+                                <label></label>
+                        </div>                  
+                               <div class="prod-row">
+                                <div class="product-discription">
+                                    <div class="product-img">
+                                        <img src="img/item1.svg" alt="item">
+                                    </div>
+                                    <div class="width">
+    
+                                        <div class="nameQty">
+                                            <div class="name">
+                                                <div class="name-wrapper">
+                                                    <a class="text-sm">
+                                                      Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                                    </a>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">SKU:</span>
+                                                    <span class="text-s">3274628</span>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">Color:</span>
+                                                    <span class="text-s">White</span>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">Size:</span>
+                                                    <span class="text-s">3L</span>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">Material:</span>
+                                                    <span class="text-s"> Plastic</span>
+                                                </div>
+                                             
+                                            </div>
+                                            <div class="qty-wrapper">
+                                            <div class="add-plus">
+                                                <i class="material-icons minus_a icons-disabled">remove</i>
+                                                <!-- icons-disabled -->
+                                                <div class="form-group  ">
+                                                    <input type = "number" maxlength ="3" min="1" max="500"  value="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                                                    <!-- <input type="number" min="1" max="500" value="1"> -->
+                                                </div>
+                                               <!-- error -->
+                                                <i class="material-icons  plus_a">add</i>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+          
+                                </div>
+                                <div class="product-price">
+                                    <div class="remove-price">
+                                        <div class="price-wrapper">
+                                            <p class="text-md">$50.09</p>
+                                            <p class="text-sm sale light-dark">$61.00</p>
+                                        </div>
+                                        <a class="remove text-xs light-dark">Remove</a>
+                                    </div>
+                                    <!-- <button class="main-btn">Buy now</button> -->
+                                </div>
+                            </div>
+                            <br/>
+                    </div>
+                      <div class="products">
+                        <div class="checkbox-style">
+                                <input class="" name="" id="" value="" type="checkbox">
+                                <label></label>
+                        </div>                  
+                               <div class="prod-row">
+                                <div class="product-discription">
+                                    <div class="product-img">
+                                        <img src="img/item1.svg" alt="item">
+                                    </div>
+                                    <div class="width">
+    
+                                        <div class="nameQty">
+                                            <div class="name">
+                                                <div class="name-wrapper">
+                                                    <a class="text-sm">
+                                                      Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                                    </a>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">SKU:</span>
+                                                    <span class="text-s">3274628</span>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">Color:</span>
+                                                    <span class="text-s">White</span>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">Size:</span>
+                                                    <span class="text-s">3L</span>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">Material:</span>
+                                                    <span class="text-s"> Plastic</span>
+                                                </div>                                            
+                                            </div>
+                                            <div class="qty-wrapper">
+                                            <div class="add-plus">
+                                                <i class="material-icons minus_a">remove</i>
+                                                <div class="form-group">
+                                                    <input type = "number" maxlength ="3"  min="1" max="500"   value="33" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                                                    <!-- <input type="number" min="1" max="5" value="1"> -->
+                                                </div>
+                                               <!-- error -->
+                                                <i class="material-icons  plus_a">add</i>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+          
+                                </div>
+                                <div class="product-price">
+                                    <div class="remove-price">
+                                        <div class="price-wrapper">
+                                            <p class="text-md">$50.09</p>
+                                            <p class="text-sm sale light-dark">$61.00</p>
+                                        </div>
+                                        <a class="remove text-xs light-dark">Remove</a>
+                                    </div>
+                                    <!-- <button class="main-btn">Buy now</button> -->
+                                </div>
+                            </div>
+                            <br/>
+                    </div>
+                      <div class="products">
+                            <div class="checkbox-style">
+                                <input type="checkbox">
+                                <label></label>
+                            </div>
+                            <div class="prod-row">
+                                <div class="product-discription">
+                                    <div class="product-img">
+                                        <img src="img/no-img.svg" alt="no-img">
+                                    </div>
+                                    <div class="width">
+                                        <div class="nameQty">
+                                            <div class="name">
+                                                <div class="name-wrapper">
+                                                    <a class="text-sm">
+                                                      Sabrent Rocket Nano 1TB USB 3.2 10Gb/s External Aluminum SSD (Black) (SB-1TB-NANO-BLK)
+                                                    </a>
+                                                </div>
+                                                <div class="product-characteristics">
+                                                    <span class="text-s light-dark">SKU:</span>
+                                                    <span class="text-s">3274628</span>
+                                                </div>
+                                            </div>
+                                            <div class="qty-wrapper">
+                                            <div class="add-plus">
+                                                <i class="material-icons minus_a">remove</i>
+                                                <div class="form-group">
+                                                    <input type = "number" maxlength ="3"  min="1" max="500"  value="152" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                                                    <!-- <input type="number" min="1" max="5" value="1"> -->
+                                                </div>
+                                               <!-- error -->
+                                                <i class="material-icons  plus_a">add</i>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+          
+                                </div>
+                                <div class="product-price">
+                                    <div class="remove-price">
+                                        <div class="price-wrapper">
+                                            <p class="text-md">$50.09</p>
+                                            <!-- <p class="text-sm sale">$61.00</p> -->
+                                        </div>
+                                        <a class="remove text-xs light-dark">Remove</a>
+                                    </div>
+                                    <!-- <button class="main-btn">Buy now</button> -->
+                                </div>
+                            </div>
+                            <br/>
+                        </div>     
+                       </div>
+                   </div>
+               </div>
+               <div class="promo-wrapper ">
+               <div class="boxShadow boxShadow1">                  
+                   <div class="promo">
+                       <div class="promo-code-wrapper">
+                           <!-- <div class="promo-code">
+                              <p class="text-sm">Apply Promo code</p>
+                              <div class="apply">
+                                  <div class="apply-input">
+                                      <div class="form-group ">
+                                       <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                                      </div>
+                                  </div>
+                                  <div class="button-wrapper">
+                                      <button href="#" class="main-btn">Apply</button>
+                                  </div>
+                              </div>
+                              <p class="text-xs">Code with higher savings will apply.</p>
+       
+                           </div> -->
+                           <div class="promo-code">       
+                               <div class="items-total">
+                                   <div class="item text-md light-dark">
+                                       <span>Items total, 4 items</span>
+                                       <span>$122.00</span>
+                                   </div>
+                                   <div class="item text-md">
+                                       <span class="discount">Discount</span>
+                                       <span class="discount">$100.18</span>
+                                   </div>        
+                               </div>
+                           </div>
+                           <div class="promo-code">       
+                               <div class="items-total light-dark">
+                                   <div class="item text-md">
+                                       <span>Subtotal</span>
+                                       <span>$50.09</span>
+                                   </div>
+                                   <div class="item text-md light-dark">
+                                       <span>Shipping</span>
+                                       <span>Calculate</span>
+                                   </div>
+                                   <div class="item text-md light-dark">
+                                       <span c>Personal discount</span>
+                                       <span class="discount">$3.00</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="promo-code borderNone">
+                               <div class="items-total">
+                                   <div class="item text-md">
+                                       <span class="font-big">Total</span>
+                                       <span class="font-big">$50.09</span>
+                                   </div>                                   
+                               </div>
+                           </div>
+                       </div>
+                   </div>                  
+            </div> 
+            <div class="checkout">
+                <div class="checkout-btn">
+                    <button href="#" class="main-btn item-price"> <!-- disabled  class-->
+                        <p class="text-sm">Proceed to Checkout</p> 
+                        <p class="text-xs">3 items, $150,27</p>
+                    </button> 
+                    <!-- <button href="#" class="main-btn disabled ">
+                        <p class="text-sm ">Select at least 1 item</p>
+                    </button>  -->
+                </div>               
+            </div>
+            <div class="paypal-wrapper">
+                <div class="paypal-title">
+                    <p class="text-sm light-dark">Accepted payment methods</p>
+                </div>
+                <div class="cardWrap cardWrap-padding">
+                    <div class="labels visa"></div>
+                    <div class="labels master"></div>
+                    <div class="labels amex"></div>
+                    <div class="labels arca"></div>
+                    <div class="labels pay_pal"></div>
+                    <div class="labels yandex_many"></div>
+                    <div class="labels payfast"></div>
+                    <div class="labels paystack"></div>
+                    <div class="labels idram"></div>
+                    <div class="labels banktransfer"></div>
+                    <div class="labels cash"></div>
+                </div>
+            </div>
+                </div>
+           </div>
+       </div>
+   </section>
+</div>
+<!-- mobile menu open -->
+   <script>
+    $(document).ready(function() {
+        $("#openNav").on("click", function() {
+            $("#main").toggleClass("open");
+        })
+        $(".menu-close").on("click", function() {
+            $("#main").removeClass("open");
+            $('.header_burger, .header-menu').removeClass('active');
+            $('body').removeClass('lock');
+        })
+    })
+    </script>
+<!-- header_burger, header-menu active -->
+   <script>
+        $(document).on("click", ".header_burger", function(){
+            $('.header_burger, .header-menu').toggleClass('active');
+            $('body').toggleClass('lock');
+        })
+    </script>
+<!-- page loader-wrapper -->
+     <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+<!-- #selectProduct and #cancelSelectProduct -->
+    <script>
+        $(document).ready(function() {
+            $("#selectProduct").on("click", function() {
+                $(".products .checkbox-style").css("display", "block");
+                $(".products .prod-row").css("right", "-30px");
+                $(".shoppingCart").css("overflow-x", "hidden");
+                $(".remove-wrap").css("display", "block");
+                $(".cancel-wrap").css("display", "block");
+                $(".select-wrap").css("display", "none");
+                $(".all .text-sm").css("display", "block");
+
+            })
+        });
+
+        $(document).ready(function() {
+            $("#cancelSelectProduct").on("click", function() {
+                $(".products .checkbox-style").css("display", "none");
+                $(".products .prod-row").css("right", "0px");
+                $(".shoppingCart").removeProp("overflow-x", "hidden");
+                $(".remove-wrap").css("display", "none");
+                $(".cancel-wrap").css("display", "none");
+                $(".select-wrap").css("display", "block");
+                $(".all .text-sm").css("display", "none");
+            })
+        })
+    </script>
+</body>
+</html>

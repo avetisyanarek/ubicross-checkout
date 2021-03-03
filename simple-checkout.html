@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- <nav class="header-menu">
+        <div class="menu-close">
+            <span class="material-icons close">close</span>
+        </div>
+        <ul class="header_list " >
+            <li class="user-name">
+                <span class="user-name-label font-big">Narek Avetisyan </span>              
+            </li>
+            <li class="user-bonus">
+                <span class="user-bonus-label text-sm">Reword Points</span>
+                <span class="user-bonus-amount text-sm">250</span>
+            </li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
+            <li class="li-hover"><a class="text-sm li-hover" href="">Addresses</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Settings</a></li>
+            <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
+        </ul>
+        <div class="language-currency">
+            <div class="container language-currency-wrap">
+                <div class="currency-wrapper">
+                    <div class="delivery-dropdown">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AMD
+                                <span>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </span>
+                                <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                            <span class="closing">
+                                <i class="material-icons">arrow_back</i>
+                            </span>
+                            <li>
+                                <a href="">USD</a>
+                            </li>
+                            <li>
+                                <a href="">INR</a>
+                            </li>
+                            <li>
+                                <a href="">ZAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="lang-wrapper">
+                    <div class="lenguage-block">
+                        <div  class="dropdown ls-language-widget">
+                            <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                                 English 
+                                     <span ></span>
+                                         <img src="img/arrow.svg" alt="arrow">
+                                     </span>
+                                     <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu ls-lang-changer-list">
+                                <span class="closing"><i class="material-icons">arrow_back</i></span>
+                                <li>
+                                    <a class="text-sm"> Հայերեն </a>
+                                </li>
+                                <li>
+                                    <a  class="text-sm">العربية</a>
+                                </li>                               
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav> -->
+    <div class="mega-wrapper" id="main">
+        <div class="language-currency">
+            <div class="container">
+                <div class="currency-wrapper">
+                    <div class="delivery-dropdown">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle wv332" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AMD
+                                <span>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </span>
+                                <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu basic1B" aria-labelledby="dropdownMenu1">
+                            <span class="closing">
+                                <i class="material-icons">arrow_back</i>
+                            </span>
+                            <li>
+                                <a href="">USD</a>
+                            </li>
+                            <li>
+                                <a href="">INR</a>
+                            </li>
+                            <li>
+                                <a href="">ZAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="lang-wrapper">
+                    <div class="lenguage-block">
+                        <div  class="dropdown ls-language-widget">
+                            <span class="ls-current-dt-lang  text-sm" data-toggle="dropdown" href="#" aria-expanded="true">
+                                 English 
+                                     <span ></span>
+                                         <img src="img/arrow.svg" alt="arrow">
+                                     </span>
+                                     <span class="fa fa-chevron-right caret1" aria-hidden="true"></span>
+                            </span>
+                            <ul class="dropdown-menu ls-lang-changer-list">
+                                <span class="closing"><i class="material-icons">arrow_back</i></span>
+                                <li>
+                                    <a class="text-sm"> Հայերեն </a>
+                                </li>
+                                <li>
+                                    <a  class="text-sm">العربية</a>
+                                </li>                               
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <header  >
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="logo">
+                        <!-- <p class="logo-text">Yeraz kids center</p>  -->
+                    </a>
+                </div>
+                <div class="main-header">
+                    <div class="busket">
+                        <a href="#">
+                            <img src="img/busket.svg" alt="busket">
+                            <div class="number">2</div>
+                        </a>
+                    </div> 
+                    <div class="sign-in">
+                        <button href="#" class="main-btn h40">Sign In</button>
+                    </div>
+                 <!-- <div class="dropdown">
+                     <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                         <div class="login-wrapper">
+                            <p class="text-xs">N</p> -->
+                            <!-- <div class="user-img">
+                                <img src="img/miki.jpg" alt="">
+                            </div> -->                           
+                         <!-- </div>                        
+                     </span>
+                     <ul class="dropdown-menu slideIn" aria-labelledby="dropdownMenu1">
+                         <li class="user-name">
+                             <span class="user-name-label text-sm">Narek Avetisyan </span>
+                         </li>
+                        <li class="user-bonus">
+                             <span class="user-bonus-label text-sm">Reword Points</span>
+                             <span class="user-bonus-amount text-sm">250</span>
+                         </li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">My Orders</a></li>                    
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Addresses</a></li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Settings</a></li>
+                         <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
+                     </ul>
+                 </div> -->
+                <!-- <div class="header_burger" id="openNav">
+                         <div class="login-wrapper"> -->
+                            <!-- <p class="text-xs">N</p> -->
+                            <!-- <div class="user-img">
+                                <img src="img/miki.jpg" alt="">
+                            </div>                           
+                         </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <section class="shoppingCart" >
+       <div class="container" >        
+           <!-- <div class="shopping-steps">
+               <div class="steps-wrapper">
+                   <div class="steps">
+                       <div class=" step step1">
+                          <div class="points points1"></div>
+                       </div>
+                       <a class="text-bold a-disabled" href="">Shopping cart</a>
+                   </div>
+                   <hr>
+                   <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <a class="text a-disabled" href="">Shipping</a>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <a class="text a-disabled" href="">Payment</a>
+                </div>
+                <hr>
+                <div class="steps">
+                    <div class="step">
+                       <div class="points"></div>
+                    </div>
+                    <a class="text a-disabled" href="">Review</a>
+                </div>              
+               </div>
+           </div>
+           <div class="shopping-mobile">
+               <div class="shopping-mobile-steps">
+                   <div class="step-circle">
+                       <div class="points"></div>
+                   </div>
+                   <div class="step-name">
+                       <div class="step-number-wrapper">
+                          <p class="text-xs">Step </p>
+                           <div class="step-number text-xs">
+                               <span>1</span>
+                               <span class="step-color">/4</span>
+                           </div>
+                       </div>
+                       <p class="text-sm">Shopping cart</p>
+                   </div>
+               </div>
+               <div class="shopping-mobile-row">
+                   <div class="row-success"></div>
+               </div>
+           </div> -->
+           <div class="shopping-cart">
+            <div class="form-wrapper">
+                <form class="address-form" action="" autocomplete="on">
+                    <div class="title">
+                      <p class="font-big light-dark">Personal info</p>
+                      <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
+                 </div>
+                 <div class="deliver-address">
+                    <span>
+                        <div class="label-container-wrapper label-simple">
+                            <div class="new-address">
+                                <div class="address-section two-input-wrapper">
+                                    <div class="error-wrapper form-width">
+                                        <div class="form-group form-position">
+                                            <label  class="form-control-label text-xs light-dark">Full Name</label>
+                                            <input class="text-sm" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
+                                        </div>
+                                        <!-- <div class="errorMessage">City cannot be blank.</div> -->
+                                    </div>
+                                    <div class="error-wrapper form-width">
+                                    <div class="form-group form-position ">
+                                        <label  class="form-control-label text-xs light-dark">Adress*</label>
+                                        <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                    </div>
+                                    <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
+                                    </div>
+                                </div>
+                                <div class="address-section two-input-wrapper">
+                                  <div class="error-wrapper form-width">
+                                  <div class="form-group form-position form-select">
+                                    <div class="select-wrapper">
+                                        <div class="select-arrow">
+                                            <img src="img/select-arrow.svg" alt="arrow">
+                                        </div>
+                                        <select class="text-sm" >
+                                            <option value="">+374</option>
+                                            <option value="">+235</option>                    
+                                        </select>
+                                    </div>
+                                      <label  class="form-control-label text-xs light-dark">Mobile Number*</label>
+                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder="12800700">
+                                      
+                                  </div>
+                                  <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
+                                  </div>
+                                  <div class="error-wrapper form-width">
+                                      <div class="form-group form-position">
+                                          <label  class="form-control-label text-xs light-dark">Email</label>
+                                          <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                      </div>
+                                      <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+                 </div>
+                 <div class="title">
+                    <p class="font-big light-dark">Shipping</p>
+               </div>
+               <div class="delivery-methods">
+                <span class="methods-row" >
+                    <div class="card-width">
+                        <label class="label-container lable--width label-selected  border2px">
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark "></span>
+                            <span class="text-md text--mrl">Deliver to your address</span> 
+                        </label>
+                    </div>
+                    <div class="card-width">
+                        <label class="label-container lable--width border2px">
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                            <span class="text-md text--mrl">Pickup at Pickup location</span> 
+                        </label>
+                    </div>
+                </span>
+           </div>
+           <div class="pickup-location">
+            <span>
+                <div class="card">
+                    <label class="label-container label-container--border label-selected">
+                        <input type="radio" name="radio-pickup">
+                        <span class="checkmark"></span>
+                    <span class="decription-row decription-row--center">
+                        <div class="label-description">
+                            <p class="font-big">Location name</p>
+                            <div class="address-span">
+                                <div class="span-content light-dark">
+                                    <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                    <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                </div>
+                                <div class="span-content light-dark">
+                                    <span class="text-sm left-border">United States </span>
+                                    <span class="text-sm left-border">3024148567</span>
+                                </div>
+                                <div class=" span-content light-dark">
+                                    <span class="text-sm">Working hours: </span>
+                                    <span class="text-sm">Monday - Friday 10:00-21:00</span>
+                                </div>
+                            </div>                                 
+                        </div>
+                        <div class="label-description">
+                            <p class="text-sm text-sm--main">Selected</p>
+                        </div>
+                    </span> 
+                    </label>
+                </div>
+                <div class="card">
+                    <label class="label-container label-container--border">
+                        <input type="radio" name="radio-pickup">
+                        <span class="checkmark"></span>
+                    <span class="decription-row decription-row--center">
+                        <div class="label-description">
+                            <p class="font-big">Location name</p>
+                            <div class="address-span">
+                                <div class="span-content light-dark">
+                                    <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                    <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                </div>
+                                <div class="span-content light-dark">
+                                    <span class="text-sm left-border">United States </span>
+                                    <span class="text-sm left-border">3024148567</span>
+                                </div>
+                                <div class=" span-content light-dark">
+                                    <span class="text-sm">Working hours: </span>
+                                    <span class="text-sm">Monday - Friday 10:00-21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-description">
+                            <p class="text-sm text-sm--main">Deliver here</p>
+                        </div>
+                    </span> 
+                    </label>
+                </div>
+            </span>
+       </div> 
+       <div class="shipping-address shipping-simple">
+        <span class="text-xs">Shipping Address:</span>
+        <div class="address-span">
+            <div class="change-address">
+                <div class="span-content light-dark">
+                    <span class="text-sm left-border">950 Ridge RD C25 </span>
+                    <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                    <span class="text-sm left-border">United States </span>
+                </div>
+                <a class="text-sm text-sm--color" href="">Change address</a>
+            </div>
+        </div>
+    </div>  
+            <div class="shipping-details">
+                <span>
+                    <div class="card">
+                        <label class="label-container label-container--border label-selected">
+                            <input type="radio" name="radio-shipping-detail">
+                            <span class="checkmark"></span>
+                        <span class="decription-row decription-row--center">
+                            <div class="label-description">
+                                <p class="font-lg">Standard delivery</p>
+                                <div class="free-shipping-wrapper ">
+                                    <p class="text-sm" >Free Shipping</p>
+                                </div>
+                                <div class="address-span">
+                                    <div class=" span-content light-dark">
+                                        <span class="text-sm">Estimated delivery:</span>
+                                        <span class="text-sm"> Dec 16 - Dec 18</span>
+                                    </div>
+                                    <div class=" span-content ">
+                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                    </div>
+                                </div>                                           
+                            </div>
+                            <div class="label-description">
+                                <p class="text-sm text-sm--free">Free</p>
+                            </div>        
+                        </span> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-shipping-detail">
+                            <span class="checkmark"></span>
+                        <span class="decription-row decription-row--center">
+                            <div class="label-description">
+                                <p class="font-lg">PO BOX or APO Address</p>
+                                <div class="address-span">
+                                    <div class=" span-content light-dark">
+                                        <span class="text-sm">Estimated delivery:</span>
+                                        <span class="text-sm">Dec 17</span>
+                                    </div>
+                                    <div class=" span-content ">
+                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label-description">
+                                <p class="text-sm ">$3.00</p>
+                            </div>
+                        </span> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-shipping-detail">
+                            <span class="checkmark"></span>
+                        <span class="decription-row decription-row--center">
+                            <div class="label-description">
+                                <p class="font-lg">One day</p>
+                                <div class="address-span">
+                                    <div class=" span-content light-dark">
+                                        <span class="text-sm">Estimated delivery:</span>
+                                        <span class="text-sm">Dec 17</span>
+                                    </div>
+                                    <div class=" span-content ">
+                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label-description">
+                                <p class="text-sm">$10.00</p>
+                            </div>
+                        </span> 
+                        </label>
+                    </div>
+                </span>
+           </div>
+           <!-- <div class="errorMessage">Alooooooooooooooooo</div> -->  
+                    
+            <div class="title payment-simple">
+                 <p class="font-big light-dark">Payment method</p>
+            </div>
+            <div class="card">
+                <label class="label-container  label-container--border reward-points "><!-- add "reward-points-selected" class, when select it -->
+                    <div class="checkbox-label">
+                        <div class="checkbox-style sellect-wrapper ">
+                            <input class=""  type="checkbox">
+                            <label></label>
+                        </div>
+                    </div>
+                    <div class="cardWrap decription-row decription-row--center">
+                        <span class="payment-name text-md">Pay with Reward Points</span>
+                        <div class="points">
+                            <span class="payment-name text-md">$14</span>
+                        </div>
+                    </div> 
+                </label>
+            </div>
+            <div class="payment-method">
+                <span>                 
+                    <div class="card">
+                        <label class="label-container label-container--border label-selected">
+                            <!-- label-selected -->
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span> 
+                        <div class="cardWrap decription-row decription-row--center">
+                            <span class="payment-name font-big">Credit card</span>
+                                <div class="labels label-size visa"></div>
+                                <div class="labels label-size master"></div>
+                                <div class="labels label-size amex"></div>
+                                <div class="labels label-size arca"></div>                
+                        </div> 
+                        </label>
+                    </div>
+                    <div class="select-card">
+                      <div class="font-big-wrapper">
+                          <p class="font-big">Select credit card</p>
+                      </div>
+                      <span>
+                        <div class="card">
+                            <label class="label-container border-none ">
+                                <input type="radio" name="radio-select-card">
+                                <span class="checkmark"></span>
+                              <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name text-md">435505******0511</span>
+                                <div class="labels label-size visa"></div>                
+                            </div> 
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container border-none">
+                                <input type="radio" name="radio-select-card">
+                                <span class="checkmark"></span>
+                              <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name text-md">550104******4682</span>
+                                <div class="labels label-size master"></div>                   
+                            </div> 
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container border-none">
+                                <input type="radio" name="radio-select-card">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name text-md">Add new card</span>
+                                    <div class="labels label-size visa"></div>
+                                    <div class="labels label-size master"></div>
+                                    <div class="labels label-size amex"></div>
+                                    <div class="labels label-size arca"></div>       
+                                </div> 
+                            </label>
+                        </div>
+                      </span>
+                    </div>  
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span>
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">PayPal</span>
+                                <div class="labels label-size pay_pal"></div>                         
+                            </div> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span>
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">Yandex.many</span>
+                                <div class="labels label-size yandex_many"></div>                         
+                            </div> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span>
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">PayFast</span>
+                                <div class="labels label-size payfast"></div>                         
+                            </div> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span>
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">Paystack</span>
+                                <div class="labels label-size paystack"></div>                         
+                            </div> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span>
+                        <div class="cardWrap decription-row decription-row--center">
+                            <span class="payment-name font-big">Idram</span>
+                            <div class="labels label-size idram"></div>                         
+                        </div> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span>
+                        <div class="cardWrap decription-row decription-row--center">
+                            <span class="payment-name font-big">Cash</span>
+                            <div class="labels label-size cash"></div>                         
+                        </div> 
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="label-container label-container--border">
+                            <input type="radio" name="radio-payment">
+                            <span class="checkmark"></span>
+                        <div class="cardWrap decription-row decription-row--center">
+                            <span class="payment-name font-big">Banktransfer</span>
+                            <div class="labels label-size banktransfer"></div>                         
+                        </div> 
+                        </label>
+                    </div>
+                </span>
+           </div> 
+           <div class="continue-wrapper">
+               <button class="main-btn" href="">Continue</button>
+               <!-- disabled class-->
+           </div>
+                </form>
+            </div>
+
+            <div class="promo-wrapper">
+                <div class="boxShadow boxShadow1">                  
+                   <div class="promo">
+                        <div class="promo-code-wrapper">
+                            <!-- <div class="promo-code">
+                               <p class="text-sm">Apply Promo code</p>
+                               <div class="apply">
+                                   <div class="apply-input">
+                                       <div class="form-group ">
+                                        <input class="text-md" type="text" id="fname" name="fname" placeholder="Enter Promo code">
+                                       </div>
+                                   </div>
+                                   <div class="button-wrapper">
+                                       <button href="#" class="main-btn">Apply</button>
+                                   </div>
+                               </div>
+                               <p class="text-xs">Code with higher savings will apply.</p>
+                            </div> -->
+                            <div class="promo-code">    
+                                <div class="items-total">
+                                    <div class="item text-md light-dark">
+                                        <span>Items total, 4 items</span>
+                                        <span>$122.00</span>
+                                    </div>
+                                    <div class="item text-md ">
+                                        <span class="discount">Discount</span>
+                                        <span class="discount">$100.18</span>
+                                    </div>          
+                                </div>
+                            </div>
+                            <div class="promo-code">
+                                <div class="items-total light-dark">
+                                    <div class="item text-md">
+                                        <span>Subtotal</span>
+                                        <span>$50.09</span>
+                                    </div>
+                                    <div class="item text-md ">
+                                        <span class="light-dark">Shipping</span>
+                                        <span class="discount">Free</span>
+                                    </div>
+                                    <div class="item text-md light-dark">
+                                        <span>Personal discount</span>
+                                        <span class="discount">$3.00</span>
+                                    </div>
+                                    <div class="item text-md">
+                                         <span>Payment discount</span>
+                                         <span class="discount">$1.00</span>
+                                     </div>
+                                     <div class="item text-md">
+                                         <span>Rewards Points</span>
+                                         <span class="reward">$14.00</span>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="promo-code borderNone">
+                                <div class="items-total">
+                                    <div class="item text-md">
+                                        <span class="font-big">Total</span>
+                                        <span class="font-big">$50.09</span>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             </div> 
+             <div class="checkout">
+                 <div class="checkout-btn">
+                     <button href="#" class="main-btn font-big">Continue</button>
+                     <!-- disabled class-->
+                 </div>               
+             </div>
+             <div class="text-wrapper">
+                 <p class="text-xs">You will be able to review and modify your order on the review page.</p>
+             </div>
+         </div>
+           </div>
+       </div>
+   </section>
+</div>
+<!-- mobile menu open -->
+   <script>
+    $(document).ready(function() {
+        $("#openNav").on("click", function() {
+            $("#main").toggleClass("open");
+        })
+        $(".menu-close").on("click", function() {
+            $("#main").removeClass("open");
+            $('.header_burger, .header-menu').removeClass('active');
+            $('body').removeClass('lock');
+        })
+    })
+    </script>
+<!-- header_burger, header-menu active -->
+   <script>
+        $(document).on("click", ".header_burger", function(){
+            $('.header_burger, .header-menu').toggleClass('active');
+            $('body').toggleClass('lock');
+        })
+    </script>
+<!-- page loader-wrapper -->
+     <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+<!-- #selectProduct and #cancelSelectProduct -->
+    <script>
+        $(document).ready(function() {
+            $("#selectProduct").on("click", function() {
+                $(".products .checkbox-style").css("display", "block");
+                $(".products .prod-row").css("right", "-30px");
+                $(".shoppingCart").css("overflow-x", "hidden");
+                $(".remove-wrap").css("display", "block");
+                $(".cancel-wrap").css("display", "block");
+                $(".select-wrap").css("display", "none");
+                $(".all .text-sm").css("display", "block");
+
+            })
+        });
+
+        $(document).ready(function() {
+            $("#cancelSelectProduct").on("click", function() {
+                $(".products .checkbox-style").css("display", "none");
+                $(".products .prod-row").css("right", "0px");
+                $(".shoppingCart").removeProp("overflow-x", "hidden");
+                $(".remove-wrap").css("display", "none");
+                $(".cancel-wrap").css("display", "none");
+                $(".select-wrap").css("display", "block");
+                $(".all .text-sm").css("display", "none");
+            })
+        })
+    </script>
+</body>
+</html>
