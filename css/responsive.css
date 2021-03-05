@@ -448,6 +448,9 @@ p {
   .shipping-address .address-span .change-address .text-sm--color {
     font-size: 12px;
   }
+  .form-select .select-wrapper .select-arrow {
+    right: -11px;
+  }
 }
 @media screen and (max-width: 767px) {
   body.lock {
@@ -649,6 +652,18 @@ p {
   .shipping-address .address-span .change-address .span-content {
     max-width: 207px;
   }
+  .new-address .two-input-wrapper {
+    flex-direction: column;
+  }
+  .new-address .two-input-wrapper .form-width {
+    width: 100%;
+  }
+  .new-address .two-input-wrapper .form-width + .form-width {
+    margin-left: 0;
+  }
+  .new-address .two-input-wrapper .form-width .form-select .select-wrapper .select-arrow {
+    right: 0px;
+  }
   .payment-method .label-container .decription-row .font-big {
     font-size: 14px;
   }
@@ -671,6 +686,9 @@ p {
   }
   .title .font-big {
     display: none;
+  }
+  .title .simple-title {
+    display: block;
   }
   .title .text-xs {
     font-size: 14px;

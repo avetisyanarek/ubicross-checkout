@@ -199,6 +199,15 @@
 // End shipping details media styling
 
 
+// Start select arrow media styling
+.form-select{
+    .select-wrapper {
+        .select-arrow {
+            right: -11px;
+        }
+    }
+} 
+// End select arrow media styling
 }
 // Start @media screen and (max-width:767px) styling
 @media screen and (max-width:767px){
@@ -447,6 +456,28 @@
 }  
 // End shipping details media styling
 
+// Start two-input-wrapper media stying
+.new-address{
+    .two-input-wrapper{
+        flex-direction: column;
+        .form-width{
+            width: 100%;
+            & + .form-width{
+                margin-left: 0;
+            }
+            .form-select{
+                .select-wrapper {
+                    .select-arrow {
+                        right: 0px;
+                    }
+                }
+            } 
+        }
+    }
+}
+// End two-input-wrapper media styling
+
+
 // Start payment media styling
 .payment-method{
     .label-container{
@@ -487,6 +518,9 @@
     .title{
         .font-big{
             display: none;
+        }
+        .simple-title{    //simple
+            display: block;
         }
         .text-xs{
             font-size: 14px;

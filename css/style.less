@@ -393,9 +393,11 @@ header{
 // End menu li styling
 
 // Start shoppingCart styling
+.shoppingCart-simple{   //simple
+    margin-top: 30px;
+}
 .shoppingCart{
     background-color: @bg;
-    margin-top: 30px;
 }
     .shopping-steps{
         width: 100%;
@@ -403,6 +405,7 @@ header{
         align-items: center;
         justify-content: center;
         margin-bottom: 60px;
+        margin-top: 10px;
         .steps-wrapper{
             display: flex;
             flex-direction: row;
@@ -1289,7 +1292,7 @@ header{
 }
 // End success-wrapper styling
 
-.form-select{
+.form-select{        //simple
     border: 1px solid @productBorder;
     border-radius: 6px;
     display: flex;
@@ -1320,24 +1323,24 @@ header{
         padding-bottom: 12px;
         &:hover{
             border: none;
-            background-color: transparent;
+            // background-color: transparent;
             height: 55px;
         }
-        &:focus{
-            border: none;
-            background-color: transparent;
-        }
+        // &:focus{
+        //     border: none;
+        //     background-color: transparent;
+        // }
     }
     input{
         border: none;
         height: 56px !important;
         &:hover{
             border: none;
-            background-color: transparent;
+            background-color: @selected;
         }
         &:focus{
             border: none;
-            background-color: transparent;
+            // background-color: transparent;
         }
     }
 }

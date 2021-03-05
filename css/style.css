@@ -682,9 +682,11 @@ header .header-wrapper .header-menu .header_list li .header_link {
   padding: 2px 7px;
   margin-left: 10px;
 }
+.shoppingCart-simple {
+  margin-top: 30px;
+}
 .shoppingCart {
   background-color: #F7F7F7;
-  margin-top: 30px;
 }
 .shopping-steps {
   width: 100%;
@@ -692,6 +694,7 @@ header .header-wrapper .header-menu .header_list li .header_link {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  margin-top: 10px;
 }
 .shopping-steps .steps-wrapper {
   display: flex;
@@ -1525,12 +1528,7 @@ header .header-wrapper .header-menu .header_list li .header_link {
 }
 .form-select select:hover {
   border: none;
-  background-color: transparent;
   height: 55px;
-}
-.form-select select:focus {
-  border: none;
-  background-color: transparent;
 }
 .form-select input {
   border: none;
@@ -1538,9 +1536,8 @@ header .header-wrapper .header-menu .header_list li .header_link {
 }
 .form-select input:hover {
   border: none;
-  background-color: transparent;
+  background-color: #F9FBFF;
 }
 .form-select input:focus {
   border: none;
-  background-color: transparent;
 }
