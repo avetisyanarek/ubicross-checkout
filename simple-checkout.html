@@ -200,380 +200,387 @@
            <div class="shopping-cart">
             <div class="form-wrapper">
                 <form class="address-form" action="" autocomplete="on">
-                    <div class="title">
-                      <p class="font-big light-dark simple-title">Personal info</p>
-                      <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
-                 </div>
-                 <div class="deliver-address">
-                    <span>
-                        <div class="label-container-wrapper label-simple">
-                            <div class="new-address">
-                                <div class="address-section two-input-wrapper">
-                                    <div class="error-wrapper form-width">
-                                        <div class="form-group form-position">
-                                            <label  class="form-control-label text-xs light-dark">Full Name</label>
-                                            <input class="text-sm" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
+                    <div class="personal-info-wrapper">
+                        <div class="title">
+                          <p class="font-big light-dark simple-title">Personal info</p>
+                          <p class="text-xs">Is the address you’d like to use displayed below? If so, click the corresponding “Deliver here” button. Or you can enter a new shipping address. </p>
+                     </div>
+                     <div class="deliver-address">
+                        <span>
+                            <div class="label-container-wrapper label-simple">
+                                <div class="new-address">
+                                    <div class="address-section two-input-wrapper">
+                                        <div class="error-wrapper form-width">
+                                            <div class="form-group form-position">
+                                                <label  class="form-control-label text-xs light-dark">Full Name</label>
+                                                <input class="text-sm" type="text" id="fname" name="fname" placeholder="Narek Avetisyan">
+                                            </div>
+                                            <!-- <div class="errorMessage">City cannot be blank.</div> -->
                                         </div>
-                                        <!-- <div class="errorMessage">City cannot be blank.</div> -->
-                                    </div>
-                                    <div class="error-wrapper form-width">
-                                    <div class="form-group form-position ">
-                                        <label  class="form-control-label text-xs light-dark">Adress*</label>
-                                        <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                    </div>
-                                    <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
-                                    </div>
-                                </div>
-                                <div class="address-section two-input-wrapper">
-                                  <div class="error-wrapper form-width">
-                                  <div class="form-group form-position form-select">
-                                    <div class="select-wrapper">
-                                        <div class="select-arrow">
-                                            <img src="img/select-arrow.svg" alt="arrow">
+                                        <div class="error-wrapper form-width">
+                                        <div class="form-group form-position ">
+                                            <label  class="form-control-label text-xs light-dark">Adress*</label>
+                                            <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
                                         </div>
-                                        <select class="text-sm" >
-                                            <option value="">+374</option>
-                                            <option value="">+235</option>                    
-                                        </select>
+                                        <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
+                                        </div>
                                     </div>
-                                      <label  class="form-control-label text-xs light-dark">Mobile Number*</label>
-                                      <input class="text-sm" type="text" id="fname" name="fname" placeholder="12800700">
-                                      
-                                  </div>
-                                  <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
-                                  </div>
-                                  <div class="error-wrapper form-width">
-                                      <div class="form-group form-position">
-                                          <label  class="form-control-label text-xs light-dark">Email</label>
-                                          <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                    <div class="address-section two-input-wrapper">
+                                      <div class="error-wrapper form-width">
+                                      <div class="form-group form-position form-select">
+                                        <div class="select-wrapper">
+                                            <div class="select-arrow">
+                                                <img src="img/select-arrow.svg" alt="arrow">
+                                            </div>
+                                            <select class="text-sm" >
+                                                <option value="">+374</option>
+                                                <option value="">+235</option>                    
+                                            </select>
+                                        </div>
+                                          <label  class="form-control-label text-xs light-dark">Mobile Number*</label>
+                                          <input class="text-sm" type="text" id="fname" name="fname" placeholder="12800700">
+                                          
                                       </div>
                                       <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
                                       </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </span>
-                 </div>
-                 <div class="title">
-                    <p class="font-big light-dark">Shipping</p>
-               </div>
-               <div class="delivery-methods">
-                <span class="methods-row" >
-                    <div class="card-width">
-                        <label class="label-container lable--width label-selected  border2px">
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark "></span>
-                            <span class="text-md text--mrl">Deliver to your address</span> 
-                        </label>
-                    </div>
-                    <div class="card-width">
-                        <label class="label-container lable--width border2px">
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                            <span class="text-md text--mrl">Pickup at Pickup location</span> 
-                        </label>
-                    </div>
-                </span>
-           </div>
-           <div class="pickup-location">
-            <span>
-                <div class="card">
-                    <label class="label-container label-container--border label-selected">
-                        <input type="radio" name="radio-pickup">
-                        <span class="checkmark"></span>
-                    <span class="decription-row decription-row--center">
-                        <div class="label-description">
-                            <p class="font-big">Location name</p>
-                            <div class="address-span">
-                                <div class="span-content light-dark">
-                                    <span class="text-sm left-border">950 Ridge RD C25 </span>
-                                    <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
-                                </div>
-                                <div class="span-content light-dark">
-                                    <span class="text-sm left-border">United States </span>
-                                    <span class="text-sm left-border">3024148567</span>
-                                </div>
-                                <div class=" span-content light-dark">
-                                    <span class="text-sm">Working hours: </span>
-                                    <span class="text-sm">Monday - Friday 10:00-21:00</span>
-                                </div>
-                            </div>                                 
-                        </div>
-                        <div class="label-description">
-                            <p class="text-sm text-sm--main">Selected</p>
-                        </div>
-                    </span> 
-                    </label>
-                </div>
-                <div class="card">
-                    <label class="label-container label-container--border">
-                        <input type="radio" name="radio-pickup">
-                        <span class="checkmark"></span>
-                    <span class="decription-row decription-row--center">
-                        <div class="label-description">
-                            <p class="font-big">Location name</p>
-                            <div class="address-span">
-                                <div class="span-content light-dark">
-                                    <span class="text-sm left-border">950 Ridge RD C25 </span>
-                                    <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
-                                </div>
-                                <div class="span-content light-dark">
-                                    <span class="text-sm left-border">United States </span>
-                                    <span class="text-sm left-border">3024148567</span>
-                                </div>
-                                <div class=" span-content light-dark">
-                                    <span class="text-sm">Working hours: </span>
-                                    <span class="text-sm">Monday - Friday 10:00-21:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="label-description">
-                            <p class="text-sm text-sm--main">Deliver here</p>
-                        </div>
-                    </span> 
-                    </label>
-                </div>
-            </span>
-       </div> 
-       <div class="shipping-address shipping-simple">
-        <span class="text-xs">Shipping Address:</span>
-        <div class="address-span">
-            <div class="change-address">
-                <div class="span-content light-dark">
-                    <span class="text-sm left-border">950 Ridge RD C25 </span>
-                    <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
-                    <span class="text-sm left-border">United States </span>
-                </div>
-                <a class="text-sm text-sm--color" href="">Change address</a>
-            </div>
-        </div>
-    </div>  
-            <div class="shipping-details">
-                <span>
-                    <div class="card">
-                        <label class="label-container label-container--border label-selected">
-                            <input type="radio" name="radio-shipping-detail">
-                            <span class="checkmark"></span>
-                        <span class="decription-row decription-row--center">
-                            <div class="label-description">
-                                <p class="font-lg">Standard delivery</p>
-                                <div class="free-shipping-wrapper ">
-                                    <p class="text-sm" >Free Shipping</p>
-                                </div>
-                                <div class="address-span">
-                                    <div class=" span-content light-dark">
-                                        <span class="text-sm">Estimated delivery:</span>
-                                        <span class="text-sm"> Dec 16 - Dec 18</span>
-                                    </div>
-                                    <div class=" span-content ">
-                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
-                                    </div>
-                                </div>                                           
-                            </div>
-                            <div class="label-description">
-                                <p class="text-sm text-sm--free">Free</p>
-                            </div>        
-                        </span> 
-                        </label>
-                    </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-shipping-detail">
-                            <span class="checkmark"></span>
-                        <span class="decription-row decription-row--center">
-                            <div class="label-description">
-                                <p class="font-lg">PO BOX or APO Address</p>
-                                <div class="address-span">
-                                    <div class=" span-content light-dark">
-                                        <span class="text-sm">Estimated delivery:</span>
-                                        <span class="text-sm">Dec 17</span>
-                                    </div>
-                                    <div class=" span-content ">
-                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                      <div class="error-wrapper form-width">
+                                          <div class="form-group form-position">
+                                              <label  class="form-control-label text-xs light-dark">Email</label>
+                                              <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                          </div>
+                                          <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
+                                          </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="label-description">
-                                <p class="text-sm ">$3.00</p>
-                            </div>
-                        </span> 
-                        </label>
+    
+                        </span>
+                     </div>
                     </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-shipping-detail">
-                            <span class="checkmark"></span>
-                        <span class="decription-row decription-row--center">
-                            <div class="label-description">
-                                <p class="font-lg">One day</p>
-                                <div class="address-span">
-                                    <div class=" span-content light-dark">
-                                        <span class="text-sm">Estimated delivery:</span>
-                                        <span class="text-sm">Dec 17</span>
-                                    </div>
-                                    <div class=" span-content ">
-                                        <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="label-description">
-                                <p class="text-sm">$10.00</p>
-                            </div>
-                        </span> 
-                        </label>
-                    </div>
-                </span>
-           </div>
-           <!-- <div class="errorMessage">Alooooooooooooooooo</div> -->  
-                    
-            <div class="title payment-simple">
-                 <p class="font-big light-dark">Payment method</p>
-            </div>
-            <div class="card">
-                <label class="label-container  label-container--border reward-points "><!-- add "reward-points-selected" class, when select it -->
-                    <div class="checkbox-label">
-                        <div class="checkbox-style sellect-wrapper ">
-                            <input class=""  type="checkbox">
-                            <label></label>
-                        </div>
-                    </div>
-                    <div class="cardWrap decription-row decription-row--center">
-                        <span class="payment-name text-md">Pay with Reward Points</span>
-                        <div class="points">
-                            <span class="payment-name text-md">$14</span>
-                        </div>
-                    </div> 
-                </label>
-            </div>
-            <div class="payment-method">
-                <span>                 
-                    <div class="card">
-                        <label class="label-container label-container--border label-selected">
-                            <!-- label-selected -->
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span> 
-                        <div class="cardWrap decription-row decription-row--center">
-                            <span class="payment-name font-big">Credit card</span>
-                                <div class="labels label-size visa"></div>
-                                <div class="labels label-size master"></div>
-                                <div class="labels label-size amex"></div>
-                                <div class="labels label-size arca"></div>                
-                        </div> 
-                        </label>
-                    </div>
-                    <div class="select-card">
-                      <div class="font-big-wrapper">
-                          <p class="font-big">Select credit card</p>
+                    <div class="delivery-methods-wrapper">
+                        <div class="title">
+                           <p class="font-big light-dark">Shipping</p>
                       </div>
-                      <span>
+                      <div class="delivery-methods">
+                       <span class="methods-row" >
+                           <div class="card-width">
+                               <label class="label-container lable--width label-selected  border2px">
+                                   <input type="radio" checked="checked" name="radio">
+                                   <span class="checkmark "></span>
+                                   <span class="text-md text--mrl">Deliver to your address</span> 
+                               </label>
+                           </div>
+                           <div class="card-width">
+                               <label class="label-container lable--width border2px">
+                                   <input type="radio" name="radio">
+                                   <span class="checkmark"></span>
+                                   <span class="text-md text--mrl">Pickup at Pickup location</span> 
+                               </label>
+                           </div>
+                       </span>
+                  </div>
+                  <div class="pickup-location">
+                   <span>
+                       <div class="card">
+                           <label class="label-container label-container--border label-selected">
+                               <input type="radio" name="radio-pickup">
+                               <span class="checkmark"></span>
+                           <span class="decription-row decription-row--center">
+                               <div class="label-description">
+                                   <p class="font-big">Location name</p>
+                                   <div class="address-span">
+                                       <div class="span-content light-dark">
+                                           <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                           <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                       </div>
+                                       <div class="span-content light-dark">
+                                           <span class="text-sm left-border">United States </span>
+                                           <span class="text-sm left-border">3024148567</span>
+                                       </div>
+                                       <div class=" span-content light-dark">
+                                           <span class="text-sm">Working hours: </span>
+                                           <span class="text-sm">Monday - Friday 10:00-21:00</span>
+                                       </div>
+                                   </div>                                 
+                               </div>
+                               <div class="label-description">
+                                   <p class="text-sm text-sm--main">Selected</p>
+                               </div>
+                           </span> 
+                           </label>
+                       </div>
+                       <div class="card">
+                           <label class="label-container label-container--border">
+                               <input type="radio" name="radio-pickup">
+                               <span class="checkmark"></span>
+                           <span class="decription-row decription-row--center">
+                               <div class="label-description">
+                                   <p class="font-big">Location name</p>
+                                   <div class="address-span">
+                                       <div class="span-content light-dark">
+                                           <span class="text-sm left-border">950 Ridge RD C25 </span>
+                                           <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                                       </div>
+                                       <div class="span-content light-dark">
+                                           <span class="text-sm left-border">United States </span>
+                                           <span class="text-sm left-border">3024148567</span>
+                                       </div>
+                                       <div class=" span-content light-dark">
+                                           <span class="text-sm">Working hours: </span>
+                                           <span class="text-sm">Monday - Friday 10:00-21:00</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="label-description">
+                                   <p class="text-sm text-sm--main">Deliver here</p>
+                               </div>
+                           </span> 
+                           </label>
+                       </div>
+                   </span>
+                    </div> 
+                 </div>
+       <div class="shipping-wrapper">
+            <div class="shipping-address shipping-simple">
+            <span class="text-xs">Shipping Address:</span>
+            <div class="address-span">
+                <div class="change-address">
+                    <div class="span-content light-dark">
+                        <span class="text-sm left-border">950 Ridge RD C25 </span>
+                        <span class="text-sm left-border">M2687 Claymont, DE 19703</span>
+                        <span class="text-sm left-border">United States </span>
+                    </div>
+                    <a class="text-sm text-sm--color" href="">Change address</a>
+                </div>
+            </div>
+            </div>  
+            <div class="shipping-details">
+                    <span>
                         <div class="card">
-                            <label class="label-container border-none ">
-                                <input type="radio" name="radio-select-card">
+                            <label class="label-container label-container--border label-selected">
+                                <input type="radio" name="radio-shipping-detail">
                                 <span class="checkmark"></span>
-                              <div class="cardWrap decription-row decription-row--center">
-                                <span class="payment-name text-md">435505******0511</span>
-                                <div class="labels label-size visa"></div>                
-                            </div> 
+                            <span class="decription-row decription-row--center">
+                                <div class="label-description">
+                                    <p class="font-lg">Standard delivery</p>
+                                    <div class="free-shipping-wrapper ">
+                                        <p class="text-sm" >Free Shipping</p>
+                                    </div>
+                                    <div class="address-span">
+                                        <div class=" span-content light-dark">
+                                            <span class="text-sm">Estimated delivery:</span>
+                                            <span class="text-sm"> Dec 16 - Dec 18</span>
+                                        </div>
+                                        <div class=" span-content ">
+                                            <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                        </div>
+                                    </div>                                           
+                                </div>
+                                <div class="label-description">
+                                    <p class="text-sm text-sm--free">Free</p>
+                                </div>        
+                            </span> 
                             </label>
                         </div>
                         <div class="card">
-                            <label class="label-container border-none">
-                                <input type="radio" name="radio-select-card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-shipping-detail">
                                 <span class="checkmark"></span>
-                              <div class="cardWrap decription-row decription-row--center">
-                                <span class="payment-name text-md">550104******4682</span>
-                                <div class="labels label-size master"></div>                   
-                            </div> 
+                            <span class="decription-row decription-row--center">
+                                <div class="label-description">
+                                    <p class="font-lg">PO BOX or APO Address</p>
+                                    <div class="address-span">
+                                        <div class=" span-content light-dark">
+                                            <span class="text-sm">Estimated delivery:</span>
+                                            <span class="text-sm">Dec 17</span>
+                                        </div>
+                                        <div class=" span-content ">
+                                            <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label-description">
+                                    <p class="text-sm ">$3.00</p>
+                                </div>
+                            </span> 
                             </label>
                         </div>
                         <div class="card">
-                            <label class="label-container border-none">
-                                <input type="radio" name="radio-select-card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-shipping-detail">
                                 <span class="checkmark"></span>
-                                <div class="cardWrap decription-row decription-row--center">
-                                    <span class="payment-name text-md">Add new card</span>
+                            <span class="decription-row decription-row--center">
+                                <div class="label-description">
+                                    <p class="font-lg">One day</p>
+                                    <div class="address-span">
+                                        <div class=" span-content light-dark">
+                                            <span class="text-sm">Estimated delivery:</span>
+                                            <span class="text-sm">Dec 17</span>
+                                        </div>
+                                        <div class=" span-content ">
+                                            <span class="text-sm text-sm--color">Flat $4.00 shipping in the contiguous U.S.!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label-description">
+                                    <p class="text-sm">$10.00</p>
+                                </div>
+                            </span> 
+                            </label>
+                        </div>
+                    </span>
+            </div>
+       </div>
+           <!-- <div class="errorMessage">Alooooooooooooooooo</div> -->  
+            <div class="payment-wrapper">
+                <div class="title payment-simple">
+                     <p class="font-big light-dark">Payment method</p>
+                </div>
+                <div class="card">
+                    <label class="label-container  label-container--border reward-points "><!-- add "reward-points-selected" class, when select it -->
+                        <div class="checkbox-label">
+                            <div class="checkbox-style sellect-wrapper ">
+                                <input class=""  type="checkbox">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div class="cardWrap decription-row decription-row--center">
+                            <span class="payment-name text-md">Pay with Reward Points</span>
+                            <div class="points">
+                                <span class="payment-name text-md">$14</span>
+                            </div>
+                        </div> 
+                    </label>
+                </div>
+                <div class="payment-method">
+                    <span>                 
+                        <div class="card">
+                            <label class="label-container label-container--border label-selected">
+                                <!-- label-selected -->
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span> 
+                            <div class="cardWrap decription-row decription-row--center">
+                                <span class="payment-name font-big">Credit card</span>
                                     <div class="labels label-size visa"></div>
                                     <div class="labels label-size master"></div>
                                     <div class="labels label-size amex"></div>
-                                    <div class="labels label-size arca"></div>       
+                                    <div class="labels label-size arca"></div>                
+                            </div> 
+                            </label>
+                        </div>
+                        <div class="select-card">
+                          <div class="font-big-wrapper">
+                              <p class="font-big">Select credit card</p>
+                          </div>
+                          <span>
+                            <div class="card">
+                                <label class="label-container border-none ">
+                                    <input type="radio" name="radio-select-card">
+                                    <span class="checkmark"></span>
+                                  <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name text-md">435505******0511</span>
+                                    <div class="labels label-size visa"></div>                
+                                </div> 
+                                </label>
+                            </div>
+                            <div class="card">
+                                <label class="label-container border-none">
+                                    <input type="radio" name="radio-select-card">
+                                    <span class="checkmark"></span>
+                                  <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name text-md">550104******4682</span>
+                                    <div class="labels label-size master"></div>                   
+                                </div> 
+                                </label>
+                            </div>
+                            <div class="card">
+                                <label class="label-container border-none">
+                                    <input type="radio" name="radio-select-card">
+                                    <span class="checkmark"></span>
+                                    <div class="cardWrap decription-row decription-row--center">
+                                        <span class="payment-name text-md">Add new card</span>
+                                        <div class="labels label-size visa"></div>
+                                        <div class="labels label-size master"></div>
+                                        <div class="labels label-size amex"></div>
+                                        <div class="labels label-size arca"></div>       
+                                    </div> 
+                                </label>
+                            </div>
+                          </span>
+                        </div>  
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">PayPal</span>
+                                    <div class="labels label-size pay_pal"></div>                         
                                 </div> 
                             </label>
                         </div>
-                      </span>
-                    </div>  
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">Yandex.many</span>
+                                    <div class="labels label-size yandex_many"></div>                         
+                                </div> 
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">PayFast</span>
+                                    <div class="labels label-size payfast"></div>                         
+                                </div> 
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
+                                <div class="cardWrap decription-row decription-row--center">
+                                    <span class="payment-name font-big">Paystack</span>
+                                    <div class="labels label-size paystack"></div>                         
+                                </div> 
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
                             <div class="cardWrap decription-row decription-row--center">
-                                <span class="payment-name font-big">PayPal</span>
-                                <div class="labels label-size pay_pal"></div>                         
+                                <span class="payment-name font-big">Idram</span>
+                                <div class="labels label-size idram"></div>                         
                             </div> 
-                        </label>
-                    </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
                             <div class="cardWrap decription-row decription-row--center">
-                                <span class="payment-name font-big">Yandex.many</span>
-                                <div class="labels label-size yandex_many"></div>                         
+                                <span class="payment-name font-big">Cash</span>
+                                <div class="labels label-size cash"></div>                         
                             </div> 
-                        </label>
-                    </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="label-container label-container--border">
+                                <input type="radio" name="radio-payment">
+                                <span class="checkmark"></span>
                             <div class="cardWrap decription-row decription-row--center">
-                                <span class="payment-name font-big">PayFast</span>
-                                <div class="labels label-size payfast"></div>                         
+                                <span class="payment-name font-big">Banktransfer</span>
+                                <div class="labels label-size banktransfer"></div>                         
                             </div> 
-                        </label>
-                    </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
-                            <div class="cardWrap decription-row decription-row--center">
-                                <span class="payment-name font-big">Paystack</span>
-                                <div class="labels label-size paystack"></div>                         
-                            </div> 
-                        </label>
-                    </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
-                        <div class="cardWrap decription-row decription-row--center">
-                            <span class="payment-name font-big">Idram</span>
-                            <div class="labels label-size idram"></div>                         
-                        </div> 
-                        </label>
-                    </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
-                        <div class="cardWrap decription-row decription-row--center">
-                            <span class="payment-name font-big">Cash</span>
-                            <div class="labels label-size cash"></div>                         
-                        </div> 
-                        </label>
-                    </div>
-                    <div class="card">
-                        <label class="label-container label-container--border">
-                            <input type="radio" name="radio-payment">
-                            <span class="checkmark"></span>
-                        <div class="cardWrap decription-row decription-row--center">
-                            <span class="payment-name font-big">Banktransfer</span>
-                            <div class="labels label-size banktransfer"></div>                         
-                        </div> 
-                        </label>
-                    </div>
-                </span>
-           </div> 
+                            </label>
+                        </div>
+                    </span>
+               </div> 
+            </div>    
            <div class="continue-wrapper">
                <button class="main-btn" href="">Continue</button>
                <!-- disabled class-->
