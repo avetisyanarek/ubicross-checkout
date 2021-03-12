@@ -405,7 +405,7 @@ body {
   width: 70%;
   font-weight: bold;
 }
-.modal1 .modal-dialog .modal-content .modal-body .text-sm {
+.modal1 .modal-dialog .modal-content .modal-body .text-margin {
   margin-top: -20px;
   margin-bottom: 70px;
 }
@@ -442,6 +442,27 @@ body {
 }
 .modal1 .modal-dialog .modal-content .modal-footer .btn_primary:hover {
   background-color: #443ED2;
+}
+.modal1 .modal-width {
+  width: 620px;
+}
+.modal1 .modal-width .modal-content {
+  padding: 10px;
+}
+.modal1 .modal-width .modal-content .modal-body .text-margin {
+  margin-bottom: 32px;
+}
+.modal1 .modal-width .modal-content .modal-body .deliver-address .label-container .checkmark {
+  display: none;
+}
+.modal1 .modal-width .modal-content .modal-body .deliver-address .change-address_center {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.modal1 .modal-width .modal-content .modal-body .deliver-address .change-address_center .text-sm--color {
+  color: #4F49F5;
+  text-decoration: none;
 }
 .language-currency {
   padding: 6px 0;
@@ -1540,4 +1561,48 @@ header .header-wrapper .header-menu .header_list li .header_link {
 }
 .form-select input:focus {
   border: none;
+}
+.delivery-methods-wrapper .two-input-wrapper .form-width {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.delivery-methods-wrapper .change-address {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.delivery-methods-wrapper .change-address .text-sm--color {
+  color: #4F49F5;
+  font-weight: bold;
+  text-decoration: none;
+}
+.delivery-methods-wrapper .deliver-address .label-simple {
+  padding: 0;
+  border-top: none;
+  margin-bottom: 0;
+}
+.delivery-methods-wrapper .deliver-address .label-container-wrapper {
+  background-color: transparent;
+  border: none;
+}
+.form-wrapper-simple .title {
+  margin-bottom: 15px;
+}
+.textarea-wrapper .font-big {
+  font-weight: 400;
+  margin-top: 15px;
+}
+.textarea-wrapper .form-control {
+  min-height: 150px;
+  border: 1px solid #D4D9EE;
+  border-radius: 6px;
+  padding: 20px;
+}
+.textarea-wrapper .form-control:hover {
+  border: 1px solid #5384F4;
+}
+.textarea-wrapper .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #5384F4;
 }

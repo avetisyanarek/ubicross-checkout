@@ -83,7 +83,7 @@ body {
                 }
             }
             .modal-body{
-                .text-sm{
+                .text-margin{
                     margin-top: -20px;
                     margin-bottom: 70px;
                 
@@ -128,6 +128,41 @@ body {
         }
     }
 }
+// Start change_adress_modal styling
+.modal1{
+    .modal-width{
+        width: 620px;
+        .modal-content{
+            padding: 10px;
+            .modal-body{
+                .text-margin{
+                    margin-bottom: 32px;
+                }
+                .deliver-address{
+                    .label-container{
+                    
+                        .checkmark{
+                            display: none;
+                        }
+
+                    }
+                    .change-address_center{
+                        z-index: 1;
+                        display: flex;
+                       justify-content: center;
+                        .text-sm--color{
+                            color: @main;
+                            text-decoration: none;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+// Eng change_adress_modal styling
 // End modal styling
 
 // Start language and currency styling
@@ -843,6 +878,7 @@ header{
                     .new-address{
                         padding: 0;
                     }
+
                 }
             }
                 .label-container{
@@ -1344,3 +1380,62 @@ header{
         }
     }
 }
+// Start delivery-methods-wrapper 
+.delivery-methods-wrapper{      //simple
+    .two-input-wrapper{
+        .form-width{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .change-address{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        .text-sm--color {
+            color: #4F49F5;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    .deliver-address{
+        .label-simple {
+            padding: 0;
+            border-top: none;
+            // border-radius: 6px;
+            margin-bottom: 0;
+        }
+        .label-container-wrapper{
+            background-color: transparent;
+            border: none;
+        }
+    } 
+}
+// Start form-wrapper-simple
+.form-wrapper-simple{     //simple
+    .title{
+        margin-bottom: 15px;
+    }
+}
+    .textarea-wrapper{    //simple
+        .font-big{
+            font-weight: 400;
+            margin-top: 15px;
+        }
+        .form-control{           
+            min-height: 150px;
+            border: 1px solid @productBorder;
+            border-radius: 6px;
+            padding: 20px;
+
+            &:hover{
+                border: 1px solid @stepsActiv;
+            }
+            &:focus{
+                box-shadow: none;
+                border: 1px solid @stepsActiv;
+            }
+        }
+
+    }

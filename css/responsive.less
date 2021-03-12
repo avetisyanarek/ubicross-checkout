@@ -216,9 +216,9 @@
             overflow: hidden;
         }
     }
-    .language-currency{
-        display: none;
-    }
+    // .language-currency{
+    //     display: none;
+    // }
     // Start header media styling
     header{
         .header-wrapper{
@@ -673,6 +673,7 @@
             }   
         } 
         // End label container media syling
+
 }
 
     // End shopping cart media styling
@@ -861,6 +862,34 @@
     } 
 }
 
+        // Start modal_change_adress media styling
+        .modal1{
+            .modal-width{
+                .modal-content{
+                    .modal-body{
+                        .deliver-address{
+                            .label-container{
+                                padding-left: 0;
+                                padding-right: 10px;
+                                .span-content{
+                                    display: flex;
+                                    flex-direction: column;
+                                    .text-sm{
+                                        & + .left-border{
+                                            border: none;
+                                            padding-left: 0;
+                                            margin-left: 0;
+                                        }
+                                    }
+                                }        
+                            }        
+                        }
+                    }
+                }
+            }
+        }
+                // End modal_change_adress media styling
+
 }
 
 // Start @media screen and (max-width:479px) styling
@@ -875,7 +904,7 @@
                     }
                 }
                 .modal-body{
-                    .text-sm{
+                    .text-margin{
                         margin-bottom: 40px;
                     }
                 }

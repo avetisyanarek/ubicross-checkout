@@ -156,7 +156,7 @@
                     <div class="sign-in">
                         <button href="#" class="main-btn h40">Sign In</button>
                     </div>
-                 <div class="dropdown">
+                 <div class="dropdown" style="display: none;">
                      <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                          <div class="login-wrapper">
                             <p class="text-xs">N</p>
@@ -179,7 +179,7 @@
                          <li class="li-hover"><a class="text-sm li-hover" href="">Log out</a></li>
                      </ul>
                  </div>
-                <div class="header_burger" id="openNav">
+                <div class="header_burger" id="openNav" style="display: none;">
                          <div class="login-wrapper">
                             <!-- <p class="text-xs">N</p> -->
                             <div class="user-img">
@@ -198,7 +198,7 @@
     <section class="shoppingCart shoppingCart-simple">
        <div class="container" >        
            <div class="shopping-cart">
-            <div class="form-wrapper">
+            <div class="form-wrapper form-wrapper-simple">
                 <form class="address-form" action="" autocomplete="on">
                     <div class="personal-info-wrapper">
                         <div class="title">
@@ -217,13 +217,13 @@
                                             </div>
                                             <!-- <div class="errorMessage">City cannot be blank.</div> -->
                                         </div>
-                                        <div class="error-wrapper form-width">
-                                        <div class="form-group form-position ">
-                                            <label  class="form-control-label text-xs light-dark">Adress*</label>
-                                            <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                        </div>
-                                        <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
-                                        </div>
+                                         <div class="error-wrapper form-width">
+                                          <div class="form-group form-position">
+                                              <label  class="form-control-label text-xs light-dark">Email</label>
+                                              <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
+                                          </div>
+                                          <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
+                                          </div>
                                     </div>
                                     <div class="address-section two-input-wrapper">
                                       <div class="error-wrapper form-width">
@@ -243,13 +243,7 @@
                                       </div>
                                       <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
                                       </div>
-                                      <div class="error-wrapper form-width">
-                                          <div class="form-group form-position">
-                                              <label  class="form-control-label text-xs light-dark">Email</label>
-                                              <input class="text-sm" type="text" id="fname" name="fname" placeholder="">
-                                          </div>
-                                          <!-- <div class="errorMessage">Zip/Postal Code cannot be blank.</div> -->
-                                          </div>
+                                     
                                     </div>
                                 </div>
                             </div>
@@ -279,6 +273,29 @@
                            </div>
                        </span>
                   </div>
+                  <div class="deliver-address">
+                    <div class="change-address">
+                        <a class="text-sm text-sm--color" href="">Change address</a>
+                    </div>
+                    <span>
+                        <div class="label-container-wrapper label-simple">
+                            <div class="new-address">
+                                <div class="address-section two-input-wrapper">
+                                 
+                                    <div class="error-wrapper form-width">
+                                    <div class="form-group form-position ">
+                                        <label  class="form-control-label text-xs light-dark">Adress*</label>
+                                        <input class="text-sm" type="text" id="fname" name="fname" placeholder="Apartment, suite, unit, building, floor, etc.">
+                                    </div>
+                                    <!-- <div class="errorMessage">State/Region cannot be blank.</div> -->
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+
+                    </span>
+                 </div>
                   <div class="pickup-location">
                    <span>
                        <div class="card">
@@ -341,8 +358,11 @@
                     </div> 
                  </div>
        <div class="shipping-wrapper">
-            <div class="shipping-address shipping-simple">
-            <span class="text-xs">Shipping Address:</span>
+        <div class="title">
+            <p class="font-big light-dark simple-title">Delivery</p>
+            </div>
+            <!-- <div class="shipping-address shipping-simple">
+            <span class="text-xs">Delivery</span>
             <div class="address-span">
                 <div class="change-address">
                     <div class="span-content light-dark">
@@ -353,7 +373,7 @@
                     <a class="text-sm text-sm--color" href="">Change address</a>
                 </div>
             </div>
-            </div>  
+            </div>   -->
             <div class="shipping-details">
                     <span>
                         <div class="card">
@@ -580,8 +600,14 @@
                         </div>
                     </span>
                </div> 
-            </div>    
-           <div class="continue-wrapper">
+            </div>   
+
+            <div class="form-group  textarea-wrapper">
+                <label class="font-big light-dark">Notes</label>
+                <textarea class="form-control light-dark">Write your notes here</textarea>         
+            </div> 
+
+            <div class="continue-wrapper">
                <button class="main-btn" href="">Continue</button>
                <!-- disabled class-->
            </div>
