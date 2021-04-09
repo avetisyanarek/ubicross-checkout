@@ -456,6 +456,9 @@ p {
   body.lock {
     overflow: hidden;
   }
+  .language-currency {
+    display: none;
+  }
   header .header-wrapper .main-header .dropdown {
     display: none;
   }
@@ -878,6 +881,9 @@ p {
   }
   .details-wrapper .details-wrapper-width .details .details-row {
     margin-left: 12px;
+  }
+  .details-wrapper .details-wrapper-width .details .details-row .pen {
+    font-size: 20px;
   }
   .details-wrapper .details-wrapper-width .promo-wrapper {
     width: 100vw;

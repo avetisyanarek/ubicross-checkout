@@ -1145,6 +1145,7 @@ header .header-wrapper .header-menu .header_list li .header_link {
   padding: 5px 13px;
   border: none;
   font-size: 14px;
+  text-align: center;
 }
 .label-container .decription-row .label-description .text-sm--main {
   color: #4F49F5;
