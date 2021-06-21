@@ -1,64 +1,51 @@
-.main-btn {
-  background-color: #4F49F5;
-  border: 1px solid #4F49F5;
-  font-size: 16px;
-  font-weight: bold;
-  color: #FFFFFF;
-  border-radius: 6px;
-  text-decoration: none;
+:root {
+  --mainColor: #5846B9;
+  --white: #FFFFFF;
+  --secondaryLight: #F4F6F7;
+  --secondaryDarck: #6D737A;
+  --black: #262626;
+  --mainHover: #3F366F;
+}
+/* Main button */
+.btn {
+  height: 50px;
+  min-width: 50px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 25px;
+  padding: 0 25px;
+  background-color: var(--mainColor);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+  /* line-height: 50px; փակել եմ, որպեսի checkout-ի երկու տողանոց button-ը չխախտվի */
   text-align: center;
-  padding: 12px 5px 12px 5px;
-}
-.main-btn:focus {
-  outline: none;
-  color: #FFFFFF;
-}
-.main-btn:hover {
-  background-color: #36c756;
-  color: #FFFFFF;
-  transition: background 0.5s linear;
-  border-color: #36c756;
-  text-decoration: none;
-}
-.cancel-btn {
-  background-color: #F9FBFF;
-  color: #77808D;
   border: none;
-  text-decoration: none;
-}
-.h40 {
-  padding: 9px 0;
-}
-.item-price {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.sign-in .main-btn {
-  background-color: #FFFFFF;
-  color: #4F49F5;
-  width: 92px;
-  text-decoration: none;
-}
-.sign-in .main-btn:hover {
-  background-color: #4F49F5;
-  border-color: #4F49F5;
-  color: #FFFFFF;
+  /* outline: none; */
+  cursor: pointer;
   transition: background 0.5s linear;
 }
-.disabled {
-  pointer-events: none;
-  cursor: not-allowed;
-  background-color: #E1E3EE;
-  border-color: #E1E3EE;
-  pointer-events: all !important;
+.btn:hover {
+  background-color: var(--mainHover);
+  /* background-color: mix(var(--mainColor), fade(var(--black), 80%)); */
+  color: var(--white);
 }
-.disabled:hover {
-  background-color: #E1E3EE;
-  border-color: #E1E3EE;
+.btn:active {
+  background-color: var(--mainColor);
+  color: var(--white);
+}
+.btn:disabled {
+  background-color: var(--secondaryLight);
+  color: var(--secondaryDarck);
+  /* cursor: not-allowed; */
+}
+.btn:focus {
+  outline: none !important;
+  color: var(--black);
+}
+/*Secondary button  */
+.btn-secondary {
+  background-color: var(--secondaryLight);
+  color: var(--black);
 }
 .error {
   border: 1px solid #E04949;
@@ -310,27 +297,27 @@ p {
   font-style: normal;
 }
 @media screen and (max-width: 991px) {
-  .shopping-cart .boxShadow {
-    background-color: #F7F7F7;
+  .boxShadow {
+    background-color: #F4f6F7;
     box-shadow: none;
   }
-  .shopping-cart .boxShadow .sellect-all {
+  .boxShadow .sellect-all {
     padding: 0;
   }
-  .shopping-cart .boxShadow .sellect-all .title {
+  .boxShadow .sellect-all .title {
     display: none;
   }
-  .shopping-cart .boxShadow .sellect-all .all {
+  .boxShadow .sellect-all .all {
     margin-bottom: 10px;
     padding-left: 10px;
   }
-  .shopping-cart .boxShadow .sellect-all .all .checkbox-label .checkbox-style label {
+  .boxShadow .sellect-all .all .checkbox-label .checkbox-style label {
     background-color: #FFFFFF;
   }
-  .shopping-cart .boxShadow .sellect-all .all .checkbox-label .checkbox-style input[type=checkbox]:checked + label {
+  .boxShadow .sellect-all .all .checkbox-label .checkbox-style input[type=checkbox]:checked + label {
     background-color: #4F49F5;
   }
-  .shopping-cart .boxShadow .sellect-all .products {
+  .boxShadow .sellect-all .products {
     flex-direction: column;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -339,117 +326,104 @@ p {
     padding: 10px;
     border-top: none;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row {
+  .boxShadow .sellect-all .products .prod-row {
     flex-direction: column;
     margin-bottom: 0;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription {
+  .boxShadow .sellect-all .products .prod-row .product-discription {
     width: 100%;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .product-img {
+  .boxShadow .sellect-all .products .prod-row .product-discription .product-img {
     border: none;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty {
+  .boxShadow .sellect-all .products .prod-row .product-discription .nameQty {
     flex-direction: column;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty .name {
+  .boxShadow .sellect-all .products .prod-row .product-discription .nameQty .name {
     max-width: 100%;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty .qty-wrapper .select-wrapper .select-arrow {
-    top: 10px;
-  }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-discription .width .nameQty .qty-wrapper .select-wrapper select {
-    height: 40px;
-    padding: 0 0 0 15px;
-  }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price {
+  .boxShadow .sellect-all .products .prod-row .product-price {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     border-top: 1px solid #D4D9EE;
     padding-top: 15px;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price .remove-price {
+  .boxShadow .sellect-all .products .prod-row .product-price .remove-price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
     width: 100%;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper {
+  .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper {
     display: flex;
     flex-direction: column;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper .sale {
+  .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper .sale {
     margin-left: 10px;
     margin-bottom: 0;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper .text-md {
+  .boxShadow .sellect-all .products .prod-row .product-price .remove-price .price-wrapper .text-md {
     margin-bottom: 0;
   }
-  .shopping-cart .boxShadow .sellect-all .products .prod-row .product-price .main-btn {
+  .boxShadow .sellect-all .products .prod-row .product-price .main-btn {
     display: block;
     width: 92px;
     padding-top: 9px;
     padding-bottom: 9px;
   }
-  .shopping-cart .boxShadow .sellect-all .product-hr {
+  .boxShadow .sellect-all .product-hr {
     display: none;
   }
-  .shopping-cart .promo-wrapper {
+  .promo-wrapper {
     width: 42%;
     margin-left: 15px;
   }
-  .shopping-cart .promo-wrapper .boxShadow1 {
+  .promo-wrapper .boxShadow1 {
     width: 100%;
     border-radius: 6px;
     box-shadow: 0 3px 10px #EAEAEA;
     background-color: #FFFFFF;
   }
-  .shopping-cart .promo-wrapper .checkout .checkout-btn .main-btn .font-big {
-    font-size: 16px;
-  }
-  .shopping-cart .address-form .delivery-methods .methods-row {
+  .methods-row {
     flex-direction: column;
   }
-  .shopping-cart .address-form .delivery-methods .methods-row .card-width {
+  .methods-row .card-width {
     width: 100%;
   }
-  .shopping-cart .address-form .delivery-methods .methods-row .card-width.card-width {
+  .methods-row .card-width.card-width {
     margin-left: 0;
   }
-  .shopping-cart .address-form .card .label-container {
+  .label-container {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .shopping-cart .address-form .card .label-container .decription-row .label-description .text-sm--main {
+  .label-container .decription-row .label-description .text-sm--main {
     display: none;
   }
-  .shopping-cart .address-form .card .label-container .decription-row .label-description .edit-remove {
+  .label-container .decription-row .label-description .edit-remove {
     display: none;
   }
-  .cardWrap .label-size {
+  .label-size {
     width: 38px;
     height: 25px;
   }
-  .cardWrap .labels {
+  .labels {
     margin-right: 4px;
   }
-  .success-wrapper .box-width {
+  .box-width {
     width: 100%;
   }
-  .details-wrapper .details-wrapper-width {
+  .details-wrapper-width {
     width: 100%;
   }
-  .shipping-address .address-span .change-address .span-content {
+  .change-address .span-content {
     max-width: 342px;
     font-size: 12px;
   }
-  .shipping-address .address-span .change-address .text-sm--color {
+  .change-address .text-sm--color {
     font-size: 12px;
-  }
-  .form-select .select-wrapper .select-arrow {
-    right: -11px;
   }
 }
 @media screen and (max-width: 767px) {

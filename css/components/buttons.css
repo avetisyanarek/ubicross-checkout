@@ -1,62 +1,49 @@
-.main-btn {
-  background-color: #4F49F5;
-  border: 1px solid #4F49F5;
-  font-size: 16px;
-  font-weight: bold;
-  color: #FFFFFF;
-  border-radius: 6px;
-  text-decoration: none;
+:root {
+  --mainColor: #5846B9;
+  --white: #FFFFFF;
+  --secondaryLight: #F4F6F7;
+  --secondaryDarck: #6D737A;
+  --black: #262626;
+  --mainHover: #3F366F;
+}
+/* Main button */
+.btn {
+  height: 50px;
+  min-width: 50px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 25px;
+  padding: 0 25px;
+  background-color: var(--mainColor);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+  /* line-height: 50px; փակել եմ, որպեսի checkout-ի երկու տողանոց button-ը չխախտվի */
   text-align: center;
-  padding: 12px 5px 12px 5px;
-}
-.main-btn:focus {
-  outline: none;
-  color: #FFFFFF;
-}
-.main-btn:hover {
-  background-color: #36c756;
-  color: #FFFFFF;
-  transition: background 0.5s linear;
-  border-color: #36c756;
-  text-decoration: none;
-}
-.cancel-btn {
-  background-color: #F9FBFF;
-  color: #77808D;
   border: none;
-  text-decoration: none;
-}
-.h40 {
-  padding: 9px 0;
-}
-.item-price {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.sign-in .main-btn {
-  background-color: #FFFFFF;
-  color: #4F49F5;
-  width: 92px;
-  text-decoration: none;
-}
-.sign-in .main-btn:hover {
-  background-color: #4F49F5;
-  border-color: #4F49F5;
-  color: #FFFFFF;
+  /* outline: none; */
+  cursor: pointer;
   transition: background 0.5s linear;
 }
-.disabled {
-  pointer-events: none;
-  cursor: not-allowed;
-  background-color: #E1E3EE;
-  border-color: #E1E3EE;
-  pointer-events: all !important;
+.btn:hover {
+  background-color: var(--mainHover);
+  /* background-color: mix(var(--mainColor), fade(var(--black), 80%)); */
+  color: var(--white);
 }
-.disabled:hover {
-  background-color: #E1E3EE;
-  border-color: #E1E3EE;
+.btn:active {
+  background-color: var(--mainColor);
+  color: var(--white);
+}
+.btn:disabled {
+  background-color: var(--secondaryLight);
+  color: var(--secondaryDarck);
+  /* cursor: not-allowed; */
+}
+.btn:focus {
+  outline: none !important;
+  color: var(--black);
+}
+/*Secondary button  */
+.btn-secondary {
+  background-color: var(--secondaryLight);
+  color: var(--black);
 }

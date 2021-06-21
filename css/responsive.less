@@ -7,7 +7,7 @@
 
 // Start @media screen and (max-width:991px) styling
 @media screen and (max-width:991px){
-    .shopping-cart {
+    // .shopping-cart {
         .boxShadow{
             background-color: @bg;
             box-shadow: none;
@@ -46,25 +46,25 @@
                                 border: none;
                             }                
                             width: 100%;
-                            .width{
+                            // .width{
                                 .nameQty{
                                     flex-direction: column;
                                     .name{
                                         max-width: 100%;
                                     }
-                                    .qty-wrapper{
-                                        .select-wrapper{
-                                            .select-arrow{
-                                                top: 10px;
-                                            }
-                                            select{
-                                                height: 40px;
-                                                padding: 0 0 0 15px;
-                                            }
-                                        }
-                                    }
+                                    // .qty-wrapper{
+                                    //     .select-wrapper{
+                                    //         .select-arrow{
+                                    //             top: 10px;
+                                    //         }
+                                    //         select{
+                                    //             height: 40px;
+                                    //             padding: 0 0 0 15px;
+                                    //         }
+                                    //     }
+                                    // }
                                 }
-                            }
+                            // }
                         }
                         .product-price{
                             justify-content: space-between;
@@ -115,76 +115,62 @@
                 box-shadow: 0 3px 10px #EAEAEA;
                 background-color: @white;
             }
-            .checkout{
-                .checkout-btn{
-                    .main-btn{
-                        .font-big{
-                            font-size: 16px;
-                        }
-                    }
+            // .checkout{
+            //     .checkout-btn{
+            //         .main-btn{
+            //             .font-big{
+            //                 font-size: 16px;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+        // End promo media styling
+    // }
+
+     // Start shipping media styling
+     .methods-row{
+        flex-direction: column;
+        .card-width{
+            width: 100%;
+            &.card-width{
+                margin-left: 0;
+            }
+        }
+    }      
+    .label-container{
+            padding-left: 10px;
+            padding-right: 10px;
+        .decription-row{
+            .label-description{
+                .text-sm--main{
+                    display: none;
+                }
+                .edit-remove{
+                    display: none;
                 }
             }
         }
-        // End promo media styling
-    }
-
-     // Start shipping media styling
-     .shopping-cart{
-        .address-form{
-            .delivery-methods{
-                .methods-row{
-                    flex-direction: column;
-                    .card-width{
-                        width: 100%;
-                        &.card-width{
-                            margin-left: 0;
-                        }
-                    }
-                }
-            }            
-                .card{
-                    .label-container{
-                            padding-left: 10px;
-                            padding-right: 10px;
-                        .decription-row{
-                            .label-description{
-                                .text-sm--main{
-                                    display: none;
-                                }
-                                .edit-remove{
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                } 
-        } 
-    }
+    }            
         // End shipping media styling
-        .cardWrap{
-            .label-size {
-                width: 38px;
-                height: 25px;
-            }
-            .labels{
-                margin-right: 4px;
-            }
-        } 
+        
+    .label-size {
+        width: 38px;
+        height: 25px;
+    }
+    .labels{
+        margin-right: 4px;
+    }
 
 // Start success media styling
-.success-wrapper{
     .box-width {
         width: 100%;
     }
-} 
-.details-wrapper{
     .details-wrapper-width {
         width: 100%;
     }
-} 
+
 // Start shipping details media styling
-.shipping-address{
-    .address-span{
         .change-address {
             .span-content{
                 max-width: 342px;
@@ -194,21 +180,9 @@
                 font-size: 12px;
             }
         }
-    }
-}  
 // End shipping details media styling
-
-
-// Start select arrow media styling
-.form-select{
-    .select-wrapper {
-        .select-arrow {
-            right: -11px;
-        }
-    }
-} 
-// End select arrow media styling
 }
+
 // Start @media screen and (max-width:767px) styling
 @media screen and (max-width:767px){
     body{

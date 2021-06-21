@@ -1,95 +1,148 @@
 @import url('../colors/color.less');
-// Start main-btn styling
-.main-btn {
-    background-color:@mainBtn;  
-    border: 1px solid @main;
-    font-size: 16px;
-    font-weight: bold;
-    color: @white;
-    border-radius: 6px;
-    text-decoration: none;
+
+:root {
+    --mainColor: #5846B9;
+    --white: #FFFFFF;
+    --secondaryLight:#F4F6F7;
+    --secondaryDarck: #6D737A;
+    --black: #262626;
+    --mainHover:#3F366F;
+  }
+/* Main button */
+.btn{
+    height: 50px;
+    min-width: 50px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 25px;
+    padding: 0 25px;
+    background-color: var(--mainColor);
+    color:var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    /* line-height: 50px; փակել եմ, որպեսի checkout-ի երկու տողանոց button-ը չխախտվի */
     text-align: center;
-    padding: 12px 5px 12px 5px;
-       &:focus{
-        outline: none;
-        color: @white;
-            }
-        &:hover{
-            background-color: @hover;
-            color: @white;
-            transition: background 0.5s linear;
-            border-color: @hover;
-            text-decoration: none;
-        }
-}
-// Start cancel-btn styling
-.cancel-btn{
-    background-color: @selected;
-    color: @light-dark;
     border: none;
-    text-decoration: none;
+    /* outline: none; */
+    cursor: pointer;
+    transition: background 0.5s linear;
 }
-// End cancel-btn styling
-
-.h40 {
-    padding: 9px 0;
+.btn:hover{
+  background-color: var(--mainHover);
+  /* background-color: mix(var(--mainColor), fade(var(--black), 80%)); */
+  color: var(--white);
+}
+.btn:active{
+    background-color:var(--mainColor);
+    color: var(--white);
+   
+}
+.btn:disabled{
+    background-color: var(--secondaryLight);
+    color: var(--secondaryDarck);
+    /* cursor: not-allowed; */
+}
+.btn:focus{
+    outline: none !important;
+    color: var(--black);
 }
 
-.item-price{    
-    padding-top: 5px;
-    padding-bottom: 5px;
+/*Secondary button  */
+.btn-secondary{
+    background-color: var(--secondaryLight);
+    color: var(--black);
 }
-// End main-btn styling
 
-// Start free shipping buttons styling
-// .free-shipping-wrapper{
-//     max-width: 120px;
-//     .text-sm{
-//         background-color: @hover;
+// // Start main-btn styling
+// .main-btn {
+//     background-color:@mainBtn;  
+//     border: 1px solid @main;
+//     font-size: 16px;
+//     font-weight: bold;
+//     color: @white;
+//     border-radius: 6px;
+//     text-decoration: none;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     padding: 12px 5px 12px 5px;
+//        &:focus{
+//         outline: none;
 //         color: @white;
-//         font-weight: bold;
-//         border-radius: 30px;
-//         padding: 5px 13px;
-//         border: none;
-//         font-size: 14px;
+//             }
+//         &:hover{
+//             background-color: @hover;
+//             color: @white;
+//             transition: background 0.5s linear;
+//             border-color: @hover;
+//             text-decoration: none;
+//         }
+// }
+// // Start cancel-btn styling
+// .cancel-btn{
+//     background-color: @selected;
+//     color: @light-dark;
+//     border: none;
+//     text-decoration: none;
+// }
+// // End cancel-btn styling
+
+// .h40 {
+//     padding: 9px 0;
+// }
+
+// .item-price{    
+//     padding-top: 5px;
+//     padding-bottom: 5px;
+// }
+// // End main-btn styling
+
+// // Start free shipping buttons styling
+// // .free-shipping-wrapper{
+// //     max-width: 120px;
+// //     .text-sm{
+// //         background-color: @hover;
+// //         color: @white;
+// //         font-weight: bold;
+// //         border-radius: 30px;
+// //         padding: 5px 13px;
+// //         border: none;
+// //         font-size: 14px;
+// //     }
+// // }
+// // End free shipping buttons styling
+
+
+// // Start sign-in styling
+// .sign-in{
+//     .main-btn{
+//         background-color: @white;
+//         color: @mainBtn;
+//         width: 92px;
+//         text-decoration: none;
+//         &:hover{
+//             background-color: @main;
+//             border-color: @main;
+//             color: @white;
+//             transition: background 0.5s linear
+//         }
 //     }
 // }
-// End free shipping buttons styling
-
-
-// Start sign-in styling
-.sign-in{
-    .main-btn{
-        background-color: @white;
-        color: @mainBtn;
-        width: 92px;
-        text-decoration: none;
-        &:hover{
-            background-color: @main;
-            border-color: @main;
-            color: @white;
-            transition: background 0.5s linear
-        }
-    }
-}
-// End sign-in styling
+// // End sign-in styling
 
 
 
-// Start disabled styling
-.disabled {
-    pointer-events: none;
-    cursor: not-allowed;
-    background-color: @stepBorder;
-    border-color: @stepBorder;
-    pointer-events: all !important;
-    &:hover{
-        background-color: @stepBorder;
-        border-color: @stepBorder;
-    }
-  }
-//End disabled styling
+// // Start disabled styling
+// .disabled {
+//     pointer-events: none;
+//     cursor: not-allowed;
+//     background-color: @stepBorder;
+//     border-color: @stepBorder;
+//     pointer-events: all !important;
+//     &:hover{
+//         background-color: @stepBorder;
+//         border-color: @stepBorder;
+//     }
+//   }
+// //End disabled styling
